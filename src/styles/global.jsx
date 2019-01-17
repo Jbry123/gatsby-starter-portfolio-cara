@@ -14,6 +14,7 @@ injectGlobal`
     background-color: #161719;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    font-family: "avenir";
   }
   html, body {
     width: 100%;

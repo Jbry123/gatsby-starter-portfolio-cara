@@ -11,8 +11,10 @@ import { rotate, UpDown, UpDownWide, waveAnimation } from '../styles/animations'
 import { hidden } from '../styles/utils';
 import { colors } from '../../tailwind';
 import triangle from '../images/triangle.svg';
-import avatar from '../images/avatar.jpg';
+import avatar from './JonathanBry.png';
 import '../styles/global';
+import rocket from './rocketGif.gif';
+import resume from './JonathanBryResume.pdf';
 
 const Divider = styled(ParallaxLayer)`
   ${tw('absolute w-full h-full')};
@@ -39,8 +41,12 @@ const Inner = styled.div`
   ${tw('w-full xxl:w-2/3 text-center lg:text-left')};
 `;
 
+const InnerCenter = styled.div`
+${tw('w-2/3 justify-center xxl:w-2/3 item-center text-center lg:text-left')};
+`;
+
 const BigTitle = styled.h1`
-  ${tw('text-5xl lg:text-6xl font-serif text-white mb-6 tracking-wide')};
+  ${tw('text-5xl lg:text-6xl font-sans-serif text-white mb-6 tracking-wide')};
   text-shadow: 0 5px 35px rgba(255, 255, 255, 0.15);
 `;
 
@@ -60,9 +66,29 @@ const Title = styled.h1`
   }
 `;
 
+const Button1= styled.button`
+${tw('font-sans w-full justify-center text-white xxl:w-3/4')};
+height: 125px;
+background: linear-gradient(to right, #D4145A 0%, #FBB03B 100%);
+font-size: 20px;
+align-content: center;
+justify-content: center;
+display: inline-flex;
+flex-direction: inherent;
+margin: 0px;
+border-radius: 15px;
+border: none;
+
+`;
+
 const Subtitle = styled.p`
   ${tw('text-2xl lg:text-4xl font-sans text-white mt-8 xxl:w-3/4')};
   text-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+  width: 500px;
+  @media (max-width: 500px) {
+    width: 350px;
+  }
+
 `;
 
 const ProjectsWrapper = styled.div`
@@ -98,6 +124,13 @@ const AboutHero = styled.div`
 
 const Avatar = styled.img`
   ${tw('rounded-full w-32 xl:w-48 shadow-lg h-auto')};
+`;
+
+const Bullet = styled.img`
+${tw('rounded-full w-12 shadow-lg')};
+  height: 28px;
+  width: 28px;
+  margin-top: 5px;
 `;
 
 const AboutSub = styled.span`
@@ -158,9 +191,18 @@ const Index = () => (
       <Content speed={0.4} offset={0}>
         <Hero>
           <BigTitle>
-            Hello, <br /> I'm John Doe.
+            Welcome, <br /> I'm Jonathan Bry!
+            <br /> Software developer, Designer, Marketing.
           </BigTitle>
-          <Subtitle>I'm creating noice web experiences for the next generation of consumer-facing companies.</Subtitle>
+          <Subtitle>
+
+          <Bullet className="bullet" src={rocket} alt="Website Development, freelance designer" />  Brilliant, interactive websites and apps. <br />
+
+          <Bullet src={rocket} alt="marketing, interactive" />  Targeted marketing and business development.<br />
+
+          <Bullet src={rocket} alt="John Doe" />  Start up friendly prices and equity contracts.
+      
+          </Subtitle>
         </Hero>
       </Content>
       <DividerMiddle
@@ -174,25 +216,25 @@ const Index = () => (
           <Title>Projects</Title>
           <ProjectsWrapper>
             <ProjectCard
-              title="Freiheit"
-              link="https://www.behance.net/gallery/58937147/Freiheit"
+              title="The Festival Voice"
+              link="https://www.thefestivalvoice.com/"
               bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
             >
-              This project is my entry to Adobe's #ChallengeYourPerspective contest.
+              Wordpress/Vue project, TFV is a blog for festivals and music in general.
             </ProjectCard>
             <ProjectCard
-              title="Harry Potter"
-              link="https://www.behance.net/gallery/52915793/Harry-Potter"
+              title="JobSeekr"
+              link="https://www.jobseekr.app/"
               bg="linear-gradient(to right, #662D8C 0%, #ED1E79 100%)"
             >
-              I entered the DOCMA 2017 award with this Harry Potter inspired image.
+            MERN stack bootcamp project that is not updated anymore
             </ProjectCard>
             <ProjectCard
-              title="Tomb Raider"
+              title="Vue E-commerce PWA w/ Shopify"
               link="https://www.behance.net/gallery/43907099/Tomb-Raider"
               bg="linear-gradient(to right, #009245 0%, #FCEE21 100%)"
             >
-              Recreation of a Tomb Raider Wallpaper (Fan Art)
+              
             </ProjectCard>
             <ProjectCard
               title="Eagle"
@@ -252,17 +294,21 @@ const Index = () => (
           <AboutHero>
             <Avatar src={avatar} alt="John Doe" />
             <AboutSub>
-              The English language can not fully capture the depth and complexity of my thoughts. So I'm incorporating
-              Emoji into my speech to better express myself. Winky face.
+              <strong>Download my resume below for specifics!</strong> At my core is design, and software development, through start up environments I also developed a love for marketing, specifically click funnels and social media marketing.
+              
             </AboutSub>
           </AboutHero>
           <AboutDesc>
-            You know the way you feel when you see a picture of two otters holding hands? That's how you're gonna feel
-            every day. My mother cried the day I was born because she knew she’d never be prettier than me. You should
-            make me your campaign manager. I was born for politics. I have great hair and I love lying. Captain? The
-            kids want to know where Paulie the Pigeon is. I told them he got sucked up into an airplane engine, is that
-            all right?
+            Modern day Stoic with a love of collaboration and adventure, digital nomad by 25 is the goal, hopefully working remotely and creating dreams on the side!
+            <br />I started out in E-Commerce, and quickly started getting involved with hackathons and consecquently start ups. I love business development, open source, and I'm always looking for new technologies.
+            <br />Agile work environments are king, working on one goal with two minds, especially at the start, then splitting into specialty work.
           </AboutDesc>
+          <InnerCenter>
+          <Button1>
+            <a href={resume} download="JonathanBryResume"></a>
+            <h5>Download My Resumé!</h5>
+          </Button1>
+          </InnerCenter>
         </Inner>
       </Content>
       <Divider fill="#23262b" speed={0.2} offset={4}>
