@@ -31,6 +31,15 @@ const upDownAnimation = keyframes`
   }
 `;
 
+const fly = keyframes`
+    from {
+        left: 0;
+    }
+    to {
+        left: 50%;
+    }
+`;
+
 const upDownWideAnimation = keyframes`
   from {
     transform: translateY(0);
@@ -52,4 +61,10 @@ export const UpDownWide = styled.div`
 
 export const waveAnimation = css`
   animation: ${wave} 20s linear infinite alternate;
+`;
+
+export const Bebopstyle = styled.img`
+  ${tw('w-120 h-100 xl:w-180')};
+  margin-top: 50px;
+  animation: ${fly} 15s linear infinite;
 `;

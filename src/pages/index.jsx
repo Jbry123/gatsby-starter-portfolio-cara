@@ -13,8 +13,10 @@ import { colors } from '../../tailwind';
 import triangle from '../images/triangle.svg';
 import avatar from './JonathanBry.png';
 import '../styles/global';
-import rocket from './rocketGif.gif';
-import resume from './JonathanBryResume.pdf';
+import rocket from './giphy.gif';
+import bebop from './cowboy-bebop-plane.png';
+import './JonathanBryResume.pdf';
+import Gallery from '../components/Gallery.jsx';
 
 const Divider = styled(ParallaxLayer)`
   ${tw('absolute w-full h-full')};
@@ -48,6 +50,8 @@ ${tw('w-2/3 justify-center xxl:w-2/3 item-center text-center lg:text-left')};
 const BigTitle = styled.h1`
   ${tw('text-5xl lg:text-6xl font-sans-serif text-white mb-6 tracking-wide')};
   text-shadow: 0 5px 35px rgba(255, 255, 255, 0.15);
+  margin-top: 400px;
+
 `;
 
 const Title = styled.h1`
@@ -62,7 +66,7 @@ const Title = styled.h1`
     background-size: 40px;
     animation: ${rotate} 4s linear infinite;
     left: -60px;
-    top: 5px;
+    top: 105px;
   }
 `;
 
@@ -125,7 +129,21 @@ const AboutHero = styled.div`
 const Avatar = styled.img`
   ${tw('rounded-full w-32 xl:w-48 shadow-lg h-auto')};
 `;
+const Bebopstyle = styled.img`
+  ${tw('w-120 h-100 xl:w-180')};
+  margin-top: 50px;
+  animation: fly 5s;
+  @keyframes fly
+  {
+      from {
+          right: 100%;
+      }
+      to {
+          right: 50%;
+      }
+  };
 
+`;
 const Bullet = styled.img`
 ${tw('rounded-full w-12 shadow-lg')};
   height: 28px;
@@ -192,19 +210,20 @@ const Index = () => (
         <Hero>
           <BigTitle>
             Welcome, <br /> I'm Jonathan Bry!
-            <br /> Software developer, Designer, Marketing.
+            <br /> UI/UX Researcher, Designer, & Marketing!
           </BigTitle>
           <Subtitle>
 
-          <Bullet className="bullet" src={rocket} alt="Website Development, freelance designer" />  Brilliant, interactive websites and apps. <br />
+          <Bullet className="bullet" src={rocket} alt="Website Development, freelance designer" />Multi-disciplined UI/UX professional, always learning!<br />
 
-          <Bullet src={rocket} alt="marketing, interactive" />  Targeted marketing and business development.<br />
+          <Bullet src={rocket} alt="marketing, interactive" />Targeted website and app development.<br />
 
-          <Bullet src={rocket} alt="John Doe" />  Start up friendly prices and equity contracts.
+          <Bullet src={rocket} alt="John Doe" />User-centric research and design.
       
           </Subtitle>
         </Hero>
       </Content>
+
       <DividerMiddle
         bg="linear-gradient(to right, SlateBlue 0%, DeepSkyBlue 100%)"
         speed={-0.2}
@@ -227,23 +246,25 @@ const Index = () => (
               link="https://www.jobseekr.app/"
               bg="linear-gradient(to right, #662D8C 0%, #ED1E79 100%)"
             >
-            MERN stack bootcamp project that is not updated anymore
+            MERN stack coding bootcamp project that is not updated anymore
             </ProjectCard>
             <ProjectCard
-              title="Vue E-commerce PWA w/ Shopify"
-              link="https://www.behance.net/gallery/43907099/Tomb-Raider"
+              title="Insanity.shop - Wild Personified."
+              link="https://www.insanity.shop/"
               bg="linear-gradient(to right, #009245 0%, #FCEE21 100%)"
             >
-              
+            Custom desktop first site website targeting niche demographics, and grabbing from the client's style.
             </ProjectCard>
             <ProjectCard
               title="Eagle"
-              link="https://www.behance.net/gallery/38068151/Eagle"
+              link="https://www.bablebark.com/"
               bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
             >
-              A fantasy image manipulation relocating the habitat of wild animals.
+            
             </ProjectCard>
           </ProjectsWrapper>
+          <Bebopstyle src={bebop} alt="hello" >
+          </Bebopstyle>
         </Inner>
       </Content>
       <Divider speed={0.1} offset={1} factor={2}>
@@ -290,11 +311,11 @@ const Index = () => (
       </Divider>
       <Content speed={0.4} offset={3}>
         <Inner>
-          <Title>About</Title>
+          <Title>About Me</Title>
           <AboutHero>
             <Avatar src={avatar} alt="John Doe" />
             <AboutSub>
-              <strong>Download my resume below for specifics!</strong> At my core is design, and software development, through start up environments I also developed a love for marketing, specifically click funnels and social media marketing.
+              <strong>Download my resume below for specifics!</strong> At my core is design, through start up environments I also developed a love for user research, and constantly learning to make apps more human centered.
               
             </AboutSub>
           </AboutHero>
@@ -304,10 +325,7 @@ const Index = () => (
             <br />Agile work environments are king, working on one goal with two minds, especially at the start, then splitting into specialty work.
           </AboutDesc>
           <InnerCenter>
-          <Button1>
-            <a href={resume} download="JonathanBryResume"></a>
-            <h5>Download My Resumé!</h5>
-          </Button1>
+          <a href="/JonathanBryResume.pdf" download>download me </a>
           </InnerCenter>
         </Inner>
       </Content>
@@ -331,17 +349,16 @@ const Index = () => (
         <Inner>
           <Title>Get in touch</Title>
           <ContactText>
-            Say <a href="mailto:plizNoSp4m@domain.tld">Hi</a> or find me on other platforms:{' '}
-            <a href="https://dribbble.com/LekoArts">Dribbble</a> &{' '}
-            <a href="https://www.instagram.com/lekoarts.de/">Instagram</a>
+            Say <a href="mailto:jonathanbry18@gmail.com">Hi</a> or find me on other platforms:{' '}
+            <a href="https://dribbble.com/jonathanbry">Dribbble</a> &{' '}
+            <a href="https://www.instagram.com/postravedepression/">Instagram</a>
           </ContactText>
         </Inner>
         <Footer>
-          &copy; 2018 by Gatsby Starter Portfolio Cara.{' '}
-          <a href="https://github.com/LekoArts/gatsby-starter-portfolio-cara">Github Repository</a>.
+          &copy; Feel free to call me at 916715786 ❤🖤❤🖤
         </Footer>
       </Content>
-      <Divider speed={0.1} offset={4}>
+      <Divider speed={0.2} offset={4}>
         <UpDown>
           <SVG icon="upDown" className={hidden} width={8} fill={colors['grey-darkest']} left="70%" top="20%" />
           <SVG icon="triangle" width={8} stroke={colors['grey-darkest']} left="25%" top="5%" />
