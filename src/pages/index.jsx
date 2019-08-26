@@ -14,7 +14,6 @@ import triangle from '../images/triangle.svg';
 import avatar from './JonathanBry.png';
 import '../styles/global';
 import rocket from './giphy.gif';
-import bebop from './cowboy-bebop-plane.png';
 import './JonathanBryResume.pdf';
 import Gallery from '../components/Gallery.jsx';
 
@@ -129,21 +128,7 @@ const AboutHero = styled.div`
 const Avatar = styled.img`
   ${tw('rounded-full w-32 xl:w-48 shadow-lg h-auto')};
 `;
-const Bebopstyle = styled.img`
-  ${tw('w-120 h-100 xl:w-180')};
-  margin-top: 50px;
-  animation: fly 5s;
-  @keyframes fly
-  {
-      from {
-          right: 100%;
-      }
-      to {
-          right: 50%;
-      }
-  };
 
-`;
 const Bullet = styled.img`
 ${tw('rounded-full w-12 shadow-lg')};
   height: 28px;
@@ -257,14 +242,12 @@ const Index = () => (
             </ProjectCard>
             <ProjectCard
               title="Eagle"
-              link="https://www.bablebark.com/"
+              link="https://www.babelbark.com/"
               bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
             >
             
             </ProjectCard>
           </ProjectsWrapper>
-          <Bebopstyle src={bebop} alt="hello" >
-          </Bebopstyle>
         </Inner>
       </Content>
       <Divider speed={0.1} offset={1} factor={2}>
@@ -315,17 +298,17 @@ const Index = () => (
           <AboutHero>
             <Avatar src={avatar} alt="John Doe" />
             <AboutSub>
-              <strong>Download my resume below for specifics!</strong> At my core is design, through start up environments I also developed a love for user research, and constantly learning to make apps more human centered.
+              <strong>Download my resume below for specifics!</strong> At my core is design, through start up environments I also developed a love for user research, and I am constantly learning to make apps more human centered!
               
             </AboutSub>
           </AboutHero>
           <AboutDesc>
-            Modern day Stoic with a love of collaboration and adventure, digital nomad by 25 is the goal, hopefully working remotely and creating dreams on the side!
-            <br />I started out in E-Commerce, and quickly started getting involved with hackathons and consecquently start ups. I love business development, open source, and I'm always looking for new technologies.
-            <br />Agile work environments are king, working on one goal with two minds, especially at the start, then splitting into specialty work.
+            Modern day Stoic with a love of collaboration, sports, and hackathons. Traveling designer/business owner by 25 is the goal, hopefully working remotely and creating dreams!
+            <br />I started out in E-Commerce, and quickly started getting involved with healthcare on multiple levels. I love business development, open source software, and I'm always looking for new technologies and avenues of learning.
+            <br />Agile work environments are king, working on one goal with two/three minds, especially at the start, then splitting into specialty work.
           </AboutDesc>
           <InnerCenter>
-          <a href="/JonathanBryResume.pdf" download>download me </a>
+          <a href="/JonathanBryResume.pdf" download>download me 💛</a>
           </InnerCenter>
         </Inner>
       </Content>
@@ -355,7 +338,7 @@ const Index = () => (
           </ContactText>
         </Inner>
         <Footer>
-          &copy; Feel free to call me at 916715786 ❤🖤❤🖤
+          &copy; Feel free to call me at 916715786 💛🖤💛🖤
         </Footer>
       </Content>
       <Divider speed={0.2} offset={4}>
