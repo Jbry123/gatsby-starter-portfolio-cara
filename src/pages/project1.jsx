@@ -12,7 +12,8 @@ import { colors } from '../../tailwind';
 import triangle from '../images/triangle.svg';
 import avatar from './JonathanBry.png';
 import '../styles/global';
-import rocket from './rocketGif.gif';
+import rocket from './giphy.gif';
+import homeicon from './homeicon.png';
 import './JonathanBryResume.pdf';
 import Gallery from '../components/Gallery.jsx';
 
@@ -35,6 +36,7 @@ const Content = styled(ParallaxLayer)`
 
 const Hero = styled.div`
   ${tw('w-full xl:w-2/3')};
+  padding-top: 300px;
 `;
 
 const Inner = styled.div`
@@ -48,7 +50,7 @@ ${tw('w-2/3 justify-center xxl:w-2/3 item-center text-center lg:text-left')};
 const BigTitle = styled.h1`
   ${tw('text-5xl lg:text-6xl font-sans-serif text-white mb-6 tracking-wide')};
   text-shadow: 0 5px 35px rgba(255, 255, 255, 0.15);
-  margin-top: 200px;
+  margin-top: 600px;
 `;
 
 const Title = styled.h1`
@@ -85,9 +87,9 @@ border: none;
 const Subtitle = styled.p`
   ${tw('text-2xl lg:text-4xl font-sans text-white mt-8 xxl:w-3/4')};
   text-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
-  width: 500px;
+  width: 700px;
   @media (max-width: 500px) {
-    width: 350px;
+    width: 400px;
   }
 
 `;
@@ -139,7 +141,8 @@ const AboutSub = styled.span`
 `;
 
 const AboutDesc = styled.p`
-  ${tw('text-grey-light text-lg md:text-xl lg:text-2xl font-sans pt-6 md:pt-12 text-justify')};
+  ${tw('text-grey-light text-lg md:text-xl lg:text-2xl font-sans pt-12 md:pt-12')};
+  width: 500px;
 `;
 
 const ContactText = styled.p`
@@ -192,18 +195,27 @@ const Babelbark = () => (
       <Content speed={0.4} offset={0}>
         <Hero>
           <BigTitle>
-            Welcome, <br /> I'm Jonathan Bry!
-            <br /> Software developer, Designer, Marketing.
+            BabelBark - Petcare reimagined
           </BigTitle>
           <Subtitle>
+            <strong>Questions to ask.. </strong> <br />
+          <Bullet className="bullet" src={rocket} alt="Website Development, freelance designer" />How can users better connect with their Vets?<br />
 
-          <Bullet className="bullet" src={rocket} alt="Website Development, freelance designer" />  Brilliant, interactive websites and apps. <br />
+          <Bullet src={rocket} alt="marketing, interactive" />What info do users care most about, when it comes to their pets?<br />
 
-          <Bullet src={rocket} alt="marketing, interactive" />  Targeted marketing and business development.<br />
+          <Bullet src={rocket} alt="John Doe" />What design style is expected when it comes to healthcare in general, how can we make the interactions accessible for all? 
+          <br /> <br />
+          <strong>Process & Research:</strong> <br />
 
-          <Bullet src={rocket} alt="John Doe" />  Start up friendly prices and equity contracts.
-      
+The percent of pet ownership is split 3 ways amongst millennials, baby boomers, and the other generation classifications. This means that we have to create an interface that plays 
+to the senses of younger people, who use many apps and grow into patterns of modern design, while keeping in mind structure, contrast, and guidance for older people 
+
+Throughout the process I surveyed current customers to get 3 takeaways across 100 surveys. I developed 15 short answer questions
+
+
           </Subtitle>
+
+
         </Hero>
       </Content>
 
@@ -216,38 +228,7 @@ const Babelbark = () => (
       <Content speed={0.4} offset={1.2} factor={2}>
         <Inner>
           <Title>Projects</Title>
-          <ProjectsWrapper>
-            <ProjectCard
-              title="The Festival Voice"
-              link="https://www.thefestivalvoice.com/"
-              bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
-            >
-              Wordpress/Vue project, TFV is a blog for festivals and music in general.
-            </ProjectCard>
-            <ProjectCard
-              title="JobSeekr"
-              link="https://www.jobseekr.app/"
-              bg="linear-gradient(to right, #662D8C 0%, #ED1E79 100%)"
-            >
-            MERN stack bootcamp project that is not updated anymore
-            </ProjectCard>
-            <ProjectCard
-              title="Vue E-commerce PWA w/ Shopify"
-              link="https://www.behance.net/gallery/43907099/Tomb-Raider"
-              bg="linear-gradient(to right, #009245 0%, #FCEE21 100%)"
-            >
-              
-            </ProjectCard>
-            <ProjectCard
-              title="Eagle"
-              link="https://www.behance.net/gallery/38068151/Eagle"
-              bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
-            >
-              A fantasy image manipulation relocating the habitat of wild animals.
-            </ProjectCard>
-          </ProjectsWrapper>
           <Content>
-        <Gallery></Gallery>
           </Content>
         </Inner>
       </Content>
@@ -331,16 +312,11 @@ const Babelbark = () => (
       </Divider>
       <Content speed={0.4} offset={4}>
         <Inner>
-          <Title>Get in touch</Title>
-          <ContactText>
-            Say <a href="mailto:plizNoSp4m@domain.tld">Hi</a> or find me on other platforms:{' '}
-            <a href="https://dribbble.com/LekoArts">Dribbble</a> &{' '}
-            <a href="https://www.instagram.com/lekoarts.de/">Instagram</a>
-          </ContactText>
+          
         </Inner>
         <Footer>
-          &copy; 2018 by Gatsby Starter Portfolio Cara.{' '}
-          <a href="https://github.com/LekoArts/gatsby-starter-portfolio-cara">Github Repository</a>.
+          
+          <a href="https://www.prideiscalifornia.com"><img src={homeicon} width="50px" height="50px" alt="bob"></img></a>.
         </Footer>
       </Content>
       <Divider speed={0.1} offset={4}>

@@ -141,7 +141,7 @@ const AboutSub = styled.span`
 `;
 
 const AboutDesc = styled.p`
-  ${tw('text-grey-light text-lg md:text-xl lg:text-2xl font-sans pt-6 md:pt-12 text-justify')};
+  ${tw('text-white text-lg md:text-xl lg:text-2xl font-sans')};
 `;
 
 const ContactText = styled.p`
@@ -220,12 +220,13 @@ const Index = () => (
           <Title>Projects</Title>
           <ProjectsWrapper>
             <ProjectCard
-              title="The Festival Voice"
-              link="https://www.thefestivalvoice.com/"
+              title="Babelbark"
+              link="https://www.prideiscalifornia.com/project1/"
               bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
             >
-              Wordpress/Vue project, TFV is a blog for festivals and music in general.
+              How can we optimize healthcare apps for all user ages, and what is most important?
             </ProjectCard>
+
             <ProjectCard
               title="JobSeekr"
               link="https://www.jobseekr.app/"
@@ -233,6 +234,7 @@ const Index = () => (
             >
             MERN stack coding bootcamp project that is not updated anymore
             </ProjectCard>
+
             <ProjectCard
               title="Insanity.shop - Wild Personified."
               link="https://www.insanity.shop/"
@@ -240,13 +242,15 @@ const Index = () => (
             >
             Custom desktop first site website targeting niche demographics, and grabbing from the client's style.
             </ProjectCard>
+
             <ProjectCard
-              title="Eagle"
-              link="https://www.babelbark.com/"
-              bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
+              title="The Festival Voice"
+              link="https://www.thefestivalvoice.com/"
+              bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
             >
-            
+              Wordpress/Vue project, TFV is a blog for festivals and music in general.
             </ProjectCard>
+            
           </ProjectsWrapper>
         </Inner>
       </Content>
@@ -303,9 +307,9 @@ const Index = () => (
             </AboutSub>
           </AboutHero>
           <AboutDesc>
-            Modern day Stoic with a love of collaboration, sports, and hackathons. Traveling designer/business owner by 25 is the goal, hopefully working remotely and creating dreams!
-            <br />I started out in E-Commerce, and quickly started getting involved with healthcare on multiple levels. I love business development, open source software, and I'm always looking for new technologies and avenues of learning.
-            <br />Agile work environments are king, working on one goal with two/three minds, especially at the start, then splitting into specialty work.
+            Modern day Stoic with a love of collaboration, sports, and hackathons. Traveling designer/business owner by 30 is the goal, hopefully working remotely and creating dreams!
+            <br /><br />I started out in E-Commerce, and quickly started getting involved with healthcare on multiple levels. I love business development, open source software, and I'm always looking for new technologies and avenues of learning.
+            <br /><br />Agile work environments are king, working on one goal with two/three minds, especially at the start, then splitting into specialty work.
           </AboutDesc>
           <InnerCenter>
           <a href="/JonathanBryResume.pdf" download>download me 💛</a>
