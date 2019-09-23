@@ -194,8 +194,8 @@ const Index = () => (
       <Content speed={0.4} offset={0}>
         <Hero>
           <BigTitle>
-            Welcome, <br /> I'm Jonathan Bry!
-            <br /> UI/UX Researcher, Designer, & Marketing!
+            Welcome, I'm<br />Jonathan Bry!
+            <br /> I excel at <mark style={{backgroundColor: '#F799C3'}}>UI/UX research</mark>,<br /> and <mark style={{backgroundColor: '#e8e8e8'}}>design</mark> on many levels!
           </BigTitle>
           <Subtitle>
 
@@ -210,8 +210,8 @@ const Index = () => (
       </Content>
 
       <DividerMiddle
-        bg="linear-gradient(to right, SlateBlue 0%, DeepSkyBlue 100%)"
-        speed={-0.2}
+        bg="linear-gradient(to right, #E8E8E8 0%, #F5B3C1 40%, #F799C3 90%)"
+        speed={-0.4}
         offset={1.1}
         factor={2}
       />
@@ -220,24 +220,24 @@ const Index = () => (
           <Title>Projects</Title>
           <ProjectsWrapper>
             <ProjectCard
-              title="Babelbark"
+              title="Babelbark - UI/UX contract"
               link="https://www.prideiscalifornia.com/project1/"
               bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
             >
-              How can we optimize healthcare apps for all user ages, and what is most important?
+            How can we optimize healthcare apps for all user ages, and what is most important?
             </ProjectCard>
 
             <ProjectCard
-              title="JobSeekr"
-              link="https://www.jobseekr.app/"
+              title="Graphic Design Portfolio"
+              link="https://www.prideiscalifornia.com/iconography"
               bg="linear-gradient(to right, #662D8C 0%, #ED1E79 100%)"
             >
-            MERN stack coding bootcamp project that is not updated anymore
+            Various assets: illustrations, websites, apps, album covers, fliers, and product design.
             </ProjectCard>
 
             <ProjectCard
               title="Insanity.shop - Wild Personified."
-              link="https://www.insanity.shop/"
+              link="https://www.insanity.shop/project2"
               bg="linear-gradient(to right, #009245 0%, #FCEE21 100%)"
             >
             Custom desktop first site website targeting niche demographics, and grabbing from the client's style.
@@ -246,9 +246,9 @@ const Index = () => (
             <ProjectCard
               title="The Festival Voice"
               link="https://www.thefestivalvoice.com/"
-              bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
+              bg="linear-gradient(to right, #000047 0%, #009245 100%)"
             >
-              Wordpress/Vue project, TFV is a blog for festivals and music in general.
+            Wordpress/Vue project, TFV is a blog for festivals and music in general.
             </ProjectCard>
             
           </ProjectsWrapper>
@@ -259,7 +259,7 @@ const Index = () => (
           <SVG icon="box" width={6} fill={colors.white} left="85%" top="75%" />
           <SVG icon="upDown" width={8} fill={colors.teal} left="70%" top="20%" />
           <SVG icon="triangle" width={8} stroke={colors.orange} left="25%" top="5%" />
-          <SVG icon="circle" className={hidden} width={24} fill={colors.white} left="17%" top="60%" />
+          <SVG icon="circle" className={hidden} width={24} fill={colors.green} left="17%" top="60%" />
         </UpDown>
         <UpDownWide>
           <SVG icon="arrowUp" className={hidden} width={16} fill={colors.green} left="20%" top="90%" />
@@ -302,17 +302,21 @@ const Index = () => (
           <AboutHero>
             <Avatar src={avatar} alt="John Doe" />
             <AboutSub>
-              <strong>Download my resume below for specifics!</strong> At my core is design, through start up environments I also developed a love for user research, and I am constantly learning to make apps more human centered!
-              
+              <strong>
+              <br /><br />“Better to have a short life that is full of what you like doing than a long life spent in a miserable way. And after all, if you do really like what you’re doing, it doesn’t matter what it is—somebody is interested in everything—anything you can be interested in, you will find others who are...” - Alan Watts
+              </strong>
             </AboutSub>
           </AboutHero>
           <AboutDesc>
-            Modern day Stoic with a love of collaboration, sports, and hackathons. Traveling designer/business owner by 30 is the goal, hopefully working remotely and creating dreams!
-            <br /><br />I started out in E-Commerce, and quickly started getting involved with healthcare on multiple levels. I love business development, open source software, and I'm always looking for new technologies and avenues of learning.
-            <br /><br />Agile work environments are king, working on one goal with two/three minds, especially at the start, then splitting into specialty work.
+          <br />
+            
+          <strong>At my core is design, through start up environments I developed a love for user research, and I am constantly learning to make apps more human centered!<br />
+                  I'm a modern day Stoic with a love of collaboration, sports, and hackathons. Traveling designer/business owner by 30 is the goal, hopefully working remotely and creating dreams!
+            I started out in E-Commerce, and quickly started getting involved with healthcare on multiple levels. I love business development, open source software, and I'm always looking for new technologies and avenues of learning.
+            Agile work environments are king, working on one goal with two/three minds, especially at the start, then splitting into specialty work.
+          </strong>
           </AboutDesc>
           <InnerCenter>
-          <a href="/JonathanBryResume.pdf" download>download me 💛</a>
           </InnerCenter>
         </Inner>
       </Content>
@@ -336,13 +340,13 @@ const Index = () => (
         <Inner>
           <Title>Get in touch</Title>
           <ContactText>
-            Say <a href="mailto:jonathanbry18@gmail.com">Hi</a> or find me on other platforms:{' '}
+            Say <a href="mailto:jonathanbry18@gmail.com"><mark>Hi with an e-mail!</mark></a> or find me on other platforms:{' '}
             <a href="https://dribbble.com/jonathanbry">Dribbble</a> &{' '}
             <a href="https://www.instagram.com/postravedepression/">Instagram</a>
           </ContactText>
         </Inner>
         <Footer>
-          &copy; Feel free to call me at 916715786 💛🖤💛🖤
+          &copy; Feel free to call or text me at 9167157867 💛🖤💛🖤
         </Footer>
       </Content>
       <Divider speed={0.2} offset={4}>

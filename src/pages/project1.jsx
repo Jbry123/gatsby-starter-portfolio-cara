@@ -50,7 +50,7 @@ ${tw('w-2/3 justify-center xxl:w-2/3 item-center text-center lg:text-left')};
 const BigTitle = styled.h1`
   ${tw('text-5xl lg:text-6xl font-sans-serif text-white mb-6 tracking-wide')};
   text-shadow: 0 5px 35px rgba(255, 255, 255, 0.15);
-  margin-top: 600px;
+  margin-top: 900px;
 `;
 
 const Title = styled.h1`
@@ -61,7 +61,7 @@ const Title = styled.h1`
     width: 40px;
     height: 40px;
     background: url(${triangle});
-    position: absolute;
+    position: inherit;
     background-size: 40px;
     animation: ${rotate} 4s linear infinite;
     left: -60px;
@@ -88,8 +88,10 @@ const Subtitle = styled.p`
   ${tw('text-2xl lg:text-4xl font-sans text-white mt-8 xxl:w-3/4')};
   text-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
   width: 700px;
-  @media (max-width: 500px) {
-    width: 400px;
+  @media (max-width: 450px) {
+    width: 350px;
+    margin-right: 5%;
+    margin-left: 1%;
   }
 
 `;
@@ -141,8 +143,7 @@ const AboutSub = styled.span`
 `;
 
 const AboutDesc = styled.p`
-  ${tw('text-grey-light text-lg md:text-xl lg:text-2xl font-sans pt-12 md:pt-12')};
-  width: 500px;
+  ${tw('text-white text-lg md:text-xl lg:text-2xl font-sans')};
 `;
 
 const ContactText = styled.p`
@@ -197,25 +198,59 @@ const Babelbark = () => (
           <BigTitle>
             BabelBark - Petcare reimagined
           </BigTitle>
+          <Title>
+            <strong>Questions:</strong> <br />
+            </Title>
           <Subtitle>
-            <strong>Questions to ask.. </strong> <br />
           <Bullet className="bullet" src={rocket} alt="Website Development, freelance designer" />How can users better connect with their Vets?<br />
 
           <Bullet src={rocket} alt="marketing, interactive" />What info do users care most about, when it comes to their pets?<br />
 
           <Bullet src={rocket} alt="John Doe" />What design style is expected when it comes to healthcare in general, how can we make the interactions accessible for all? 
           <br /> <br />
-          <strong>Process & Research:</strong> <br />
-
-The percent of pet ownership is split 3 ways amongst millennials, baby boomers, and the other generation classifications. This means that we have to create an interface that plays 
-to the senses of younger people, who use many apps and grow into patterns of modern design, while keeping in mind structure, contrast, and guidance for older people 
-
-Throughout the process I surveyed current customers to get 3 takeaways across 100 surveys. I developed 15 short answer questions
-
-
           </Subtitle>
+          <AboutDesc>
+          <strong>Project Overview:</strong>
+          <br />
+          <br />
+The percent of pet ownership is split 3 ways amongst millennials, baby boomers, and the other generation classifications. This means that we have to create an interface that plays 
+to the senses of younger people, who use many apps and grow into patterns of modern design, while keeping in mind structure, contrast, and guidance for older people. 
+<br />
+<br />
+Sadly UI/UX roles come with heavy NDA's, so i cant reveal much, but lets go over my process, keeping in mind that every project is special and complicated, so this is an overview!
 
 
+<br />
+<br />
+<strong>Problem Statement:</strong>
+<br />
+<br />
+Healthcare, or in this case, petcare, is notoriously clunky and outdated when it comes to design; this is usually due 
+to the leadership, HIPA guidelines, or the overall cost when it comes to this field. Thankfully Babelbark is a forward 
+thinking company that allowed me the artistic freedom to design something that didnt look like it was from 2010. As i was researching and talking to users of the beta, 
+I quickly realized that the Problem statement could be boiled down to a few points: We have to design with all age ranges in mind, and create interactions, notifications, 
+and content that would inspire people to log on at least weekly.
+<br /><br />
+<strong>My Role:</strong>
+<br />
+<br />
+Throughout the process I surveyed current customers to get 3 takeaways across 100 surveys. I developed 15 short answer questions that fell within the three questions. From this initial survey I quickly got what I hypothesized; 
+older users expect a hamburger menu and some help/teaching with navigation, they dont get 3D touch, and they like simple and elegant interfaces. Young people however were across the board for conventions,
+ depending on what apps they use. I researched the top apps of this year, and came back with examples that are normal to each demographic.
+<br /><br />
+<strong>The User:</strong>
+<br />
+<br />
+
+<br /><br />
+<strong>What I Did:</strong>
+<br />
+<br />
+
+<br /><br />
+<strong>Outcomes and Lessons:</strong>
+<br />
+</AboutDesc>
         </Hero>
       </Content>
 
@@ -227,7 +262,6 @@ Throughout the process I surveyed current customers to get 3 takeaways across 10
       />
       <Content speed={0.4} offset={1.2} factor={2}>
         <Inner>
-          <Title>Projects</Title>
           <Content>
           </Content>
         </Inner>
@@ -237,7 +271,7 @@ Throughout the process I surveyed current customers to get 3 takeaways across 10
           <SVG icon="box" width={6} fill={colors.white} left="85%" top="75%" />
           <SVG icon="upDown" width={8} fill={colors.teal} left="70%" top="20%" />
           <SVG icon="triangle" width={8} stroke={colors.orange} left="25%" top="5%" />
-          <SVG icon="circle" className={hidden} width={24} fill={colors.white} left="17%" top="60%" />
+          <SVG icon="circle" className={hidden} width={24} fill={colors.green} left="17%" top="60%" />
         </UpDown>
         <UpDownWide>
           <SVG icon="arrowUp" className={hidden} width={16} fill={colors.green} left="20%" top="90%" />
@@ -276,22 +310,13 @@ Throughout the process I surveyed current customers to get 3 takeaways across 10
       </Divider>
       <Content speed={0.4} offset={3}>
         <Inner>
-          <Title>About</Title>
+          <Title>Design Screenshots</Title>
           <AboutHero>
-            <Avatar src={avatar} alt="John Doe" />
+            
             <AboutSub>
-              <strong>Download my resume below for specifics!</strong> At my core is design, and software development, through start up environments I also developed a love for marketing, specifically click funnels and social media marketing.
-              
+
             </AboutSub>
           </AboutHero>
-          <AboutDesc>
-            Modern day Stoic with a love of collaboration and adventure, digital nomad by 25 is the goal, hopefully working remotely and creating dreams on the side!
-            <br />I started out in E-Commerce, and quickly started getting involved with hackathons and consecquently start ups. I love business development, open source, and I'm always looking for new technologies.
-            <br />Agile work environments are king, working on one goal with two minds, especially at the start, then splitting into specialty work.
-          </AboutDesc>
-          <InnerCenter>
-          <a href="/JonathanBryResume.pdf" download>download me </a>
-          </InnerCenter>
         </Inner>
       </Content>
       <Divider fill="#23262b" speed={0.2} offset={4}>
