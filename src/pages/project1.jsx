@@ -228,15 +228,16 @@ Sadly UI/UX roles come with heavy NDA's, so i cant reveal much, but lets go over
 Healthcare, or in this case, petcare, is notoriously clunky and outdated when it comes to design; this is usually due 
 to the leadership, HIPA guidelines, or the overall cost when it comes to this field. Thankfully Babelbark is a forward 
 thinking company that allowed me the artistic freedom to design something that didnt look like it was from 2010. As i was researching and talking to users of the beta, 
-I quickly realized that the Problem statement could be boiled down to a few points: We have to design with all age ranges in mind, and create interactions, notifications, 
+I quickly realized that the problem statement could be boiled down to a few points: we have to design with all age ranges in mind, and create interactions, notifications, 
 and content that would inspire people to log on at least weekly.
 <br /><br />
 <strong>My Role:</strong>
 <br />
 <br />
-Throughout the process I surveyed current customers to get 3 takeaways across 100 surveys. I developed 15 short answer questions that fell within the three questions. From this initial survey I quickly got what I hypothesized; 
-older users expect a hamburger menu and some help/teaching with navigation, they dont get 3D touch, and they like simple and elegant interfaces. Young people however were across the board for conventions,
- depending on what apps they use. I researched the top apps of this year, and came back with examples that are normal to each demographic.
+Throughout the process I surveyed current customers to get 3 takeaways across 100 surveys. I developed 15 short answer questions that fell within the three main take-aways I was targeting. From this initial survey I quickly got what I hypothesized: 
+First, older users expect a hamburger menu and some help/teaching with navigation, they dont get 3D touch, and they like simple and elegant interfaces. Young people however were across the board for conventions, 
+depending on what apps they use. I researched the top apps of this year, and came back with examples that are normal to each demographic. Second, Users cared about their pets first and foremost, and valued this app as a way to connect with their Vets, 
+so we developed a dashboard at the top, with key details about your next appointment, if theres any shots/medicines your dog needs soon, and a link to your favorite products, all surrounding a picture of your pet! Lastly, they wanted to connect with their friends and share helpful/funny/exciting things, we easily made this possible with an extensive feed.
 <br /><br />
 {/* <strong>The User:</strong>
 <br />
