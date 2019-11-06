@@ -250,7 +250,7 @@ so we developed a dashboard at the top, with key details about your next appoint
 
 <br /><br /> */}
 <strong>Outcomes and Lessons:</strong>
-<br />
+<br /><br />
 BabelBark was a look into what healthcare could look like if it had enough time, money, great designers, developers, and executives who understood how important good 
 design is, we learned the struggles of designing for all age groups, keeping a uniform but sleek design for various tastes, and making sure the user would enjoy and use what 
 we developed. One big take away I learned through our user retention stats and initial interviews, was that guided walkthroughs are essential, due to our inital 33,000 downloads, and after 6 months, 
