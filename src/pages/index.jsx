@@ -229,15 +229,15 @@ const Index = () => (
 
             <ProjectCard
               title="Graphic Design Portfolio"
-              link="https://www.prideiscalifornia.com/iconography"
+              link="https://dribbble.com/jonathanbry"
               bg="linear-gradient(to right, #662D8C 0%, #ED1E79 100%)"
             >
-            Various assets: illustrations, websites, apps, album covers, fliers, and product design.
+            Various assets: illustrations, websites, apps, album covers, fliers, and product design.(always updating)
             </ProjectCard>
 
             <ProjectCard
-              title="Insanity.shop - Wild Personified."
-              link="https://www.insanity.shop/project2"
+              title="Sixity.com"
+              link="https://www.sixity.com/"
               bg="linear-gradient(to right, #009245 0%, #FCEE21 100%)"
             >
             Custom desktop first site website targeting niche demographics, and grabbing from the client's style.
