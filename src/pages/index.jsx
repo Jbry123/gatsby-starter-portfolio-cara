@@ -342,7 +342,7 @@ const Index = () => (
           <ContactText>
             Say <a href="mailto:jonathanbry18@gmail.com"><mark style={{backgroundColor: '#F799C3'}}>Hi with an e-mail!</mark></a> or find me on other platforms:{' '}
             <a href="https://dribbble.com/jonathanbry">Dribbble</a> &{' '}
-            <a href="https://www.instagram.com/postravedepression/">Instagram</a>
+            <a href="https://www.instagram.com/postravedepression.jpg/">Instagram</a>
           </ContactText>
         </Inner>
         <Footer>
