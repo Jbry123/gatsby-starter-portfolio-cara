@@ -315,7 +315,8 @@ we had roughly 25,000 active users.
       </Divider>
       <Content speed={0.4} offset={3}>
         <Inner>
-          <Title>Design Screenshots</Title>
+        <a href="https://www.prideiscalifornia.com"><img src={homeicon} width="150px" height="150px" alt="bob"></img></a>.
+
           <AboutHero>
             
             <AboutSub>
