@@ -240,7 +240,7 @@ const Index = () => (
               link="https://www.sixity.com/"
               bg="linear-gradient(to right, #009245 0%, #FCEE21 100%)"
             >
-            Custom desktop first website targeting niche demographics, and grabbing from the client's style to appeal to active motorsport enthusiasts.
+            Custom desktop first website targeting niche demographics, to appeal to active motorsport enthusiasts.
             </ProjectCard>
 
             <ProjectCard
