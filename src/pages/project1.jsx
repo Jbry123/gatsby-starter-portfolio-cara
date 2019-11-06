@@ -238,7 +238,7 @@ Throughout the process I surveyed current customers to get 3 takeaways across 10
 older users expect a hamburger menu and some help/teaching with navigation, they dont get 3D touch, and they like simple and elegant interfaces. Young people however were across the board for conventions,
  depending on what apps they use. I researched the top apps of this year, and came back with examples that are normal to each demographic.
 <br /><br />
-<strong>The User:</strong>
+{/* <strong>The User:</strong>
 <br />
 <br />
 
@@ -247,9 +247,13 @@ older users expect a hamburger menu and some help/teaching with navigation, they
 <br />
 <br />
 
-<br /><br />
+<br /><br /> */}
 <strong>Outcomes and Lessons:</strong>
 <br />
+BabelBark was a look into what healthcare could look like if it had enough time, money, great designers, developers, and executives who understood how important good 
+design is, we learned the struggles of designing for all age groups, keeping a uniform but sleek design for various tastes, and making sure the user would enjoy and use what 
+we developed. One big take away I learned through our user retention stats and initial interviews, was that guided walkthroughs are essential, due to our inital 33,000 downloads, and after 6 months, 
+we had roughly 25,000 active users.
 </AboutDesc>
         </Hero>
       </Content>
