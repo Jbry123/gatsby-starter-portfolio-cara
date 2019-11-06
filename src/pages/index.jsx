@@ -310,8 +310,8 @@ const Index = () => (
           <AboutDesc>
           <br />
             
-          <strong>Hello! My name is Jonathan Bry. At my core is design, through start up environments I developed a love for user research, and I am constantly learning to make apps more human centered!<br /><br />
-                  I'm a modern day Stoic with a love of collaboration, sports, and hackathons. Traveling designer/business owner by 30 is the goal, hopefully working remotely and creating dreams!
+          <strong>Hello! My name is Jonathan Bry. At my core is design, through start up environments I developed a love for user research, and I am constantly learning to make apps more human centered!
+            I'm a modern day Stoic with a love of collaboration, sports, and hackathons. Traveling designer/business owner by 30 is the goal, hopefully working remotely and creating dreams!
             I started out in E-Commerce, and quickly started getting involved with healthcare on multiple levels. I love business development, open source software, and I'm always looking for new technologies and avenues of learning.
             Agile work environments are king, working on one goal with two/three minds, especially at the start, then splitting into specialty work.
           </strong>
@@ -340,7 +340,7 @@ const Index = () => (
         <Inner>
           <Title>Get in touch</Title>
           <ContactText>
-            Say <a href="mailto:jonathanbry18@gmail.com"><mark>Hi with an e-mail!</mark></a> or find me on other platforms:{' '}
+            Say <a href="mailto:jonathanbry18@gmail.com"><mark style={{backgroundColor: '#F799C3'}}>Hi with an e-mail!</mark></a> or find me on other platforms:{' '}
             <a href="https://dribbble.com/jonathanbry">Dribbble</a> &{' '}
             <a href="https://www.instagram.com/postravedepression/">Instagram</a>
           </ContactText>
