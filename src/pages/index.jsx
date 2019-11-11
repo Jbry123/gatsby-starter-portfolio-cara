@@ -147,7 +147,7 @@ const AboutDesc = styled.p`
 const ContactText = styled.p`
   ${tw('text-grey-light font-sans text-xl md:text-2xl lg:text-3xl')};
   a {
-    color: #e07628;
+    color: rgb(209,76,50);
     text-decoration: none;
   }
 `;
@@ -155,7 +155,7 @@ const ContactText = styled.p`
 const Footer = styled.footer`
   ${tw('text-center text-grey absolute pin-b p-6 font-sans text-md lg:text-lg')};
   a {
-    color: #e07628;
+    color: rgb(209,76,50);
     text-decoration: none;
   }
 `;
@@ -193,17 +193,17 @@ const Index = () => (
       </Divider>
       <Content speed={0.4} offset={0}>
         <Hero>
-          <BigTitle>
-            Welcome, I'm<br />Jonathan Bry!
-            <br /> I excel at <mark style={{backgroundColor: '#F799C3'}}>UI/UX research</mark>,<br /> and <mark style={{backgroundColor: '#e8e8e8'}}>design</mark> on many levels!
+          <BigTitle style={{lineHeight: '160%'}}>
+            Welcome, we're<br /><span style={{color: 'rgb(209,76,50)' }}>Palm Treez Smoothie!</span>
+            <br /> Bringing you <mark style={{backgroundColor: 'rgb(209,76,50)'}}>FRESH</mark>,<br /> and <mark style={{backgroundColor: 'rgb(209,76,50)'}}>BEAUTIFUL</mark> smoothies.
           </BigTitle>
           <Subtitle>
 
-          <Bullet className="bullet" src={rocket} alt="Website Development, freelance designer" />Multi-disciplined UI/UX professional, always learning!<br />
+          <Bullet className="bullet" src={rocket} alt="Website Development, freelance designer" />We offer perfectly blended smoothies in real pineapples, with fresh fruit garnishes; as well as fruit cups!<br />
 
-          <Bullet src={rocket} alt="marketing, interactive" />Targeted website and app development.<br />
+          <Bullet src={rocket} alt="marketing, interactive" />Catering is available for parties, weddings, and festivals!<br />
 
-          <Bullet src={rocket} alt="John Doe" />User-centric research and design.
+          <Bullet src={rocket} alt="John Doe" />We are very focused on vending as well, see the contact page for our info.
       
           </Subtitle>
         </Hero>
@@ -217,25 +217,25 @@ const Index = () => (
       />
       <Content speed={0.4} offset={1.2} factor={2}>
         <Inner>
-          <Title>Projects</Title>
+          <Title>NAVIGATION</Title>
           <ProjectsWrapper>
             <ProjectCard
-              title="Babelbark - UI/UX contract"
+              title="Contact Us"
               link="https://www.prideiscalifornia.com/project1/"
               bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
             >
-            How can we optimize healthcare apps for all user ages, and what is most important?
+            Contact us for catering, having us as vendors, or if you just want to chat ❤️
             </ProjectCard>
 
             <ProjectCard
-              title="Graphic Design Portfolio"
+              title="Gallery"
               link="https://dribbble.com/jonathanbry"
               bg="linear-gradient(to right, #662D8C 0%, #ED1E79 100%)"
             >
             Various assets: illustrations, websites, apps, album covers, fliers, and product design.(always updating)
             </ProjectCard>
 
-            <ProjectCard
+            {/* <ProjectCard
               title="Sixity.com"
               link="https://www.sixity.com/"
               bg="linear-gradient(to right, #009245 0%, #FCEE21 100%)"
@@ -250,7 +250,7 @@ const Index = () => (
             >
             Wordpress/Vue project, TFV is a blog for festivals and music in general.
             </ProjectCard>
-            
+             */}
           </ProjectsWrapper>
         </Inner>
       </Content>
