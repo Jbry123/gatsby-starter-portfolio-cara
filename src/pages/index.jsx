@@ -49,7 +49,7 @@ ${tw('w-2/3 justify-center xxl:w-2/3 item-center text-center lg:text-left')};
 const BigTitle = styled.h1`
   ${tw('text-5xl lg:text-6xl font-sans-serif text-white mb-6 tracking-wide')};
   text-shadow: 0 5px 35px rgba(255, 255, 255, 0.15);
-  margin-top: 400px;
+  margin-top: 550px;
 
 `;
 
@@ -89,7 +89,7 @@ const Subtitle = styled.p`
   text-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
   width: 500px;
   @media (max-width: 500px) {
-    width: 350px;
+    width: 300px;
   }
 
 `;
@@ -210,7 +210,7 @@ const Index = () => (
       </Content>
 
       <DividerMiddle
-        bg="linear-gradient(to right, #E8E8E8 0%, #F5B3C1 40%, #F799C3 90%)"
+        bg="linear-gradient(to right, #E8E8E8 0%, rgb(209,76,50) 90%)"
         speed={-0.4}
         offset={1.1}
         factor={2}

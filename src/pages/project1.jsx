@@ -89,7 +89,7 @@ const Subtitle = styled.p`
   text-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
   width: 700px;
   @media (max-width: 450px) {
-    width: 350px;
+    width: 320px;
     margin-right: 5%;
     margin-left: 1%;
   }

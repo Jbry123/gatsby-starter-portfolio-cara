@@ -6,9 +6,9 @@ import { width as twWidth } from '../../tailwind';
 
 const Wrapper = styled.svg`
   ${tw('stroke-current absolute')};
-  color: ${props => props.stroke};
+  color: rgb(209,76,50);
   width: ${props => props.svgWidth};
-  fill: ${props => props.fill};
+  fill: rgb(209,76,50);
   left: ${props => props.left};
   top: ${props => props.top};
 `;
