@@ -22,4 +22,5 @@ injectGlobal`
     margin: 0;
     padding: 0;
   }
+  #new-tab-sidebar {display: none;}
 `;

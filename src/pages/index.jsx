@@ -50,6 +50,7 @@ const BigTitle = styled.h1`
   ${tw('text-5xl lg:text-6xl font-sans-serif text-white mb-6 tracking-wide')};
   text-shadow: 0 5px 35px rgba(255, 255, 255, 0.15);
   margin-top: 400px;
+  line-height: 130%;
 
 `;
 
@@ -138,10 +139,12 @@ ${tw('rounded-full w-12 shadow-lg')};
 
 const AboutSub = styled.span`
   ${tw('text-white pt-12 lg:pt-0 lg:pl-12 text-2xl lg:text-3xl xl:text-4xl')};
+  text-align: left;
 `;
 
 const AboutDesc = styled.p`
   ${tw('text-white text-lg md:text-xl lg:text-2xl font-sans')};
+  text-align: left;
 `;
 
 const ContactText = styled.p`
@@ -225,14 +228,15 @@ const Index = () => (
               bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
             >
             How can we optimize healthcare apps for all user ages, and what is most important?
+            75% Mobile, 25% Website contract, focusing on accesibility and 
             </ProjectCard>
 
             <ProjectCard
               title="Graphic Design Portfolio"
-              link="https://www.prideiscalifornia.com/iconography"
+              link="https://www.prideiscalifornia.com/project2"
               bg="linear-gradient(to right, #662D8C 0%, #ED1E79 100%)"
             >
-            Various assets: illustrations, websites, apps, album covers, fliers, and product design.
+            CTA/sign up case study, what makes a person convert, more over, the right one?
             </ProjectCard>
 
             <ProjectCard

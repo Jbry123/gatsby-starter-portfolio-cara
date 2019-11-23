@@ -1,4 +1,3 @@
-/* global tw */
 import React from 'react';
 import styled from 'react-emotion';
 import 'typeface-cantata-one';
@@ -6,16 +5,14 @@ import 'typeface-open-sans';
 import { Parallax, ParallaxLayer } from 'react-spring/dist/addons';
 import SEO from '../components/SEO';
 import SVG from '../components/SVG';
-import ProjectCard from '../components/ProjectCard';
 import { rotate, UpDown, UpDownWide, waveAnimation } from '../styles/animations';
 import { hidden } from '../styles/utils';
 import { colors } from '../../tailwind';
 import triangle from '../images/triangle.svg';
-import avatar from './JonathanBry.png';
 import '../styles/global';
-import rocket from './rocketGif.gif';
+import rocket from './giphy.gif';
+import homeicon from './homeicon.png';
 import './JonathanBryResume.pdf';
-import Gallery from '../components/Gallery.jsx';
 
 const Divider = styled(ParallaxLayer)`
   ${tw('absolute w-full h-full')};
@@ -32,10 +29,54 @@ const DividerMiddle = styled(Divider)`
 
 const Content = styled(ParallaxLayer)`
   ${tw('p-6 md:p-12 lg:p-24 justify-center items-center flex z-50')};
+
+`;
+
+const Content1 = styled(ParallaxLayer)`
+  ${tw('p-6 md:p-12 lg:p-24 justify-center items-center flex z-50')};
+  margin-top: 90%;
+
+`;
+
+const Content2 = styled(ParallaxLayer)`
+  ${tw('p-6 md:p-12 lg:p-24 justify-center items-center flex z-50')};
+
 `;
 
 const Hero = styled.div`
   ${tw('w-full xl:w-2/3')};
+  margin-top: 100%;
+  
+  
+  @media (min-width: 1700px) {
+    margin-top: -90%;
+  }
+
+  @media (min-width: 2000px) {
+    margin-top: -150%;
+  }
+
+  media (min--moz-device-pixel-ratio: 1.5) and
+       (-o-min-device-pixel-ratio: 3/2) and
+       (-webkit-min-device-pixel-ratio: 1.5) and
+       (min-device-pixel-ratio: 1.5) and
+       (min-resolution: 144dpi) and
+       (min-resolution: 1.5dppx) and 
+       (min-width: 1300px) and (max-width : 2000px) and
+       @-ms-viewport {
+{
+ margin-top: 200%;
+}
+
+  @media (min-width: 1000px) and (max-width: 1400px) {
+    margin-top: -58%;
+  }
+
+  
+  @media (min-width: 350px) and (max-width: 800px) {
+    margin-top: 460%;
+  }
+
 `;
 
 const Inner = styled.div`
@@ -49,7 +90,6 @@ ${tw('w-2/3 justify-center xxl:w-2/3 item-center text-center lg:text-left')};
 const BigTitle = styled.h1`
   ${tw('text-5xl lg:text-6xl font-sans-serif text-white mb-6 tracking-wide')};
   text-shadow: 0 5px 35px rgba(255, 255, 255, 0.15);
-  margin-top: 200px;
 `;
 
 const Title = styled.h1`
@@ -60,7 +100,7 @@ const Title = styled.h1`
     width: 40px;
     height: 40px;
     background: url(${triangle});
-    position: absolute;
+    position: inherit;
     background-size: 40px;
     animation: ${rotate} 4s linear infinite;
     left: -60px;
@@ -86,9 +126,11 @@ border: none;
 const Subtitle = styled.p`
   ${tw('text-2xl lg:text-4xl font-sans text-white mt-8 xxl:w-3/4')};
   text-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
-  width: 500px;
-  @media (max-width: 500px) {
+  width: 700px;
+  @media (max-width: 450px) {
     width: 350px;
+    margin-right: 5%;
+    margin-left: 1%;
   }
 
 `;
@@ -140,7 +182,7 @@ const AboutSub = styled.span`
 `;
 
 const AboutDesc = styled.p`
-  ${tw('text-grey-light text-lg md:text-xl lg:text-2xl font-sans pt-6 md:pt-12 text-justify')};
+  ${tw('text-white text-lg md:text-xl lg:text-2xl font-sans')};
 `;
 
 const ContactText = styled.p`
@@ -159,7 +201,7 @@ const Footer = styled.footer`
   }
 `;
 
-const Index = () => (
+const Babelbark = () => (
   <React.Fragment>
     <SEO />
     <Parallax pages={5}>
@@ -190,23 +232,73 @@ const Index = () => (
         <SVG icon="hexa" width={16} stroke={colors['grey-darker']} left="10%" top="50%" />
         <SVG icon="hexa" width={8} stroke={colors['grey-darker']} left="80%" top="70%" />
       </Divider>
-      <Content speed={0.4} offset={0}>
+      <Content1 speed={0.4} offset={0}>
         <Hero>
           <BigTitle>
-            Welcome, <br /> I'm Jonathan Bry!
-            <br /> Software developer, Designer, Marketing.
+            BabelBark - Petcare Reimagined
           </BigTitle>
+          <Title>
+            <strong>Questions:</strong> <br />
+          </Title>
           <Subtitle>
+          <Bullet className="bullet" src={rocket} alt="Website Development, freelance designer" />Good UX starts from the moment your customer intracts with your brand.<br />
 
-          <Bullet className="bullet" src={rocket} alt="Website Development, freelance designer" />  Brilliant, interactive websites and apps. <br />
+          <Bullet src={rocket} alt="marketing, interactive" />How can we focus conversions on the right demographic?<br />
 
-          <Bullet src={rocket} alt="marketing, interactive" />  Targeted marketing and business development.<br />
-
-          <Bullet src={rocket} alt="John Doe" />  Start up friendly prices and equity contracts.
-      
+          <Bullet src={rocket} alt="John Doe" />How does psychology play into the whole experience?
+          <br /> <br />
           </Subtitle>
+          <AboutDesc>
+            <strong>Case Study Overview:</strong>
+            <br /><br />
+            For this case study, I focused on the use of paid ads on social media, and affiliate websites 
+            <br />
+            <br />
+            Sadly UI/UX roles come with heavy NDA's, so I cant reveal much, but lets go over my process, keeping in mind that every project is special and complicated, so this is an overview!
+
+
+            <br />
+            <br />
+            <strong>Problem Statement:</strong>
+            <br />
+            <br />
+            Healthcare, or in this case, petcare, is notoriously clunky and outdated when it comes to design; this is usually due 
+            to the leadership, HIPA guidelines, or the overall cost when it comes to this field. Thankfully Babelbark is a forward 
+            thinking company that allowed me the artistic freedom to design something that didnt look like it was from 2010. As i was researching and talking to users of the beta, 
+            I quickly realized that the problem statement could be boiled down to a few points: We have to design with all age ranges in mind, and create interactions, notifications, 
+            and content that would inspire people to log on at least weekly. Lastly, with the latest ADA requirements directed towards public facing apps and websites, we had to start 
+            the development with ARIA attributes in mind for blind users, contrast/typography customization rules for the visual impared, and ease of use for anyone that uses our product with less than two hands.
+            <br /><br />
+            <strong>My Role:</strong>
+            <br />
+            <br />
+            Throughout the process I surveyed current customers to get 3 takeaways across 100 surveys. I developed 15 short, open-ended answer questions that fell within the five take-aways we wanted. From this initial survey I quickly got what I hypothesized; 
+            older users expect a hamburger menu and some help/teaching with navigation, they dont get 3D touch, and they like simple and elegant interfaces. Young people however were across the board for conventions,
+            depending on what apps they use. I researched the top apps of this year, and came back with examples that are normal to each demographic.
+            <br /><br />
+            <strong>The User:</strong>
+            <br />
+            <br />
+            Typically an app has one or two demographics, closely related, whether it be an auto parts distributor, or a music festival focused product; Babelbark was 
+            different in the sense that I had to focus on many vantage points and experience levels when it came to technology, and UI/UX norms.
+            <br /><br />
+            <strong>What I Did:</strong>
+            <br />
+            <br />
+            Surveys and beta testers were key in my heuristic evaluation after I- made high fidelity mockups; we got a total of 100 surveys, and 20 beta testers, with a mix of both inside and outside of our company. 
+            One thing I think is vital to any app is a guided tour through the app, that the user can not skip. When it comes to tutorials the drop off of information retention drops off at the 5th instruction. 
+            This clearly means the shorter the better, but we had to provide enough to give all our users a solid starting point no matter what they're used to when it comes to app/website design. <br /> <br />
+            When it comes to information heirarchy, our surveys revealed that they would prioritize about pet's shots, appointments, and preferred products. We made a banner at the top of the application with this info, 
+            with a specialized feed of articles from brands, blogs, and their vet. 
+            <br /><br />
+            <strong>Outcomes and Lessons:</strong>
+            <br />
+            <br />
+            Making an accessible product is a strenuous, but neccessary task when you take into account demographics like: Baby Boomers, Millenials, Gen X, Y, Z, and everyone in between; as well as differently abled poplations such as: visual, cognitive, and motor functions. 
+            It is a task I strive to keep on the forefront, because my job as a UI/UX professional is to make the web not only accessible for <strong>ALL,</strong> but easy and intuitive for <strong>ALL.</strong> 
+</AboutDesc>
         </Hero>
-      </Content>
+      </Content1>
 
       <DividerMiddle
         bg="linear-gradient(to right, SlateBlue 0%, DeepSkyBlue 100%)"
@@ -214,50 +306,13 @@ const Index = () => (
         offset={1.1}
         factor={2}
       />
-      <Content speed={0.4} offset={1.2} factor={2}>
-        <Inner>
-          <Title>Projects</Title>
-          <ProjectsWrapper>
-            <ProjectCard
-              title="The Festival Voice"
-              link="https://www.thefestivalvoice.com/"
-              bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
-            >
-              Wordpress/Vue project, TFV is a blog for festivals and music in general.
-            </ProjectCard>
-            <ProjectCard
-              title="JobSeekr"
-              link="https://www.jobseekr.app/"
-              bg="linear-gradient(to right, #662D8C 0%, #ED1E79 100%)"
-            >
-            MERN stack bootcamp project that is not updated anymore
-            </ProjectCard>
-            <ProjectCard
-              title="Vue E-commerce PWA w/ Shopify"
-              link="https://www.behance.net/gallery/43907099/Tomb-Raider"
-              bg="linear-gradient(to right, #009245 0%, #FCEE21 100%)"
-            >
-              
-            </ProjectCard>
-            <ProjectCard
-              title="Eagle"
-              link="https://www.behance.net/gallery/38068151/Eagle"
-              bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
-            >
-              A fantasy image manipulation relocating the habitat of wild animals.
-            </ProjectCard>
-          </ProjectsWrapper>
-          <Content>
-        <Gallery></Gallery>
-          </Content>
-        </Inner>
-      </Content>
+
       <Divider speed={0.1} offset={1} factor={2}>
         <UpDown>
           <SVG icon="box" width={6} fill={colors.white} left="85%" top="75%" />
           <SVG icon="upDown" width={8} fill={colors.teal} left="70%" top="20%" />
           <SVG icon="triangle" width={8} stroke={colors.orange} left="25%" top="5%" />
-          <SVG icon="circle" className={hidden} width={24} fill={colors.white} left="17%" top="60%" />
+          <SVG icon="circle" className={hidden} width={24} fill={colors.green} left="17%" top="60%" />
         </UpDown>
         <UpDownWide>
           <SVG icon="arrowUp" className={hidden} width={16} fill={colors.green} left="20%" top="90%" />
@@ -294,26 +349,16 @@ const Index = () => (
         <SVG icon="box" width={12} fill={colors['grey-darkest']} left="20%" top="30%" />
         <SVG icon="hexa" width={8} stroke={colors['grey-darkest']} left="80%" top="70%" />
       </Divider>
-      <Content speed={0.4} offset={3}>
+      <Content2 speed={0.4} offset={3}>
         <Inner>
-          <Title>About</Title>
           <AboutHero>
-            <Avatar src={avatar} alt="John Doe" />
+            
             <AboutSub>
-              <strong>Download my resume below for specifics!</strong> At my core is design, and software development, through start up environments I also developed a love for marketing, specifically click funnels and social media marketing.
-              
+
             </AboutSub>
           </AboutHero>
-          <AboutDesc>
-            Modern day Stoic with a love of collaboration and adventure, digital nomad by 25 is the goal, hopefully working remotely and creating dreams on the side!
-            <br />I started out in E-Commerce, and quickly started getting involved with hackathons and consecquently start ups. I love business development, open source, and I'm always looking for new technologies.
-            <br />Agile work environments are king, working on one goal with two minds, especially at the start, then splitting into specialty work.
-          </AboutDesc>
-          <InnerCenter>
-          <a href="/JonathanBryResume.pdf" download>download me </a>
-          </InnerCenter>
         </Inner>
-      </Content>
+      </Content2>
       <Divider fill="#23262b" speed={0.2} offset={4}>
         <WaveWrapper>
           <InnerWave>
@@ -332,16 +377,11 @@ const Index = () => (
       </Divider>
       <Content speed={0.4} offset={4}>
         <Inner>
-          <Title>Get in touch</Title>
-          <ContactText>
-            Say <a href="mailto:plizNoSp4m@domain.tld">Hi</a> or find me on other platforms:{' '}
-            <a href="https://dribbble.com/LekoArts">Dribbble</a> &{' '}
-            <a href="https://www.instagram.com/lekoarts.de/">Instagram</a>
-          </ContactText>
+          
         </Inner>
         <Footer>
-          &copy; 2018 by Gatsby Starter Portfolio Cara.{' '}
-          <a href="https://github.com/LekoArts/gatsby-starter-portfolio-cara">Github Repository</a>.
+          
+          <a href="https://www.prideiscalifornia.com"><img src={homeicon} width="50px" height="50px" alt="bob"></img></a>.
         </Footer>
       </Content>
       <Divider speed={0.1} offset={4}>
@@ -363,4 +403,4 @@ const Index = () => (
   </React.Fragment>
 );
 
-export default Index;
+export default Babelbark;
