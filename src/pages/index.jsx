@@ -16,6 +16,26 @@ import '../styles/global';
 import rocket from './giphy.gif';
 import './JonathanBryResume.pdf';
 import Gallery from '../components/Gallery.jsx';
+import $ from 'jquery';
+
+//JQUERY EDITS
+$( document ).ready(function() {
+  // $(window).resize(function(){
+
+  //   if ($(window).width() <= 1000) {  
+  
+  //     $('.css-6v7ury-AboutDesc').attr('style','color: red !important');
+  
+  //   }     
+  
+  // });
+  
+});
+
+
+
+//JQUERY EDITS END
+
 
 const Divider = styled(ParallaxLayer)`
   ${tw('absolute w-full h-full')};
@@ -70,20 +90,20 @@ const Title = styled.h1`
   }
 `;
 
-const Button1= styled.button`
-${tw('font-sans w-full justify-center text-white xxl:w-3/4')};
-height: 125px;
-background: linear-gradient(to right, #D4145A 0%, #FBB03B 100%);
-font-size: 20px;
-align-content: center;
-justify-content: center;
-display: inline-flex;
-flex-direction: inherent;
-margin: 0px;
-border-radius: 15px;
-border: none;
+// const Button1= styled.button`
+// ${tw('font-sans w-full justify-center text-white xxl:w-3/4')};
+// height: 125px;
+// background: linear-gradient(to right, #D4145A 0%, #FBB03B 100%);
+// font-size: 20px;
+// align-content: center;
+// justify-content: center;
+// display: inline-flex;
+// flex-direction: inherent;
+// margin: 0px;
+// border-radius: 15px;
+// border: none;
 
-`;
+// `;
 
 const Subtitle = styled.p`
   ${tw('text-2xl lg:text-4xl font-sans text-white mt-8 xxl:w-3/4')};
