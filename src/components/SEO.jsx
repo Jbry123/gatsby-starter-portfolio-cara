@@ -1,7 +1,6 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import config from '../../config/website';
-// import $ from 'jquery';
 
 const SEO = () => {
   const title = config.siteTitle;
