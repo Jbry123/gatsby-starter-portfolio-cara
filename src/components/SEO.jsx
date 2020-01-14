@@ -8,7 +8,6 @@ const SEO = () => {
   const realPrefix = config.pathPrefix === '/' ? '' : config.pathPrefix;
   const image = config.siteUrl + realPrefix + config.siteLogo;
   const blogURL = config.siteUrl + config.pathPrefix;
-  $('body').attr('jqueryWorking','true');
   const schemaOrgJSONLD = [
 
     {
@@ -31,10 +30,6 @@ const SEO = () => {
       <meta name="msapplication-config" content="browserconfig.xml" />
       <meta name="description" content={description} />
       <meta name="image" content={image} />
-      {/* <script
-      src="https://code.jquery.com/jquery-3.4.0.min.js"
-      integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
-      crossorigin="anonymous"></script> */}
       <script type="application/ld+json">{JSON.stringify(schemaOrgJSONLD)}</script>
       <meta property="og:locale" content={config.ogLanguage} />
       <meta property="og:site_name" content={config.ogSiteName} />
