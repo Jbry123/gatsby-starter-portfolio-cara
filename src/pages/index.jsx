@@ -19,7 +19,7 @@ import Gallery from '../components/Gallery.jsx';
 import $ from 'jquery';
 
 //JQUERY EDITS
-$( document ).ready(function() {
+// $( 'document' ).ready(function() {
   // $(window).resize(function(){
 
   //   if ($(window).width() <= 1000) {  
@@ -30,7 +30,7 @@ $( document ).ready(function() {
   
   // });
   
-});
+// });
 
 
 
