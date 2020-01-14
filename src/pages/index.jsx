@@ -16,7 +16,7 @@ import '../styles/global';
 import rocket from './giphy.gif';
 import './JonathanBryResume.pdf';
 import Gallery from '../components/Gallery.jsx';
-import $ from 'jquery';
+// import $ from 'jquery';
 
 //JQUERY EDITS
 // $( 'document' ).ready(function() {

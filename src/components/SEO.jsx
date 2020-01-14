@@ -1,7 +1,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import config from '../../config/website';
-import $ from 'jquery';
+// import $ from 'jquery';
 
 const SEO = () => {
   const title = config.siteTitle;
@@ -32,10 +32,10 @@ const SEO = () => {
       <meta name="msapplication-config" content="browserconfig.xml" />
       <meta name="description" content={description} />
       <meta name="image" content={image} />
-      <script
+      {/* <script
       src="https://code.jquery.com/jquery-3.4.0.min.js"
       integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
-      crossorigin="anonymous"></script>
+      crossorigin="anonymous"></script> */}
       <script type="application/ld+json">{JSON.stringify(schemaOrgJSONLD)}</script>
       <meta property="og:locale" content={config.ogLanguage} />
       <meta property="og:site_name" content={config.ogSiteName} />
