@@ -143,8 +143,6 @@ const Bullet = styled.img`
 ${tw('rounded-full w-12 shadow-lg')};
   height: 28px;
   width: 28px;
-  margin-top: 5px;
-  margin-bottom: 10px;
 `;
 
 const AboutSub = styled.span`
@@ -343,7 +341,7 @@ const Babelbark = () => (
         </Inner>
         <Footer>
           
-          <a href="https://www.prideiscalifornia.com"><img src={homeicon} width="50px" height="50px" alt="bob"></img></a>.
+          <a class="homeIcon" href="https://www.prideiscalifornia.com"><img src={homeicon} width="50px" height="50px" alt="bob"></img></a>.
         </Footer>
       </Content>
       <Divider speed={0.1} offset={4}>
