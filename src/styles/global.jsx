@@ -24,12 +24,12 @@ injectGlobal`
   }
   #new-tab-sidebar {display: none;}
 
-  .css-6v7ury-AboutDesc {
+  .css-6v7ury-AboutDesc, .bodyText {
     h2{
-      font-size: 40px !important;
+      font-size: 30px;
       text-shadow: 3px 0px black;
     }
-    p{font-size: 12.5px;}
+
     }
 
 
@@ -47,10 +47,10 @@ injectGlobal`
     }
     .css-6v7ury-AboutDesc, .css-ugwx4i {
       h2{
-        font-size: 50px !important;
+        font-size: 40px !important;
       }
       p{
-        font-size: 40px !important;
+        font-size: 30px !important;
       }
       }
 
@@ -71,7 +71,7 @@ injectGlobal`
     }
     .css-6v7ury-AboutDesc, .css-ugwx4i {
       h2{
-        font-size: 50px !important;
+        font-size: 40px !important;
       }
       p{
         font-size: 30px !important;
@@ -94,7 +94,7 @@ injectGlobal`
     }
     .css-6v7ury-AboutDesc, .css-ugwx4i {
       h2{
-        font-size: 50px !important;
+        font-size: 40px !important;
       }
       p{
         font-size: 20px !important;
@@ -109,7 +109,10 @@ injectGlobal`
     }
     .css-6v7ury-AboutDesc, .css-ugwx4i {
       h2{
-        font-size: 50px !important;
+        font-size: 40px !important;
+      }
+      p {
+        font-size: 20px !important;
       }
       }
 
@@ -156,8 +159,16 @@ injectGlobal`
   }
 
   @media only screen and (min-width: 366px) and (max-width: 385px) {
+    .bodyText {
+      h2{
+        font-size: 30px !important;
+      }
+      p {
+        font-size: 12px !important;
+      }
+    }
     .css-sd50ea-Subtitle, .css-5yc6i9-Subtitle, .css-142vdkh, .subtitles{
-
+      font-size: 12px !important;
       width: 300px !important;
     }
     .css-11ptdj9-BigTitle, .css-142vdkh {
@@ -167,8 +178,16 @@ injectGlobal`
   }
 
   @media only screen and (min-width: 331px) and (max-width: 365px) {
+    .bodyText {
+      h2{
+        font-size: 30px !important;
+      }
+      p {
+        font-size: 12px !important;
+      }
+    }
     .css-sd50ea-Subtitle, .css-5yc6i9-Subtitle, .css-142vdkh, .subtitles{
-
+      font-size: 12px !important;
       width: 300px !important;
     }
     .css-11ptdj9-BigTitle, .css-142vdkh {
@@ -178,7 +197,14 @@ injectGlobal`
   }
 
   @media only screen and (min-width: 280px) and (max-width: 330px) {
-    
+    .bodyText {
+      h2{
+        font-size: 30px !important;
+      }
+      p {
+        font-size: 12px !important;
+      }
+    }
     .css-ugwx4i, .subtitles {
  font-size: 12px !important;
     }

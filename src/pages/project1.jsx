@@ -220,7 +220,7 @@ const Babelbark = () => (
           <Bullet src={rocket} alt="John Doe" />What design style is expected when it comes to healthcare in general, how can we make the interactions accessible for all? 
           <br /> <br />
           </Subtitle>
-          <AboutDesc>
+          <AboutDesc className="bodyText">
             <h2><strong>Project Overview:</strong></h2>
             <p>
             The percent of pet ownership is split 3 ways amongst millennials, baby boomers, and the other generation classifications. This means that we have to create an interface that plays 
@@ -250,7 +250,7 @@ const Babelbark = () => (
             </p>
             <h2><strong>What I Did:</strong></h2>
             <p>
-            Surveys and beta testers were key in my heuristic evaluation after I- made high fidelity mockups; we got a total of 100 surveys, and 20 beta testers, with a mix of both inside and outside of our company. 
+            Surveys and beta testers were key in my heuristic evaluation after I made high fidelity mockups; we got a total of 100 surveys, and 20 beta testers, with a mix of both inside and outside of our company. 
             One thing I think is vital to any app is a guided tour through the app, that the user can not skip. When it comes to tutorials the drop off of information retention drops off at the 5th instruction. 
             This clearly means the shorter the better, but we had to provide enough to give all our users a solid starting point no matter what they're used to when it comes to app/website design. <br /> <br />
             When it comes to information heirarchy, our surveys revealed that they would prioritize about pet's shots, appointments, and preferred products. We made a banner at the top of the application with this info, 
