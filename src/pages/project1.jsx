@@ -96,6 +96,15 @@ const Subtitle = styled.p`
   ${tw('text-2xl lg:text-4xl font-sans text-white mt-8 xxl:w-3/4')};
   text-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
   width: 700px;
+  @media (min-width: 531px) and (max-width: 730px) {
+    width: 505px;
+  }
+  @media (min-width: 371px) and (max-width: 530px) {
+    width: 355px;
+  }
+  @media (min-width: 300px) and (max-width: 370px) {
+    width: 285px;
+  }
 
 `;
 
@@ -203,7 +212,7 @@ const Babelbark = () => (
           <Title>
             <strong>Questions:</strong> <br />
           </Title>
-          <Subtitle>
+          <Subtitle className="subtitles">
           <Bullet className="bullet" src={rocket} alt="Website Development, freelance designer" />How can users better connect with their Vets?<br />
 
           <Bullet src={rocket} alt="marketing, interactive" />What info do users care most about, when it comes to their pets?<br />

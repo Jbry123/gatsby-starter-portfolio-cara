@@ -34,7 +34,7 @@ injectGlobal`
 
 
   @media only screen and (min-width: 1701px) and (max-width: 4000px) {
-    .css-sd50ea-Subtitle, .css-142vdkh{
+    .css-sd50ea-Subtitle, .css-142vdkh, .subtitles{
       img{
         height:45px;
         width:45px;
@@ -58,7 +58,7 @@ injectGlobal`
   }
 
   @media only screen and (min-width: 1701px) and (max-width: 2500px) {
-    .css-sd50ea-Subtitle, .css-142vdkh{
+    .css-sd50ea-Subtitle, .css-142vdkh, .subtitles{
       img{
         height:45px;
         width:45px;
@@ -81,7 +81,7 @@ injectGlobal`
     }
   }
   @media only screen and (min-width: 1500px) and (max-width: 1720px) {
-    .css-sd50ea-Subtitle, .css-142vdkh{
+    .css-sd50ea-Subtitle, .css-142vdkh, .subtitles{
       img{
         height:45px;
         width:45px;
@@ -134,7 +134,7 @@ injectGlobal`
   }
 
   @media only screen and (min-width: 426px) and (max-width: 510px) {
-    .css-sd50ea-Subtitle, .css-5yc6i9-Subtitle, .css-142vdkh{
+    .css-sd50ea-Subtitle, .css-5yc6i9-Subtitle, .css-142vdkh, .subtitles{
 
       width: 320px !important;
     }
@@ -145,7 +145,7 @@ injectGlobal`
   }
 
   @media only screen and (min-width: 386px) and (max-width: 425px) {
-    .css-sd50ea-Subtitle, .css-5yc6i9-Subtitle, .css-142vdkh{
+    .css-sd50ea-Subtitle, .css-5yc6i9-Subtitle, .css-142vdkh, .subtitles{
 
       width: 300px !important;
     }
@@ -156,7 +156,7 @@ injectGlobal`
   }
 
   @media only screen and (min-width: 366px) and (max-width: 385px) {
-    .css-sd50ea-Subtitle, .css-5yc6i9-Subtitle, .css-142vdkh{
+    .css-sd50ea-Subtitle, .css-5yc6i9-Subtitle, .css-142vdkh, .subtitles{
 
       width: 300px !important;
     }
@@ -167,7 +167,7 @@ injectGlobal`
   }
 
   @media only screen and (min-width: 331px) and (max-width: 365px) {
-    .css-sd50ea-Subtitle, .css-5yc6i9-Subtitle, .css-142vdkh{
+    .css-sd50ea-Subtitle, .css-5yc6i9-Subtitle, .css-142vdkh, .subtitles{
 
       width: 300px !important;
     }
@@ -179,14 +179,14 @@ injectGlobal`
 
   @media only screen and (min-width: 280px) and (max-width: 330px) {
     
-    .css-ugwx4i {
+    .css-ugwx4i, .subtitles {
  font-size: 12px !important;
     }
     
     .css-m6odof-Inner {
       margin-top: 245px;
     }
-    .css-sd50ea-Subtitle, .css-5yc6i9-Subtitle, .css-142vdkh, .css-tzys1p{
+    .css-sd50ea-Subtitle, .css-5yc6i9-Subtitle, .css-142vdkh, .css-tzys1p, .subtitles{
 
       width: 285px !important;
     }
