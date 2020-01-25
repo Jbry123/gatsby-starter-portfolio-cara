@@ -96,11 +96,6 @@ const Subtitle = styled.p`
   ${tw('text-2xl lg:text-4xl font-sans text-white mt-8 xxl:w-3/4')};
   text-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
   width: 700px;
-  @media (max-width: 450px) {
-    width: 350px;
-    margin-right: 5%;
-    margin-left: 1%;
-  }
 
 `;
 
