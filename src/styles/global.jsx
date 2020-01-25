@@ -162,7 +162,7 @@ injectGlobal`
     }
     .css-11ptdj9-BigTitle, .css-142vdkh {
       
-      margin-top: 2522 px !important;
+      margin-top: 2522px !important;
     }
   }
 
@@ -180,7 +180,7 @@ injectGlobal`
   @media only screen and (min-width: 280px) and (max-width: 330px) {
     
     .css-ugwx4i {
- font-size: 12px;
+ font-size: 12px !important;
     }
     
     .css-m6odof-Inner {
@@ -192,7 +192,7 @@ injectGlobal`
     }
     .css-11ptdj9-BigTitle, .css-142vdkh {
       
-      margin-top: 1894px !important;
+      margin-top: 1366px !important;
     }
   }
 `;
