@@ -15,7 +15,7 @@ import avatar from './JonathanBry.png';
 import '../styles/global';
 import rocket from './giphy.gif';
 import './JonathanBryResume.pdf';
-import Gallery from '../components/Gallery.jsx';
+import Footer from '../components/Footer';
 // import $ from 'jquery';
 
 //JQUERY EDITS
@@ -172,7 +172,7 @@ const ContactText = styled.p`
   }
 `;
 
-const Footer = styled.footer`
+const Footer2 = styled.footer`
   ${tw('text-center text-grey absolute pin-b p-6 font-sans text-md lg:text-lg')};
   a {
     color: #e07628;
@@ -363,12 +363,12 @@ const Index = () => (
           <ContactText>
             Say <a href="mailto:jonathanbry18@gmail.com"><mark>Hi with an e-mail!</mark></a> or find me on other platforms:{' '}
             <a href="https://dribbble.com/jonathanbry">Dribbble</a> &{' '}
-            <a href="https://www.instagram.com/postravedepression/">Instagram</a>
+            <a href="https://www.instagram.com/vapr.media/">Instagram</a>
           </ContactText>
         </Inner>
-        <Footer>
+        <Footer2 style={{color: "#000000"}}>
           &copy; Feel free to call or text me at 9167157867 💛🖤💛🖤
-        </Footer>
+        </Footer2>
       </Content>
       <Divider speed={0.2} offset={4}>
         <UpDown>
@@ -385,6 +385,7 @@ const Index = () => (
         <SVG icon="box" width={12} fill={colors['grey-darkest']} left="20%" top="30%" />
         <SVG icon="hexa" width={8} stroke={colors['grey-darkest']} left="80%" top="70%" />
       </Divider>
+        <Footer className="test1"></Footer>
     </Parallax>
   </React.Fragment>
 );

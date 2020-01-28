@@ -13,6 +13,10 @@ import '../styles/global';
 import rocket from './giphy.gif';
 import homeicon from './homeicon.png';
 import './JonathanBryResume.pdf';
+import babelbark1 from './babelbark.jpg';
+import babelbark2 from './babelbark2.jpg';
+import babelbark3 from './babelbark3.jpg';
+import babelbark4 from './babelbark4.jpg';
 
 const Divider = styled(ParallaxLayer)`
   ${tw('absolute w-full h-full')};
@@ -147,6 +151,10 @@ const Bullet = styled.img`
 ${tw('rounded-full w-12 shadow-lg')};
   height: 28px;
   width: 28px;
+  @media (min-width: 290px) and (max-width: 390px){
+    height: 12px;
+    width 12px;
+  }
 `;
 
 const AboutSub = styled.span`
@@ -227,6 +235,8 @@ const Babelbark = () => (
             to the senses of younger people, who use many apps and grow into patterns of modern design, while keeping in mind: structure, contrast, and guidance for people who don't interact with many interfaces. 
             Sadly UI/UX roles come with heavy NDA's, so I cant reveal much, but lets go over my process, keeping in mind that every project is special and complicated, so this is an overview!
             </p>
+            <img src={babelbark1} className="babelbark">
+            </img>
             <h2><strong>Problem Statement:</strong></h2>
             <p>
             Healthcare, or in this case, petcare, is notoriously clunky and outdated when it comes to design; this is usually due 
@@ -243,11 +253,18 @@ const Babelbark = () => (
             depending on what apps they use. I researched the top apps of this year, and came back with examples that were typical to every demographic, and tailored for our platform. My role went from: researching and interviewing, to designing, to testing my findings and reiterating through prototypes, 
             ultimately working with the development team to bring my low fidelity, coded prototypes, to life. I worked for 6 months past the product release to see how our users reacted; this role lasted 2 years.
             </p>
+            
+            <img src={babelbark2} className="babelbark2">
+            </img>
+
             <h2><strong>The User:</strong></h2>
             <p>
             Typically an app has one or two demographics, closely related, whether it be an auto parts distributor, or a music festival focused product; Babelbark was 
             different in the sense that I had to focus on many vantage points and experience levels when it came to technology, and UI/UX norms.
             </p>
+            <img src={babelbark3} className="babelbark3">
+            </img>
+
             <h2><strong>What I Did:</strong></h2>
             <p>
             Surveys and beta testers were key in my heuristic evaluation after I made high fidelity mockups; we got a total of 100 surveys, and 20 beta testers, with a mix of both inside and outside of our company. 
@@ -255,6 +272,9 @@ const Babelbark = () => (
             This clearly means the shorter the better, but we had to provide enough to give all our users a solid starting point no matter what they're used to when it comes to app/website design. <br /> <br />
             When it comes to information heirarchy, our surveys revealed that they would prioritize about pet's shots, appointments, and preferred products. We made a banner at the top of the application with this info, 
             with a specialized feed of articles from brands, blogs, and their vet. </p>
+            <img src={babelbark4} className="babelbark4">
+            </img>
+
             <h2><strong>Outcomes and Lessons:</strong></h2>
             <p>
             Making an accessible product is a strenuous, but neccessary task when you take into account demographics like: Baby Boomers, Millenials, Gen X, Y, Z, and everyone in between; as well as differently abled poplations such as: visual, cognitive, and motor functions. 
@@ -345,7 +365,7 @@ const Babelbark = () => (
         </Inner>
         <Footer>
           
-          <a class="homeIcon" href="https://www.prideiscalifornia.com"><img src={homeicon} width="50px" height="50px" alt="bob"></img></a>.
+          <a className="homeIcon" href="https://www.prideiscalifornia.com"><img src={homeicon} width="50px" height="50px" alt="bob"></img></a>.
         </Footer>
       </Content>
       <Divider speed={0.1} offset={4}>
