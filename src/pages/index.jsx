@@ -126,6 +126,8 @@ const ProjectsWrapper = styled.div`
   }
 `;
 
+
+
 const WaveWrapper = styled.div`
   ${tw('absolute pin-b w-full')};
   transform: matrix(1, 0, 0, -1, 0, 0);
@@ -239,32 +241,35 @@ const Index = () => (
         <Inner>
           <Title>Projects</Title>
           <ProjectsWrapper>
-            <ProjectCard
+            <ProjectCard className="projectCard1"
               title="Babelbark - UI/UX contract"
               link="https://www.prideiscalifornia.com/project1/"
               bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
+              style={{boxShadow: "2px -2px 10px #d4145a80, -2px 2px 10px #fbb03b, .5px .5px 1.5px #ffffff30"}}
             >
             How can we optimize healthcare apps for all user ages, and what is most important?
             75% Mobile, 25% Website contract, focusing on accesibility and 
             </ProjectCard>
 
-            <ProjectCard
+            <ProjectCard className="projectCard2"
               title="Graphic Design Portfolio"
               link="https://www.prideiscalifornia.com/project2"
               bg="linear-gradient(to right, #662D8C 0%, #ED1E79 100%)"
+
             >
             CTA/sign up case study, what makes a person convert, more over, the right one?
             </ProjectCard>
 
-            <ProjectCard
+            <ProjectCard className="projectCard3"
               title="Insanity.shop - Wild Personified."
               link="https://www.insanity.shop/project2"
               bg="linear-gradient(to right, #009245 0%, #FCEE21 100%)"
+   
             >
             Custom desktop first site website targeting niche demographics, and grabbing from the client's style.
             </ProjectCard>
 
-            <ProjectCard
+            <ProjectCard className="projectCard4"
               title="The Festival Voice"
               link="https://www.thefestivalvoice.com/"
               bg="linear-gradient(to right, #000047 0%, #009245 100%)"

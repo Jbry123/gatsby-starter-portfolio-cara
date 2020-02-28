@@ -30,6 +30,10 @@ injectGlobal`
     max-width: 800px;
     border-radius: 20px;
   }
+
+  .projectCard1{ 
+   box-shadow: 2px -2px 10px #d4145a80, -2px 2px 10px #fbb03b, .5px .5px 1.5px #ffffff30 !important;
+  }
   .babelbark2, .babelbark3{
 
 
@@ -71,7 +75,7 @@ injectGlobal`
     }
 
 
-  @media only screen and (min-width: 1701px) and (max-width: 4000px) {
+  @media only screen and (min-width: 2501px) and (max-width: 4000px) {
     .css-sd50ea-Subtitle, .css-142vdkh, .subtitles{
       img{
         height:45px;
@@ -105,7 +109,7 @@ injectGlobal`
       width: 1200px !important;
     }
     .css-11ptdj9-BigTitle, .css-142vdkh {
-      margin-top: -156% !important;
+      margin-top: 1556px !important;
     }
     .css-6v7ury-AboutDesc, .css-ugwx4i {
       h2{
@@ -128,7 +132,7 @@ injectGlobal`
       width: 1200px !important;
     }
     .css-11ptdj9-BigTitle, .css-142vdkh {
-      margin-top: -36% !important;
+      margin-top: 1340px !important;
     }
     .css-6v7ury-AboutDesc, .css-ugwx4i {
       h2{
@@ -143,7 +147,7 @@ injectGlobal`
   }
   @media only screen and (min-width: 1321px) and (max-width: 1499px) {
     .css-11ptdj9-BigTitle, .css-142vdkh {
-      margin-top: 800px !important;
+      margin-top: 2200px !important;
     }
     .css-6v7ury-AboutDesc, .css-ugwx4i {
       h2{
@@ -159,18 +163,18 @@ injectGlobal`
   
   @media only screen and (min-width: 1201px) and (max-width: 1320px) {
     .css-11ptdj9-BigTitle, .css-142vdkh {
-      margin-top: 900px !important;
+      margin-top: 2900px !important;
     }
   }
 
   @media only screen and (min-width: 899px) and (max-width: 1200px) {
     .css-11ptdj9-BigTitle, .css-142vdkh {
-      margin-top: -49px !important;
+      margin-top: 2949px !important;
     }
   }
   @media only screen and (min-width: 520px) and (max-width: 898px) {
     .css-11ptdj9-BigTitle, .css-142vdkh {
-      margin-top: 498px !important;
+      margin-top: 2595px  !important;
     }
   }
 
