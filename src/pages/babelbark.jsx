@@ -104,7 +104,7 @@ const Subtitle = styled.p`
     width: 505px;
   }
   @media (min-width: 371px) and (max-width: 530px) {
-    width: 355px;
+    width: 305px;
   }
   @media (min-width: 300px) and (max-width: 370px) {
     width: 285px;

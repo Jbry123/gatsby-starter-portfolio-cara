@@ -156,18 +156,10 @@ class Footer extends Component {
           <div className="bubble" style={{animationDuration: '4.591948310079363s', distance: 6.402106335449148, left: '48.206519435002534%', time: 3.5427469321677707, animationDelay: 2.8938863963392736}} ></div>
         </div>
         <div className="content">
-          <div>
-            <div><b>Eldew</b><a href="#">Secuce</a><a href="#">Drupand</a><a href="#">Oceash</a><a href="#">Ugefe</a><a href="#">Babed</a></div>
-            <div><b>Spotha</b><a href="#">Miskasa</a><a href="#">Agithe</a><a href="#">Scesha</a><a href="#">Lulle</a></div>
-            <div><b>Chashakib</b><a href="#">Chogauw</a><a href="#">Phachuled</a><a href="#">Tiebeft</a><a href="#">Ocid</a><a href="#">Izom</a><a href="#">Ort</a></div>
-            <div><b>Athod</b><a href="#">Pamuz</a><a href="#">Vapert</a><a href="#">Neesk</a><a href="#">Omemanen</a></div>
-          </div>
-          <div><a className="image" href="https://codepen.io/z-" target="_blank" style={{backgroundImage: 'url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/199011/happy.svg")'}} ></a>
-            <p>©2019 Not Really</p>
-          </div>
+
         </div>
       </div>
-      <svg style={{left: 'fixed', top: 100 }}>
+      <svg style={{left: 'fixed', top: 150 }}>
         <defs>
           <filter id="blob">
             <feGaussianBlur in="SourceGraphic" stdDeviation={10} result="blur" />

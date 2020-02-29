@@ -290,7 +290,7 @@ injectGlobal`
     position: absolute;
     grid-area: footer;
     min-height: 12rem;
-    bottom: -20px;
+    bottom: -129px;
     width: 100vw;
   }
   body .footer .bubbles {

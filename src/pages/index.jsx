@@ -109,6 +109,15 @@ const Subtitle = styled.p`
   ${tw('text-2xl lg:text-4xl font-sans text-white mt-8 xxl:w-3/4')};
   text-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
   width: 500px;
+  @media (min-width: 531px) and (max-width: 730px) {
+    width: 505px;
+  }
+  @media (min-width: 371px) and (max-width: 530px) {
+    width: 305px;
+  }
+  @media (min-width: 300px) and (max-width: 370px) {
+    width: 285px;
+  }
 
 `;
 
@@ -239,25 +248,26 @@ const Index = () => (
       />
       <Content speed={0.4} offset={1.2} factor={2}>
         <Inner>
-          <Title>Projects</Title>
+          <Title>Portfolio</Title>
           <ProjectsWrapper>
             <ProjectCard className="projectCard1"
               title="Babelbark - UI/UX contract"
-              link="https://www.prideiscalifornia.com/project1/"
+              link="https://www.prideiscalifornia.com/babelbark/"
               bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
               style={{boxShadow: "2px -2px 10px #d4145a80, -2px 2px 10px #fbb03b, .5px .5px 1.5px #ffffff30"}}
             >
             How can we optimize healthcare apps for all user ages, and what is most important?
-            75% Mobile, 25% Website contract, focusing on accesibility and 
+            75% Mobile, 25% Website contract, focusing on Accessibility and Information Architecture.
             </ProjectCard>
 
             <ProjectCard className="projectCard2"
-              title="Graphic Design Portfolio"
-              link="https://www.prideiscalifornia.com/project2"
+              title="CTA/Sign Up Case Study - 5 concepts to optimize"
+              link="https://www.prideiscalifornia.com/CTA-Sign-up-Case-Study/"
               bg="linear-gradient(to right, #662D8C 0%, #ED1E79 100%)"
 
             >
             CTA/sign up case study, what makes a person convert, more over, the right one?
+            Here's 5 things you can keep a hold of.
             </ProjectCard>
 
             <ProjectCard className="projectCard3"
@@ -266,7 +276,8 @@ const Index = () => (
               bg="linear-gradient(to right, #009245 0%, #FCEE21 100%)"
    
             >
-            Custom desktop first site website targeting niche demographics, and grabbing from the client's style.
+            Custom desktop first site website targeting niche demographics, and grabbing from 
+            the client's style.
             </ProjectCard>
 
             <ProjectCard className="projectCard4"
@@ -274,7 +285,8 @@ const Index = () => (
               link="https://www.thefestivalvoice.com/"
               bg="linear-gradient(to right, #000047 0%, #009245 100%)"
             >
-            Wordpress/Vue project, TFV is a blog for festivals and music in general.
+            Wordpress/Vue project, TFV is a blog for festivals and music in general. 
+            Uniting a love for data and music.
             </ProjectCard>
             
           </ProjectsWrapper>
