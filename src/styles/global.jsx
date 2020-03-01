@@ -23,7 +23,6 @@ injectGlobal`
     padding: 0;
   }
   .babelbark, .babelbark4 {
-    box-shadow: -2px 5px 5px #4d4d5090, 2px -5px 5px #f2f2f270;
     width: 80vw;
     height: auto;
     min-width: 245px;
@@ -31,13 +30,11 @@ injectGlobal`
     border-radius: 20px;
   }
 
+
   .projectCard1{ 
    box-shadow: 2px -2px 10px #d4145a80, -2px 2px 10px #fbb03b, .5px .5px 1.5px #ffffff30 !important;
   }
   .babelbark2, .babelbark3{
-
-
-    box-shadow: -5px 8px 5px #becbd870, 2px -5px 5px #ffffff70;
     width: 80vw;
     height: auto;
     min-width: 245px;
@@ -76,7 +73,7 @@ injectGlobal`
 
 
   @media only screen and (min-width: 2501px) and (max-width: 4000px) {
-    .css-sd50ea-Subtitle, .css-142vdkh, .subtitles{
+    .css-sd50ea-Subtitle, .css-142vdkh{
       img{
         height:45px;
         width:45px;
@@ -100,7 +97,7 @@ injectGlobal`
   }
 
   @media only screen and (min-width: 1701px) and (max-width: 2500px) {
-    .css-sd50ea-Subtitle, .css-142vdkh, .subtitles{
+    .css-sd50ea-Subtitle, .css-142vdkh{
       img{
         height:45px;
         width:45px;
@@ -123,7 +120,7 @@ injectGlobal`
     }
   }
   @media only screen and (min-width: 1500px) and (max-width: 1720px) {
-    .css-sd50ea-Subtitle, .css-142vdkh, .subtitles{
+    .css-sd50ea-Subtitle, .css-142vdkh{
       img{
         height:45px;
         width:45px;
@@ -179,7 +176,7 @@ injectGlobal`
   }
 
   @media only screen and (min-width: 426px) and (max-width: 510px) {
-    .css-sd50ea-Subtitle, .css-5yc6i9-Subtitle, .css-142vdkh, .subtitles{
+    .css-sd50ea-Subtitle, .css-5yc6i9-Subtitle, .css-142vdkh{
       .bodyText {
         h2{
           font-size: 30px !important;
@@ -208,7 +205,7 @@ injectGlobal`
       }
     }
 
-    .css-sd50ea-Subtitle, .css-5yc6i9-Subtitle, .css-142vdkh, .subtitles{
+    .css-sd50ea-Subtitle, .css-5yc6i9-Subtitle, .css-142vdkh{
 
       width: 300px !important;
     }
@@ -227,7 +224,7 @@ injectGlobal`
         font-size: 15px !important;
       }
     }
-    .css-sd50ea-Subtitle, .css-5yc6i9-Subtitle, .css-142vdkh, .subtitles{
+    .css-sd50ea-Subtitle, .css-5yc6i9-Subtitle{
       font-size: 15px !important;
       width: 300px !important;
     }
@@ -246,13 +243,13 @@ injectGlobal`
         font-size: 13px !important;
       }
     }
-    .css-sd50ea-Subtitle, .css-5yc6i9-Subtitle, .css-142vdkh, .subtitles{
+    .css-sd50ea-Subtitle, .css-5yc6i9-Subtitle{
       font-size: 13px !important;
       width: 300px !important;
     }
     .css-11ptdj9-BigTitle, .css-142vdkh {
       
-      margin-top: 2304px !important;
+      margin-top: 2522px !important;
     }
   }
 
@@ -265,14 +262,14 @@ injectGlobal`
         font-size: 13px !important;
       }
     }
-    .css-ugwx4i, .subtitles {
+    .css-ugwx4i {
  font-size: 12px !important;
     }
     
     .css-m6odof-Inner {
       margin-top: 245px;
     }
-    .css-sd50ea-Subtitle, .css-5yc6i9-Subtitle, .css-142vdkh, .css-tzys1p, .subtitles{
+    .css-sd50ea-Subtitle, .css-5yc6i9-Subtitle, .css-142vdkh, .css-tzys1p{
 
       width: 285px !important;
     }
@@ -394,4 +391,11 @@ injectGlobal`
     }
   }
   
+
+  .homeIcon img {
+    @media only screen and (min-width: 800px) and (max-width: 6330px) {
+      width: 125px !important;
+      height: 125px !important;
+    }
+  }
 `;

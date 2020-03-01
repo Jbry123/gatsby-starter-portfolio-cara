@@ -90,11 +90,24 @@ ${tw('w-2/3 justify-center xxl:w-2/3 item-center text-center lg:text-left')};
 const BigTitle = styled.h1`
   ${tw('text-5xl lg:text-6xl font-sans-serif text-white mb-6 tracking-wide')};
   text-shadow: 0 5px 35px rgba(255, 255, 255, 0.15);
+
+  @media (min-width: 355px) and (max-width: 365px) {
+    margin-top: 3040px !important;
+  }
 `;
 
 const Title = styled.h1`
   ${tw('text-4xl lg:text-4xl font-serif text-white mb-8 tracking-wide relative inline-block')};
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  @media (min-width: 280px) and (max-width: 800px) {
+    font-size: 1rem;
+  }
+  @media (min-width: 801px) and (max-width: 1200px) {
+    font-size: 1.6rem;
+  }
+  @media (min-width: 1201px) and (max-width: 5000px) {
+    font-size: 2rem;
+  }
   &:before {
     content: '';
     width: 40px;
@@ -128,7 +141,7 @@ const Subtitle = styled.p`
   text-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
   width: 700px;
   @media (max-width: 450px) {
-    width: 300px;
+    width: 280px;
     margin-right: 5%;
     margin-left: 1%;
   }
@@ -235,10 +248,10 @@ const Babelbark = () => (
       <Content1 speed={0.4} offset={0}>
         <Hero>
           <BigTitle>
-            BabelBark - Petcare Reimagined
+            CTA Sign Up Case Study
           </BigTitle>
           <Title>
-            <strong>Questions:</strong> <br />
+            <strong>5 Things To Focus On When Optimizing Your CTAs.</strong> <br />
           </Title>
           <Subtitle>
           <Bullet className="bullet" src={rocket} alt="Website Development, freelance designer" />Good UX starts from the moment your customer intracts with your brand.<br />
@@ -384,7 +397,7 @@ const Babelbark = () => (
           <a href="https://www.prideiscalifornia.com"><img src={homeicon} width="50px" height="50px" alt="bob"></img></a>.
         </Footer>
       </Content>
-      <Divider speed={0.1} offset={4}>
+      <Divider speed={0.2} offset={4}>
         <UpDown>
           <SVG icon="upDown" className={hidden} width={8} fill={colors['grey-darkest']} left="70%" top="20%" />
           <SVG icon="triangle" width={8} stroke={colors['grey-darkest']} left="25%" top="5%" />

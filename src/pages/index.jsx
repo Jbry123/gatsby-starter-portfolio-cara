@@ -70,7 +70,18 @@ const BigTitle = styled.h1`
   ${tw('text-5xl lg:text-6xl font-sans-serif text-white mb-6 tracking-wide')};
   text-shadow: 0 5px 35px rgba(255, 255, 255, 0.15);
   margin-top: 400px;
-  line-height: 130%;
+  line-height: 150%;
+
+  @media (min-width: 280px) and (max-width: 800px) {
+    font-size: 2.5rem;
+  }
+  @media (min-width: 801px) and (max-width: 1200px) {
+    font-size: 3rem;
+  }
+  @media (min-width: 1201px) and (max-width: 5000px) {
+    font-size: 4rem;
+  }
+  
 
 `;
 
@@ -107,7 +118,8 @@ const Title = styled.h1`
 
 const Subtitle = styled.p`
   ${tw('text-2xl lg:text-4xl font-sans text-white mt-8 xxl:w-3/4')};
-  text-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+  text-shadow: 0 2px 15px rgba(0, 0, 0, 0.2),
+              -1px 1px 0px rgba(0, 0, 0, 1);
   width: 500px;
   @media (min-width: 531px) and (max-width: 730px) {
     width: 505px;
@@ -117,6 +129,16 @@ const Subtitle = styled.p`
   }
   @media (min-width: 300px) and (max-width: 370px) {
     width: 285px;
+  }
+
+  @media (min-width: 280px) and (max-width: 800px) {
+    font-size: 1.4rem;
+  }
+  @media (min-width: 801px) and (max-width: 1200px) {
+    font-size: 2rem;
+  }
+  @media (min-width: 1201px) and (max-width: 5000px) {
+    font-size: 2.7rem;
   }
 
 `;
@@ -160,9 +182,20 @@ const Avatar = styled.img`
 
 const Bullet = styled.img`
 ${tw('rounded-full w-12 shadow-lg')};
-  height: 28px;
-  width: 28px;
+
   margin-top: 5px;
+  @media (min-width: 280px) and (max-width: 800px) {
+    height: 18px;
+    width: 18px;
+  }
+  @media (min-width: 801px) and (max-width: 1200px) {
+    height: 25px;
+    width: 25px;
+  }
+  @media (min-width: 1201px) and (max-width: 5000px) {
+    height: 28px;
+    width: 28px;
+  }
 `;
 
 const AboutSub = styled.span`
@@ -197,36 +230,36 @@ const Index = () => (
     <Parallax pages={5}>
       <Divider speed={0.2} offset={0}>
         <UpDown>
-          <SVG icon="triangle" className={hidden} width={48} stroke={colors.orange} left="10%" top="20%" />
-          <SVG icon="hexa" width={48} stroke={colors.red} left="60%" top="70%" />
-          <SVG icon="box" width={6} fill={colors['grey-darker']} left="60%" top="15%" />
+          <SVG icon="triangle" className={hidden} width={48} stroke={'#87546B'} left="10%" top="20%" />
+          <SVG icon="hexa" width={48} stroke={'#87546B'} left="60%" top="70%" />
+          <SVG icon="box" width={6} fill={'#F799C3'} left="60%" top="15%" />
         </UpDown>
         <UpDownWide>
-          <SVG icon="arrowUp" className={hidden} width={16} fill={colors['blue-dark']} left="80%" top="10%" />
-          <SVG icon="triangle" width={12} stroke={colors.white} left="90%" top="50%" />
-          <SVG icon="circle" width={16} fill={colors['grey-darker']} left="70%" top="90%" />
-          <SVG icon="triangle" width={16} stroke={colors['grey-darkest']} left="30%" top="65%" />
+          <SVG icon="arrowUp" className={hidden} width={16} fill={'#E18CB2'} left="80%" top="10%" />
+          <SVG icon="triangle" width={12} stroke={'#F9B4D3'} left="90%" top="50%" />
+          <SVG icon="circle" width={16} fill={colors['grey']} left="70%" top="90%" />
+          <SVG icon="triangle" width={16} stroke={'#E18CB2'} left="30%" top="65%" />
           <SVG icon="circle" width={6} fill={colors['grey-darkest']} left="75%" top="10%" />
-          <SVG icon="upDown" className={hidden} width={8} fill={colors['grey-darkest']} left="45%" top="10%" />
+          <SVG icon="upDown" className={hidden} width={8} fill={colors['grey']} left="45%" top="10%" />
         </UpDownWide>
-        <SVG icon="circle" className={hidden} width={24} fill={colors['grey-darker']} left="5%" top="70%" />
-        <SVG icon="circle" width={6} fill={colors['grey-darkest']} left="4%" top="20%" />
+        <SVG icon="circle" className={hidden} width={24} fill={colors['grey']} left="5%" top="70%" />
+        <SVG icon="circle" width={6} fill={colors['grey']} left="4%" top="20%" />
         <SVG icon="circle" width={12} fill={colors['grey-darkest']} left="50%" top="60%" />
-        <SVG icon="upDown" width={8} fill={colors['grey-darkest']} left="95%" top="90%" />
-        <SVG icon="upDown" className={hidden} width={24} fill={colors['grey-darker']} left="40%" top="80%" />
-        <SVG icon="triangle" width={8} stroke={colors['grey-darker']} left="25%" top="5%" />
-        <SVG icon="circle" width={64} fill={colors.green} left="95%" top="5%" />
-        <SVG icon="box" className={hidden} width={64} fill={colors.purple} left="5%" top="90%" />
-        <SVG icon="box" width={6} fill={colors['grey-darkest']} left="10%" top="10%" />
-        <SVG icon="box" width={12} fill={colors['grey-darkest']} left="40%" top="30%" />
-        <SVG icon="hexa" width={16} stroke={colors['grey-darker']} left="10%" top="50%" />
-        <SVG icon="hexa" width={8} stroke={colors['grey-darker']} left="80%" top="70%" />
+        <SVG icon="upDown" width={8} fill={colors['grey']} left="95%" top="90%" />
+        <SVG icon="upDown" className={hidden} width={24} fill={'#F799C3'} left="40%" top="80%" />
+        <SVG icon="triangle" width={8} stroke={'#F799C3'} left="25%" top="5%" />
+        <SVG icon="circle" width={64} fill={colors['grey-darkest']} left="95%" top="5%" />
+        <SVG icon="box" className={hidden} width={64} fill={'#FBD0E3'} left="-5%" top="90%" />
+        <SVG icon="box" width={6} fill={colors['grey']} left="10%" top="10%" />
+        <SVG icon="box" width={12} fill={'#F9B4D3'} left="40%" top="30%" />
+        <SVG icon="hexa" width={16} stroke={'#F799C3'} left="10%" top="50%" />
+        <SVG icon="hexa" width={8} stroke={'#F799C3'} left="80%" top="70%" />
       </Divider>
       <Content speed={0.4} offset={0}>
         <Hero>
           <BigTitle>
             Welcome, I'm<br />Jonathan Bry!
-            <br /> I excel at <mark style={{backgroundColor: '#F799C3'}}>UI/UX research</mark>,<br /> and <mark style={{backgroundColor: '#e8e8e8'}}>design</mark> on many levels!
+            <br /> I excel at <mark style={{backgroundColor: '#F799C3'}}>UI/UX research</mark>,<mark style={{backgroundColor: '#e8e8e8'}}><br />development</mark>,<br /> and <mark style={{backgroundColor: '#F799C3'}}>design</mark> on many levels!
           </BigTitle>
           <Subtitle>
 
@@ -241,7 +274,7 @@ const Index = () => (
       </Content>
 
       <DividerMiddle
-        bg="linear-gradient(to right, #E8E8E8 0%, #F5B3C1 40%, #F799C3 90%)"
+        bg="linear-gradient(to right, #161719 0%, #161719 20%, #23262B 30%, #F799C3 90%)"
         speed={-0.4}
         offset={1.1}
         factor={2}
@@ -253,17 +286,17 @@ const Index = () => (
             <ProjectCard className="projectCard1"
               title="Babelbark - UI/UX contract"
               link="https://www.prideiscalifornia.com/babelbark/"
-              bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
+              bg="linear-gradient(to right, #23262B 0%, #5A3847 100%)"
               style={{boxShadow: "2px -2px 10px #d4145a80, -2px 2px 10px #fbb03b, .5px .5px 1.5px #ffffff30"}}
             >
-            How can we optimize healthcare apps for all user ages, and what is most important?
-            75% Mobile, 25% Website contract, focusing on Accessibility and Information Architecture.
+            I optimized a petcare app for all user ages, focusing on universal UX concepts;
+            75% Mobile, 25% Website contract.
             </ProjectCard>
 
             <ProjectCard className="projectCard2"
               title="CTA/Sign Up Case Study - 5 concepts to optimize"
               link="https://www.prideiscalifornia.com/CTA-Sign-up-Case-Study/"
-              bg="linear-gradient(to right, #662D8C 0%, #ED1E79 100%)"
+              bg="linear-gradient(to right, #23262B 0%, #5A3847 100%)"
 
             >
             CTA/sign up case study, what makes a person convert, more over, the right one?
@@ -273,7 +306,7 @@ const Index = () => (
             <ProjectCard className="projectCard3"
               title="Insanity.shop - Wild Personified."
               link="https://www.insanity.shop/project2"
-              bg="linear-gradient(to right, #009245 0%, #FCEE21 100%)"
+              bg="linear-gradient(to right, #23262B 0%, #87546B 100%)"
    
             >
             Custom desktop first site website targeting niche demographics, and grabbing from 
@@ -283,7 +316,7 @@ const Index = () => (
             <ProjectCard className="projectCard4"
               title="The Festival Voice"
               link="https://www.thefestivalvoice.com/"
-              bg="linear-gradient(to right, #000047 0%, #009245 100%)"
+              bg="linear-gradient(to right, #23262B 0%, #87546B 100%)"
             >
             Wordpress/Vue project, TFV is a blog for festivals and music in general. 
             Uniting a love for data and music.
@@ -294,45 +327,45 @@ const Index = () => (
       </Content>
       <Divider speed={0.1} offset={1} factor={2}>
         <UpDown>
-          <SVG icon="box" width={6} fill={colors.white} left="85%" top="75%" />
-          <SVG icon="upDown" width={8} fill={colors.teal} left="70%" top="20%" />
-          <SVG icon="triangle" width={8} stroke={colors.orange} left="25%" top="5%" />
-          <SVG icon="circle" className={hidden} width={24} fill={colors.green} left="17%" top="60%" />
+          <SVG icon="box" width={6} fill={'#FBD0E3'} left="85%" top="75%" />
+          <SVG icon="upDown" width={8} fill={'#87546B'} left="70%" top="20%" />
+          <SVG icon="triangle" width={8} stroke={'#87546B'} left="25%" top="5%" />
+          <SVG icon="circle" className={hidden} width={24} fill={'#E18CB2'} left="17%" top="60%" />
         </UpDown>
         <UpDownWide>
-          <SVG icon="arrowUp" className={hidden} width={16} fill={colors.green} left="20%" top="90%" />
-          <SVG icon="triangle" width={12} stroke={colors.white} left="90%" top="30%" />
-          <SVG icon="circle" width={16} fill={colors.yellow} left="70%" top="90%" />
-          <SVG icon="triangle" className={hidden} width={16} stroke={colors.teal} left="18%" top="75%" />
-          <SVG icon="circle" width={6} fill={colors.white} left="75%" top="10%" />
-          <SVG icon="upDown" className={hidden} width={8} fill={colors.green} left="45%" top="10%" />
+          <SVG icon="arrowUp" className={hidden} width={16} fill={'#F799C3'} left="20%" top="90%" />
+          <SVG icon="triangle" width={12} stroke={'#F799C3'} left="90%" top="30%" />
+          <SVG icon="circle" width={16} fill={'#F9B4D3'} left="70%" top="90%" />
+          <SVG icon="triangle" className={hidden} width={16} stroke={'#F9B4D3'} left="18%" top="75%" />
+          <SVG icon="circle" width={6} fill={'#FBD0E3'} left="75%" top="10%" />
+          <SVG icon="upDown" className={hidden} width={8} fill={'#F9B4D3'} left="45%" top="10%" />
         </UpDownWide>
-        <SVG icon="circle" width={6} fill={colors.white} left="4%" top="20%" />
-        <SVG icon="circle" width={12} fill={colors.pink} left="80%" top="60%" />
-        <SVG icon="box" width={6} fill={colors.orange} left="10%" top="10%" />
-        <SVG icon="box" width={12} fill={colors.yellow} left="29%" top="26%" />
-        <SVG icon="hexa" width={16} stroke={colors.red} left="75%" top="30%" />
-        <SVG icon="hexa" width={8} stroke={colors.yellow} left="80%" top="70%" />
+        <SVG icon="circle" width={6} fill={'#FBD0E3'} left="4%" top="20%" />
+        <SVG icon="circle" width={12} fill={'#F799C3'} left="80%" top="60%" />
+        <SVG icon="box" width={6} fill={'#F799C3'} left="10%" top="10%" />
+        <SVG icon="box" width={12} fill={'#F9B4D3'} left="29%" top="26%" />
+        <SVG icon="hexa" width={16} stroke={'#E18CB2'} left="75%" top="30%" />
+        <SVG icon="hexa" width={8} stroke={'#F9B4D3'} left="80%" top="70%" />
       </Divider>
       <Divider bg="#23262b" clipPath="polygon(0 16%, 100% 4%, 100% 82%, 0 94%)" speed={0.2} offset={3} />
       <Divider speed={0.1} offset={3}>
         <UpDown>
-          <SVG icon="box" className={hidden} width={6} fill={colors.blue} left="50%" top="75%" />
-          <SVG icon="upDown" className={hidden} width={8} fill={colors['grey-darkest']} left="70%" top="20%" />
-          <SVG icon="triangle" width={8} stroke={colors['grey-darkest']} left="25%" top="5%" />
-          <SVG icon="upDown" className={hidden} width={24} fill={colors.orange} left="80%" top="80%" />
+          <SVG icon="box" className={hidden} width={6} fill={'#E18CB2'} left="50%" top="75%" />
+          <SVG icon="upDown" className={hidden} width={8} fill={colors['grey']} left="70%" top="20%" />
+          <SVG icon="triangle" width={8} stroke={colors['grey']} left="25%" top="5%" />
+          <SVG icon="upDown" className={hidden} width={24} fill={'#87546B'} left="80%" top="80%" />
         </UpDown>
         <UpDownWide>
-          <SVG icon="arrowUp" className={hidden} width={16} fill={colors.purple} left="5%" top="80%" />
-          <SVG icon="triangle" width={12} stroke={colors.white} left="95%" top="50%" />
-          <SVG icon="circle" width={6} fill={colors.white} left="85%" top="15%" />
-          <SVG icon="upDown" className={hidden} width={8} fill={colors['grey-darkest']} left="45%" top="10%" />
+          <SVG icon="arrowUp" className={hidden} width={16} fill={'#87546B'} left="5%" top="80%" />
+          <SVG icon="triangle" width={12} stroke={'#FBD0E3'} left="95%" top="50%" />
+          <SVG icon="circle" width={6} fill={'#FBD0E3'} left="85%" top="15%" />
+          <SVG icon="upDown" className={hidden} width={8} fill={'#E18CB2'} left="45%" top="10%" />
         </UpDownWide>
-        <SVG icon="circle" width={6} fill={colors.white} left="4%" top="20%" />
-        <SVG icon="circle" width={12} fill={colors['grey-darkest']} left="70%" top="60%" />
-        <SVG icon="box" width={6} fill={colors.orange} left="10%" top="10%" />
-        <SVG icon="box" width={12} fill={colors['grey-darkest']} left="20%" top="30%" />
-        <SVG icon="hexa" width={8} stroke={colors['grey-darkest']} left="80%" top="70%" />
+        <SVG icon="circle" width={6} fill={'#FBD0E3'} left="4%" top="20%" />
+        <SVG icon="circle" width={12} fill={colors['grey']} left="70%" top="60%" />
+        <SVG icon="box" width={6} fill={'#F9B4D3'} left="10%" top="10%" />
+        <SVG icon="box" width={12} fill={colors['grey']} left="20%" top="30%" />
+        <SVG icon="hexa" width={8} stroke={'#F9B4D3'} left="80%" top="70%" />
       </Divider>
       <Content speed={0.4} offset={3}>
         <Inner>
@@ -376,31 +409,31 @@ const Index = () => (
       </Divider>
       <Content speed={0.4} offset={4}>
         <Inner>
-          <Title>Get in touch</Title>
-          <ContactText>
-            Say <a href="mailto:jonathanbry18@gmail.com"><mark>Hi with an e-mail!</mark></a> or find me on other platforms:{' '}
-            <a href="https://dribbble.com/jonathanbry">Dribbble</a> &{' '}
-            <a href="https://www.instagram.com/vapr.media/">Instagram</a>
+          <Title style={{marginTop: '45px'}}>Get in touch</Title>
+          <ContactText style={{lineHeight: '172%'}}>
+            Say <a href="mailto:jonathanbry18@gmail.com"><mark style={{backgroundColor: '#F799C3'}}>Hi with an e-mail!</mark></a> or find me on other platforms:{' '}
+            <a style={{backgroundColor: '#ffffff', color: '#000000'}} href="https://dribbble.com/jonathanbry">Dribbble</a> &{' '}
+            <a style={{backgroundColor: '#F799C3', color: '#000000'}} href="https://www.instagram.com/vapr.media/">Instagram</a>
           </ContactText>
         </Inner>
         <Footer2 style={{color: "#000000"}}>
-          &copy; Feel free to call or text me at 9167157867 💛🖤💛🖤
+          &copy; Feel free to call or text me at (615) 823-0984 💕🖤💕🖤
         </Footer2>
       </Content>
       <Divider speed={0.2} offset={4}>
         <UpDown>
-          <SVG icon="upDown" className={hidden} width={8} fill={colors['grey-darkest']} left="70%" top="20%" />
-          <SVG icon="triangle" width={8} stroke={colors['grey-darkest']} left="25%" top="5%" />
+          <SVG icon="upDown" className={hidden} width={8} fill={colors['grey']} left="70%" top="20%" />
+          <SVG icon="triangle" width={8} stroke={colors['grey']} left="25%" top="5%" />
         </UpDown>
         <UpDownWide>
           <SVG icon="triangle" width={12} stroke={colors.white} left="95%" top="50%" />
           <SVG icon="circle" width={6} fill={colors.white} left="85%" top="15%" />
-          <SVG icon="upDown" className={hidden} width={8} fill={colors['grey-darkest']} left="45%" top="10%" />
+          <SVG icon="upDown" className={hidden} width={8} fill={colors['grey']} left="45%" top="10%" />
         </UpDownWide>
         <SVG icon="circle" width={6} fill={colors.white} left="4%" top="20%" />
-        <SVG icon="circle" width={12} fill={colors['grey-darkest']} left="70%" top="60%" />
-        <SVG icon="box" width={12} fill={colors['grey-darkest']} left="20%" top="30%" />
-        <SVG icon="hexa" width={8} stroke={colors['grey-darkest']} left="80%" top="70%" />
+        <SVG icon="circle" width={12} fill={colors['grey']} left="70%" top="60%" />
+        <SVG icon="box" width={12} fill={colors['grey']} left="20%" top="30%" />
+        <SVG icon="hexa" width={8} stroke={colors['grey']} left="80%" top="70%" />
       </Divider>
         <Footer className="test1"></Footer>
     </Parallax>
