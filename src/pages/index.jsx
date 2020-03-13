@@ -68,7 +68,8 @@ ${tw('w-2/3 justify-center xxl:w-2/3 item-center text-center lg:text-left')};
 
 const BigTitle = styled.h1`
   ${tw('text-5xl lg:text-6xl font-sans-serif text-white mb-6 tracking-wide')};
-  text-shadow: 0 5px 35px rgba(255, 255, 255, 0.15);
+  text-shadow: 0 0px 35px rgba(255,255,255,0.15), -1.2px .91px 0px rgba(10,10,10,0.7)
+}
   margin-top: 400px;
   line-height: 150%;
 
@@ -263,7 +264,7 @@ const Index = () => (
           </BigTitle>
           <Subtitle>
 
-          <Bullet className="bullet" src={rocket} alt="Website Development, freelance designer" />Multi-disciplined UI/UX professional, always learning!<br />
+          <Bullet className="bullet" src={rocket} alt="Website Development, freelance designer" />Multi-disciplined Web and Mobile Developer, always learning!<br />
 
           <Bullet src={rocket} alt="marketing, interactive" />Targeted website and app development.<br />
 
@@ -294,8 +295,8 @@ const Index = () => (
             </ProjectCard>
 
             <ProjectCard className="projectCard2"
-              title="CTA/Sign Up Case Study - 5 concepts to optimize"
-              link="https://www.prideiscalifornia.com/CTA-Sign-up-Case-Study/"
+              title="CTA/Sign Up Case Study"
+              link="https://www.prideiscalifornia.com/CTA-Sign-up-Case-Study1/"
               bg="linear-gradient(to right, #23262B 0%, #5A3847 100%)"
 
             >
@@ -304,13 +305,13 @@ const Index = () => (
             </ProjectCard>
 
             <ProjectCard className="projectCard3"
-              title="Insanity.shop - Wild Personified."
-              link="https://www.insanity.shop/project2"
+              title="Spotify Analyis &amp; Ideas"
+              link="https://www.insanity.shop/spotify-assessment"
               bg="linear-gradient(to right, #23262B 0%, #87546B 100%)"
    
             >
-            Custom desktop first site website targeting niche demographics, and grabbing from 
-            the client's style.
+            Spotify has some great UX and features, but there's some weird things that leave
+             some work to be done.
             </ProjectCard>
 
             <ProjectCard className="projectCard4"
@@ -318,8 +319,8 @@ const Index = () => (
               link="https://www.thefestivalvoice.com/"
               bg="linear-gradient(to right, #23262B 0%, #87546B 100%)"
             >
-            Wordpress/Vue project, TFV is a blog for festivals and music in general. 
-            Uniting a love for data and music.
+            Wordpress/React contracted project, TFV is a company that handles data and fan relations for festivals. 
+            Data + music
             </ProjectCard>
             
           </ProjectsWrapper>
@@ -369,12 +370,12 @@ const Index = () => (
       </Divider>
       <Content speed={0.4} offset={3}>
         <Inner>
-          <Title>About Me</Title>
+          <Title>Jonathan Bry -The Stoic Designer </Title>
           <AboutHero>
             <Avatar src={avatar} alt="John Doe" />
             <AboutSub>
               <strong>
-              <br /><br />“Better to have a short life that is full of what you like doing than a long life spent in a miserable way. And after all, if you do really like what you’re doing, it doesn’t matter what it is—somebody is interested in everything—anything you can be interested in, you will find others who are...” - Alan Watts
+              “Better to have a short life that is full of what you like doing than a long life spent in a miserable way. And after all, if you do really like what you’re doing, it doesn’t matter what it is—somebody is interested in everything—anything you can be interested in, you will find others who are...” - Alan Watts
               </strong>
             </AboutSub>
           </AboutHero>

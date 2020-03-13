@@ -91,9 +91,6 @@ const BigTitle = styled.h1`
   ${tw('text-5xl lg:text-6xl font-sans-serif text-white mb-6 tracking-wide')};
   text-shadow: 0 5px 35px rgba(255, 255, 255, 0.15);
 
-  @media (min-width: 355px) and (max-width: 365px) {
-    margin-top: 3040px !important;
-  }
 `;
 
 const Title = styled.h1`
@@ -214,7 +211,7 @@ const Footer = styled.footer`
   }
 `;
 
-const Babelbark = () => (
+const CtaStudy = () => (
   <React.Fragment>
     <SEO />
     <Parallax pages={5}>
@@ -248,13 +245,13 @@ const Babelbark = () => (
       <Content1 speed={0.4} offset={0}>
         <Hero>
           <BigTitle>
-            CTA Sign Up Case Study
+            CTA Sign Up CRO Strategies
           </BigTitle>
           <Title>
-            <strong>5 Things To Focus On When Optimizing Your CTAs.</strong> <br />
+            <strong>3 Things To Focus On When Optimizing Your CTA's UX, To Boost Conversions.</strong> <br />
           </Title>
           <Subtitle>
-          <Bullet className="bullet" src={rocket} alt="Website Development, freelance designer" />Good UX starts from the moment your customer intracts with your brand.<br />
+          <Bullet className="bullet" src={rocket} alt="Website Development, freelance designer" />Good UX starts from the moment your customer interacts with your brand.<br />
 
           <Bullet src={rocket} alt="marketing, interactive" />How can we focus conversions on the right demographic?<br />
 
@@ -264,30 +261,36 @@ const Babelbark = () => (
           <AboutDesc>
             <strong>Case Study Overview:</strong>
             <br /><br />
-            For this case study, I focused on the use of paid ads on social media, and affiliate websites 
+            For this case study, I focused on the use of CTAs in landing page sign ups.
             <br />
             <br />
-            Sadly UI/UX roles come with heavy NDA's, so I cant reveal much, but lets go over my process, keeping in mind that every project is special and complicated, so this is an overview!
+            This is an overview of certain trends and takeaways for CTA conversion optimization , lets go over my process of: researching a targeted demographic, looking at well curated copy examples and deciding on
+             a voice, and tying that into the whole Call to Action
 
 
             <br />
             <br />
-            <strong>Problem Statement:</strong>
+            <strong>Researching Demographics:</strong>
             <br />
             <br />
-            Healthcare, or in this case, petcare, is notoriously clunky and outdated when it comes to design; this is usually due 
-            to the leadership, HIPA guidelines, or the overall cost when it comes to this field. Thankfully Babelbark is a forward 
-            thinking company that allowed me the artistic freedom to design something that didnt look like it was from 2010. As i was researching and talking to users of the beta, 
-            I quickly realized that the problem statement could be boiled down to a few points: We have to design with all age ranges in mind, and create interactions, notifications, 
-            and content that would inspire people to log on at least weekly. Lastly, with the latest ADA requirements directed towards public facing apps and websites, we had to start 
-            the development with ARIA attributes in mind for blind users, contrast/typography customization rules for the visual impared, and ease of use for anyone that uses our product with less than two hands.
+            You probably have some sort of idea as to what your target demographics are, now you need to realize where they are at in their buying journey, what info will help convert, and what's valuable to them in order for them
+             to give you their email. 
+             <br />
+             1. Segment your data based off of the traffic that brought the user to the site
+             <br />
+             2. Establish key parts of the sign up design, offering, and copy
+             <br />
+             3. Connect the solution you're offering to a customer model, based off of: Age, Traffic Type, Needs, and Career.
+             <br />
+             4. Extract the elements of what was working, the needs you solved, the design, and the overall ad delivery.
             <br /><br />
-            <strong>My Role:</strong>
+            <strong>CTA Design:</strong>
             <br />
             <br />
-            Throughout the process I surveyed current customers to get 3 takeaways across 100 surveys. I developed 15 short, open-ended answer questions that fell within the five take-aways we wanted. From this initial survey I quickly got what I hypothesized; 
-            older users expect a hamburger menu and some help/teaching with navigation, they dont get 3D touch, and they like simple and elegant interfaces. Young people however were across the board for conventions,
-            depending on what apps they use. I researched the top apps of this year, and came back with examples that are normal to each demographic.
+            If you're designing a new concept/style for your sign up landing page, you can tie the information I discussed above, in with reviewing examples of either competition or other websites with interesting and functional designs. Use these design concepts to 
+            formulate something that you think will hold true to the message, branding, and information it's working with.
+            <br />
+            Using a brand style guide? Easy, use the data of past campaigns, and evaluate whether it was a good demographic to target, a good ad delivery combines multimedia value propositions, and industry specific, sleek design.
             <br /><br />
             <strong>The User:</strong>
             <br />
@@ -416,4 +419,4 @@ const Babelbark = () => (
   </React.Fragment>
 );
 
-export default Babelbark;
+export default CtaStudy;
