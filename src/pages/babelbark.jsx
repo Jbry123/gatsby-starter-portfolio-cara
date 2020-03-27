@@ -63,6 +63,58 @@ ${tw('w-2/3 justify-center xxl:w-2/3 item-center text-center lg:text-left')};
 const BigTitle = styled.h1`
   ${tw('text-5xl lg:text-6xl font-sans-serif text-white mb-6 tracking-wide')};
   text-shadow: 0 5px 35px rgba(255, 255, 255, 0.15);
+
+  @media only screen 
+  and (max-width : 2880px) 
+  and (max-height : 5120px) {
+  /*  27 inch 4k IMAC Styles here */
+    font-size: 15rem;
+}
+
+@media only screen 
+   and (max-width : 2304px) 
+   and (max-height : 4096px) {
+   /* 21 inch 4k IMAC Styles here */
+}
+
+@media only screen 
+   and (max-width : 1080px) 
+   and (max-height : 1920px) {
+   /* 21 inch IMAC Styles here */
+}
+
+@media only screen 
+   and (max-width : 1800px) 
+   and (max-height : 2880px) {
+   /* 15 inch macbook pro retina Styles here */
+}
+
+@media only screen 
+   and (max-width : 1600px) 
+   and (max-height : 2560px) {
+   /* 13 inch macbook pro retina Styles here */
+}
+
+@media only screen 
+   and (max-width : 800px) 
+   and (max-height : 1280px) {
+   /* 15 inch macbook pro low res Styles here */
+}
+
+@media only screen 
+   and (max-width : 1280px) 
+   and (max-height : 720px) {
+   /* Microsoft surface pro Styles here */
+   font-size: 3rem !important;
+}
+
+@media only screen 
+   and (max-width : 2736px) 
+   and (max-height : 1824px) {
+   /* Microsoft surface pro4 Styles here */
+}
+
+
 `;
 
 const Title = styled.h1`
@@ -79,6 +131,13 @@ const Title = styled.h1`
     left: -60px;
     top: 5px;
   }
+
+  @media only screen 
+  and (max-width : 2880px) 
+  and (max-height : 5120px) {
+  /*  27 inch 4k IMAC Styles here */
+    font-size: 10rem;
+}
 `;
 
 const Button1= styled.button`
@@ -110,6 +169,12 @@ const Subtitle = styled.p`
     width: 285px;
   }
 
+  @media only screen 
+  and (max-width : 2880px) 
+  and (max-height : 5120px) {
+  /*  27 inch 4k IMAC Styles here */
+    font-size: 7rem;
+}
 `;
 
 const ProjectsWrapper = styled.div`
@@ -199,7 +264,7 @@ const Babelbark = () => (
         <SVG icon="upDown" className={hidden} width={24} fill={'#F799C3'} left="40%" top="80%" />
         <SVG icon="triangle" width={8} stroke={'#F799C3'} left="25%" top="5%" />
         <SVG icon="circle" width={64} fill={colors['grey-darkest']} left="95%" top="5%" />
-        <SVG icon="box" className={hidden} width={64} fill={'#FBD0E3'} left="5%" top="90%" />
+        <SVG icon="box" className={hidden} width={64} fill={'#FBD0E3'} left="-5%" top="90%" />
         <SVG icon="box" width={6} fill={colors['grey']} left="10%" top="10%" />
         <SVG icon="box" width={12} fill={'#F9B4D3'} left="40%" top="30%" />
         <SVG icon="hexa" width={16} stroke={'#F799C3'} left="10%" top="50%" />
@@ -330,7 +395,7 @@ const Babelbark = () => (
           </AboutHero>
         </Inner>
       </Content2>
-      <Divider fill="#23262b" speed={0.2} offset={4}>
+      <Divider fill="#23262b" speed={0.4} offset={4}>
         <WaveWrapper>
           <InnerWave>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 338.05" preserveAspectRatio="none">
@@ -350,10 +415,10 @@ const Babelbark = () => (
         <Inner>
           
         </Inner>
-        <a className="homeIcon" href="https://www.prideiscalifornia.com"><img src={homeicon} style={{position: 'absolute', bottom: '75px', right: '45vw'}} width="50px" height="50px" alt="bob"></img></a>
+        <a className="homeIcon" href="https://www.prideiscalifornia.com"><img src={homeicon} style={{position: 'absolute', bottom: '75px', right: '45vw'}} width="30px" height="30px" alt="bob"></img></a>
 
       </Content>
-      <Divider speed={0.1} offset={4}>
+      <Divider speed={0.4} offset={4}>
         <UpDown>
           <SVG icon="upDown" className={hidden} width={8} fill={colors['grey-darkest']} left="70%" top="20%" />
           <SVG icon="triangle" width={8} stroke={colors['grey-darkest']} left="25%" top="5%" />

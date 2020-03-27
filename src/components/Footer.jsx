@@ -24,8 +24,8 @@ class Footer extends Component {
 
     return (
       <div className="main">
-      <div className="footer">
-        <div className="bubbles">
+      <div className="footer" style={{backgroundColor: '#F799C3'}}>
+        <div className="bubbles" style={{backgroundColor: '#F799C3'}} >
           <div className="bubble" style={{animationDuration: '5.883557047036205s', distance: 8.349255333933286, left: '72.28228395449513%', time: 2.1307487604777244, animationDelay: 3.040572693012255}} ></div>
           <div className="bubble" style={{animationDuration: '2.7627474087426442s', distance: 8.367167407033847, left: '63.139047501290804%', time: 2.0811331206401618, animationDelay: 3.705617773105802}} ></div>
           <div className="bubble" style={{animationDuration: '3.682140886565759s', distance: 6.75020605923084, left: '80.72253972246781%', time: 2.5240173205276695, animationDelay: 3.635034633999563}} ></div>

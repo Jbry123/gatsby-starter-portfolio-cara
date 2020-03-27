@@ -396,9 +396,9 @@ const CtaStudy1 = () => (
         <Inner>
           
         </Inner>
-        <a href="https://www.prideiscalifornia.com"><img src={homeicon} width="50px" height="50px" alt="bob"></img></a>
-          <marquee behavior="scroll" direction="right" scrollamount="6">srednje scroll speed</marquee>
+        <a href="https://www.prideiscalifornia.com"><img src={homeicon} width="50px" height="50px" alt="Click to go to home page and learn about my website development freelance agency"></img></a>
         <Footer>
+          
           
         </Footer>
       </Content>

@@ -71,7 +71,7 @@ const BigTitle = styled.h1`
   text-shadow: 0 0px 35px rgba(255,255,255,0.15), -1.2px .91px 0px rgba(10,10,10,0.7)
 }
   margin-top: 400px;
-  line-height: 150%;
+  line-height: 190%;
 
   @media (min-width: 280px) and (max-width: 800px) {
     font-size: 2.5rem;
@@ -79,8 +79,26 @@ const BigTitle = styled.h1`
   @media (min-width: 801px) and (max-width: 1200px) {
     font-size: 3rem;
   }
-  @media (min-width: 1201px) and (max-width: 5000px) {
-    font-size: 4rem;
+  @media (min-width: 1201px) and (max-width: 1280px) {
+    font-size: 3.8rem;
+    margin-top: 490px !important;
+  }
+  @media (min-width: 1281px) and (max-width: 1440px) {
+    font-size: 3.8rem;
+    margin-top: 490px !important;
+  }
+  @media (min-width: 1441px) and (max-width: 2599px) {
+    font-size: 4rem !important;
+  }
+  @media (min-width: 2600px) and (max-width: 3000px) {
+    font-size: 6rem !important;
+  }
+  @media (min-width: 3001px) and (max-width: 4000px) {
+    font-size: 8rem !important;
+  }
+  @media (min-width: 3001px) and (max-width: 6000px) {
+    font-size: 10rem !important;
+    margin-top: 400px !important;
   }
   
 
@@ -135,11 +153,21 @@ const Subtitle = styled.p`
   @media (min-width: 280px) and (max-width: 800px) {
     font-size: 1.4rem;
   }
-  @media (min-width: 801px) and (max-width: 1200px) {
+  @media (min-width: 801px) and (max-width: 1440px) {
     font-size: 2rem;
   }
-  @media (min-width: 1201px) and (max-width: 5000px) {
-    font-size: 2.7rem;
+  @media (min-width: 1441px) and (max-width: 2599px) {
+    font-size: 3rem !important;
+  }
+  @media (min-width: 2600px) and (max-width: 3000px) {
+    font-size: 3rem !important;
+  }
+  @media (min-width: 3001px) and (max-width: 4000px) {
+    font-size: 4rem !important;
+  }
+  @media (min-width: 3001px) and (max-width: 6000px) {
+    font-size: 5rem !important;
+    margin-top: 400px !important;
   }
 
 `;
@@ -252,7 +280,7 @@ const Index = () => (
         <SVG icon="circle" width={64} fill={colors['grey-darkest']} left="95%" top="5%" />
         <SVG icon="box" className={hidden} width={64} fill={'#FBD0E3'} left="-5%" top="90%" />
         <SVG icon="box" width={6} fill={colors['grey']} left="10%" top="10%" />
-        <SVG icon="box" width={12} fill={'#F9B4D3'} left="40%" top="30%" />
+        {/* <SVG icon="box" width={12} fill={'#F9B4D3'} left="40%" top="30%" /> */}
         <SVG icon="hexa" width={16} stroke={'#F799C3'} left="10%" top="50%" />
         <SVG icon="hexa" width={8} stroke={'#F799C3'} left="80%" top="70%" />
       </Divider>
@@ -260,7 +288,7 @@ const Index = () => (
         <Hero>
           <BigTitle>
             Welcome, I'm<br />Jonathan Bry!
-            <br /> I excel at <mark style={{backgroundColor: '#F799C3'}}>UI/UX research</mark>,<mark style={{backgroundColor: '#e8e8e8'}}><br />development</mark>,<br /> and <mark style={{backgroundColor: '#F799C3'}}>design</mark> on many levels!
+            <br /> I excel at <mark style={{backgroundColor: '#F799C3', textShadow: '0 0px 35px rgba(255,255,255,0.15), -1.2px 0.91px 0px rgba(255,255,255,0.7)'}}>UI/UX research</mark>,<br /><mark style={{backgroundColor: '#e8e8e8',  textShadow: '0 0px 35px rgba(255,255,255,0.15), -1px 1.5px 0px #F799C3'}}>development</mark>,<br /> and <mark style={{backgroundColor: '#F799C3',  textShadow: '0 0px 35px rgba(255,255,255,0.15), -2px 1px 0px rgba(255,255,255,0.7)'}}>design</mark> on many levels!
           </BigTitle>
           <Subtitle>
 
@@ -275,7 +303,7 @@ const Index = () => (
       </Content>
 
       <DividerMiddle
-        bg="linear-gradient(to right, #161719 0%, #161719 20%, #23262B 30%, #F799C3 90%)"
+        bg="linear-gradient(to right, #000 0%, #000 10%, #F799C3 90%)"
         speed={-0.4}
         offset={1.1}
         factor={2}
@@ -290,37 +318,34 @@ const Index = () => (
               bg="linear-gradient(to right, #23262B 0%, #5A3847 100%)"
               style={{boxShadow: "2px -2px 10px #d4145a80, -2px 2px 10px #fbb03b, .5px .5px 1.5px #ffffff30"}}
             >
-            I optimized a petcare app for all user ages, focusing on universal UX concepts;
-            75% Mobile, 25% Website contract.
+            Optimization of a pet-care app for all user demographics, focusing on universal UX concepts.
             </ProjectCard>
 
             <ProjectCard className="projectCard2"
-              title="CTA/Sign Up Case Study"
+              title="Newsletter Sign Up Case Study"
               link="https://www.prideiscalifornia.com/CTA-Sign-up-Case-Study1/"
               bg="linear-gradient(to right, #23262B 0%, #5A3847 100%)"
 
             >
-            CTA/sign up case study, what makes a person convert, more over, the right one?
-            Here's 5 things you can keep a hold of.
+            Newsletter sign up case-study. What makes a user demographic convert? More over, the right one?
             </ProjectCard>
 
             <ProjectCard className="projectCard3"
-              title="Spotify Analyis &amp; Ideas"
-              link="https://www.insanity.shop/spotify-assessment"
+              title="EntryLevel - Job Board Company"
+              link="https://www.entrylevel.io"
               bg="linear-gradient(to right, #23262B 0%, #87546B 100%)"
    
             >
-            Spotify has some great UX and features, but there's some weird things that leave
-             some work to be done.
+            First MVP for the first IP of a company I'm involved with as a UX consultant,
+             totalling 10% equity share.
             </ProjectCard>
 
             <ProjectCard className="projectCard4"
-              title="The Festival Voice"
+              title="Sixity - 3 Year Long Role"
               link="https://www.thefestivalvoice.com/"
               bg="linear-gradient(to right, #23262B 0%, #87546B 100%)"
             >
-            Wordpress/React contracted project, TFV is a company that handles data and fan relations for festivals. 
-            Data + music
+            Wordpress/React stack, E-Commerce, conversion focused efforts, Sixity is an auto parts distributor.
             </ProjectCard>
             
           </ProjectsWrapper>
@@ -352,30 +377,30 @@ const Index = () => (
       <Divider speed={0.1} offset={3}>
         <UpDown>
           <SVG icon="box" className={hidden} width={6} fill={'#E18CB2'} left="50%" top="75%" />
-          <SVG icon="upDown" className={hidden} width={8} fill={colors['grey']} left="70%" top="20%" />
+          <SVG icon="upDown" className={hidden} width={8} fill={'#F799C3'} left="70%" top="20%" />
           <SVG icon="triangle" width={8} stroke={colors['grey']} left="25%" top="5%" />
-          <SVG icon="upDown" className={hidden} width={24} fill={'#87546B'} left="80%" top="80%" />
+          <SVG icon="upDown" className={hidden} width={24} fill={'#F799C3'} left="80%" top="80%" />
         </UpDown>
         <UpDownWide>
           <SVG icon="arrowUp" className={hidden} width={16} fill={'#87546B'} left="5%" top="80%" />
           <SVG icon="triangle" width={12} stroke={'#FBD0E3'} left="95%" top="50%" />
           <SVG icon="circle" width={6} fill={'#FBD0E3'} left="85%" top="15%" />
-          <SVG icon="upDown" className={hidden} width={8} fill={'#E18CB2'} left="45%" top="10%" />
+          <SVG icon="upDown" className={hidden} width={8} fill={'#F9B4D3'} left="45%" top="10%" />
         </UpDownWide>
         <SVG icon="circle" width={6} fill={'#FBD0E3'} left="4%" top="20%" />
         <SVG icon="circle" width={12} fill={colors['grey']} left="70%" top="60%" />
         <SVG icon="box" width={6} fill={'#F9B4D3'} left="10%" top="10%" />
-        <SVG icon="box" width={12} fill={colors['grey']} left="20%" top="30%" />
+        <SVG icon="box" width={12} fill={'#F799C3'} left="20%" top="30%" />
         <SVG icon="hexa" width={8} stroke={'#F9B4D3'} left="80%" top="70%" />
       </Divider>
       <Content speed={0.4} offset={3}>
         <Inner>
-          <Title>Jonathan Bry -The Stoic Designer </Title>
+          <Title>Jonathan Bry </Title>
           <AboutHero>
             <Avatar src={avatar} alt="John Doe" />
             <AboutSub>
               <strong>
-              “Better to have a short life that is full of what you like doing than a long life spent in a miserable way. And after all, if you do really like what you’re doing, it doesn’t matter what it is—somebody is interested in everything—anything you can be interested in, you will find others who are...” - Alan Watts
+              “Better to have a short life that is full of what you like doing than a long life spent in a miserable way. And after all, if you do really like what you’re doing, it doesn’t matter what it is—somebody is interested in everything—anything you can be interested in, you will find others who are...”<br />- <mark style={{backgroundColor: '#e8e8e8', fontWeight: '1000'}}>Alan Watts</mark>
               </strong>
             </AboutSub>
           </AboutHero>
