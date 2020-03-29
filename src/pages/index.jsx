@@ -160,13 +160,13 @@ const Subtitle = styled.p`
     font-size: 3rem !important;
   }
   @media (min-width: 2600px) and (max-width: 3000px) {
-    font-size: 3rem !important;
+    font-size: 5rem !important;
   }
   @media (min-width: 3001px) and (max-width: 4000px) {
-    font-size: 4rem !important;
+    font-size: 6rem !important;
   }
   @media (min-width: 3001px) and (max-width: 6000px) {
-    font-size: 5rem !important;
+    font-size: 7rem !important;
     margin-top: 400px !important;
   }
 

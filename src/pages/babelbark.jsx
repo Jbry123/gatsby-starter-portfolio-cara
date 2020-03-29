@@ -15,8 +15,6 @@ import '../styles/global';
 import rocket from './giphy.gif';
 import homeicon from './homeicon.png';
 import './JonathanBryResume.pdf';
-import perfundoCss from './perfundo.min.css';
-import perfundoJs from './perfundo.min.js';
 
 const Divider = styled(ParallaxLayer)`
   ${tw('absolute w-full h-full')};
@@ -436,14 +434,6 @@ const Babelbark = () => (
       <Footer>
         </Footer>
     </Parallax>
-    <head><link rel="stylesheet" href={perfundoCss} />
-
-<script src={perfundoJs}></script>
-<script>
-  perfundo('.perfundo');
-</script>
-
-</head>
   </React.Fragment>
 
 );
