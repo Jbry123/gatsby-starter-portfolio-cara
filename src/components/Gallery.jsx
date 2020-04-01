@@ -3,7 +3,6 @@ import React from 'react';
 
 import '../../public/bootstrap.min.js';
 import '../../public/bootstrap.min.css';
-import Carousel from 'bootstrap';
 
 
 
