@@ -10,8 +10,8 @@ module.exports = {
   },
   /* Plugins */
   plugins: [
-    'gatsby-plugin-react-helmet',
-    'gatsby-plugin-emotion',
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-emotion`,
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -19,8 +19,8 @@ module.exports = {
         name: 'images',
       },
     },
-    'gatsby-plugin-transformer-sharp',
-    'gatsby-plugin-sharp',
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
