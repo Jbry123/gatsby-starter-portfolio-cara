@@ -70,8 +70,6 @@ ${tw('w-2/3 justify-center xxl:w-2/3 item-center text-center lg:text-left')};
 const BigTitle = styled.h1`
   ${tw('text-5xl lg:text-6xl font-sans-serif text-white mb-6 tracking-wide')};
   text-shadow: 0 5px 35px rgba(255, 255, 255, 0.15);
-  margin-top: 400px;
-  line-height: 150%;
 
   @media (min-width: 280px) and (max-width: 800px) {
     font-size: 2.5rem;
@@ -79,10 +77,24 @@ const BigTitle = styled.h1`
   @media (min-width: 801px) and (max-width: 1200px) {
     font-size: 3rem;
   }
-  @media (min-width: 1201px) and (max-width: 5000px) {
-    font-size: 4rem;
+  @media (min-width: 1201px) and (max-width: 1280px) {
+    font-size: 3.8rem;
   }
-  
+  @media (min-width: 1281px) and (max-width: 1440px) {
+    font-size: 3.8rem;
+  }
+  @media (min-width: 1441px) and (max-width: 2599px) {
+    font-size: 4rem !important;
+  }
+  @media (min-width: 2600px) and (max-width: 3000px) {
+    font-size: 6rem !important;
+  }
+  @media (min-width: 3001px) and (max-width: 4000px) {
+    font-size: 8rem !important;
+  }
+  @media (min-width: 3001px) and (max-width: 6000px) {
+    font-size: 10rem !important;
+  }
 
 `;
 
@@ -94,34 +106,58 @@ const Title = styled.h1`
     width: 40px;
     height: 40px;
     background: url(${triangle});
-    position: absolute;
+    position: inherit;
     background-size: 40px;
     animation: ${rotate} 4s linear infinite;
     left: -60px;
-    top: 105px;
+    top: 5px;
+  }
+
+  @media (min-width: 280px) and (max-width: 800px) {
+    font-size: 2.5rem;
+  }
+  @media (min-width: 801px) and (max-width: 1200px) {
+    font-size: 3rem;
+  }
+  @media (min-width: 1201px) and (max-width: 1280px) {
+    font-size: 3.8rem;
+  }
+  @media (min-width: 1281px) and (max-width: 1440px) {
+    font-size: 3.8rem;
+  }
+  @media (min-width: 1441px) and (max-width: 2599px) {
+    font-size: 4rem !important;
+  }
+  @media (min-width: 2600px) and (max-width: 3000px) {
+    font-size: 6rem !important;
+  }
+  @media (min-width: 3001px) and (max-width: 4000px) {
+    font-size: 8rem !important;
+  }
+  @media (min-width: 3001px) and (max-width: 6000px) {
+    font-size: 8rem !important;
   }
 `;
 
-// const Button1= styled.button`
-// ${tw('font-sans w-full justify-center text-white xxl:w-3/4')};
-// height: 125px;
-// background: linear-gradient(to right, #D4145A 0%, #FBB03B 100%);
-// font-size: 20px;
-// align-content: center;
-// justify-content: center;
-// display: inline-flex;
-// flex-direction: inherent;
-// margin: 0px;
-// border-radius: 15px;
-// border: none;
+const Button1= styled.button`
+${tw('font-sans w-full justify-center text-white xxl:w-3/4')};
+height: 125px;
+background: linear-gradient(to right, #D4145A 0%, #FBB03B 100%);
+font-size: 20px;
+align-content: center;
+justify-content: center;
+display: inline-flex;
+flex-direction: inherent;
+margin: 0px;
+border-radius: 15px;
+border: none;
 
-// `;
+`;
 
 const Subtitle = styled.p`
   ${tw('text-2xl lg:text-4xl font-sans text-white mt-8 xxl:w-3/4')};
-  text-shadow: 0 2px 15px rgba(0, 0, 0, 0.2),
-              -1px 1px 0px rgba(0, 0, 0, 1);
-  width: 500px;
+  text-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+  width: 700px;
   @media (min-width: 531px) and (max-width: 730px) {
     width: 505px;
   }
@@ -131,15 +167,23 @@ const Subtitle = styled.p`
   @media (min-width: 300px) and (max-width: 370px) {
     width: 285px;
   }
-
   @media (min-width: 280px) and (max-width: 800px) {
     font-size: 1.4rem;
   }
-  @media (min-width: 801px) and (max-width: 1200px) {
+  @media (min-width: 801px) and (max-width: 1440px) {
     font-size: 2rem;
   }
-  @media (min-width: 1201px) and (max-width: 5000px) {
-    font-size: 2.7rem;
+  @media (min-width: 1441px) and (max-width: 2599px) {
+    font-size: 3rem !important;
+  }
+  @media (min-width: 2600px) and (max-width: 3000px) {
+    font-size: 5rem !important;
+  }
+  @media (min-width: 3001px) and (max-width: 4000px) {
+    font-size: 6rem !important;
+  }
+  @media (min-width: 4001px) and (max-width: 6000px) {
+    font-size: 7rem !important;
   }
 
 `;
@@ -157,8 +201,6 @@ const ProjectsWrapper = styled.div`
     grid-gap: 2rem;
   }
 `;
-
-
 
 const WaveWrapper = styled.div`
   ${tw('absolute pin-b w-full')};
@@ -183,7 +225,8 @@ const Avatar = styled.img`
 
 const Bullet = styled.img`
 ${tw('rounded-full w-12 shadow-lg')};
-
+  height: 28px;
+  width: 28px;
   margin-top: 5px;
   @media (min-width: 280px) and (max-width: 800px) {
     height: 18px;
@@ -201,12 +244,10 @@ ${tw('rounded-full w-12 shadow-lg')};
 
 const AboutSub = styled.span`
   ${tw('text-white pt-12 lg:pt-0 lg:pl-12 text-2xl lg:text-3xl xl:text-4xl')};
-  text-align: left;
 `;
 
 const AboutDesc = styled.p`
   ${tw('text-white text-lg md:text-xl lg:text-2xl font-sans')};
-  text-align: left;
 `;
 
 const ContactText = styled.p`
@@ -217,13 +258,7 @@ const ContactText = styled.p`
   }
 `;
 
-const Footer2 = styled.footer`
-  ${tw('text-center text-grey absolute pin-b p-6 font-sans text-md lg:text-lg')};
-  a {
-    color: #e07628;
-    text-decoration: none;
-  }
-`;
+
 
 const CtaStudy1 = () => (
   <React.Fragment>
@@ -396,7 +431,7 @@ const CtaStudy1 = () => (
         <Inner>
           
         </Inner>
-        <a href="https://www.prideiscalifornia.com"><img src={homeicon} width="50px" height="50px" alt="Click to go to home page and learn about my website development freelance agency"></img></a>
+        <a className="homeIcon" href="https://www.prideiscalifornia.com"><img src={homeicon} style={{position: 'absolute', bottom: '75px', right: '45vw'}} width="30px" height="30px" alt="bob"></img></a>
         <Footer>
           
           

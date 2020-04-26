@@ -6,6 +6,19 @@ import { width as twWidth } from '../../tailwind';
 
 const Wrapper = styled.svg`
   ${tw('stroke-current absolute')};
+  @media (min-width: 1800px) and (max-width: 2500px) {
+    transform: Scale(1.5);
+  }
+  @media (min-width: 2501px) and (max-width: 3000px) {
+    transform: Scale(1.5);
+  }
+  @media (min-width: 3001px) and (max-width: 4000px) {
+    transform: Scale(2.2);
+  }
+  @media (min-width: 4001px) and (max-width: 6000px) {
+    transform: Scale(2.5);
+
+  }
   color: ${props => props.stroke};
   width: ${props => props.svgWidth};
   fill: ${props => props.fill};

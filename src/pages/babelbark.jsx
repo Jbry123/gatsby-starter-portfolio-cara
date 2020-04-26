@@ -62,56 +62,30 @@ const BigTitle = styled.h1`
   ${tw('text-5xl lg:text-6xl font-sans-serif text-white mb-6 tracking-wide')};
   text-shadow: 0 5px 35px rgba(255, 255, 255, 0.15);
 
-  @media only screen 
-  and (max-width : 2880px) 
-  and (max-height : 5120px) {
-  /*  27 inch 4k IMAC Styles here */
-    font-size: 15rem;
-}
-
-@media only screen 
-   and (max-width : 2304px) 
-   and (max-height : 4096px) {
-   /* 21 inch 4k IMAC Styles here */
-}
-
-@media only screen 
-   and (max-width : 1080px) 
-   and (max-height : 1920px) {
-   /* 21 inch IMAC Styles here */
-}
-
-@media only screen 
-   and (max-width : 1800px) 
-   and (max-height : 2880px) {
-   /* 15 inch macbook pro retina Styles here */
-}
-
-@media only screen 
-   and (max-width : 1600px) 
-   and (max-height : 2560px) {
-   /* 13 inch macbook pro retina Styles here */
-}
-
-@media only screen 
-   and (max-width : 800px) 
-   and (max-height : 1280px) {
-   /* 15 inch macbook pro low res Styles here */
-}
-
-@media only screen 
-   and (max-width : 1280px) 
-   and (max-height : 720px) {
-   /* Microsoft surface pro Styles here */
-   font-size: 3rem !important;
-}
-
-@media only screen 
-   and (max-width : 2736px) 
-   and (max-height : 1824px) {
-   /* Microsoft surface pro4 Styles here */
-}
-
+  @media (min-width: 280px) and (max-width: 800px) {
+    font-size: 2.5rem;
+  }
+  @media (min-width: 801px) and (max-width: 1200px) {
+    font-size: 3rem;
+  }
+  @media (min-width: 1201px) and (max-width: 1280px) {
+    font-size: 3.8rem;
+  }
+  @media (min-width: 1281px) and (max-width: 1440px) {
+    font-size: 3.8rem;
+  }
+  @media (min-width: 1441px) and (max-width: 2599px) {
+    font-size: 4rem !important;
+  }
+  @media (min-width: 2600px) and (max-width: 3000px) {
+    font-size: 6rem !important;
+  }
+  @media (min-width: 3001px) and (max-width: 4000px) {
+    font-size: 8rem !important;
+  }
+  @media (min-width: 3001px) and (max-width: 6000px) {
+    font-size: 10rem !important;
+  }
 
 `;
 
@@ -130,12 +104,30 @@ const Title = styled.h1`
     top: 5px;
   }
 
-  @media only screen 
-  and (max-width : 2880px) 
-  and (max-height : 5120px) {
-  /*  27 inch 4k IMAC Styles here */
-    font-size: 10rem;
-}
+  @media (min-width: 280px) and (max-width: 800px) {
+    font-size: 2.5rem;
+  }
+  @media (min-width: 801px) and (max-width: 1200px) {
+    font-size: 3rem;
+  }
+  @media (min-width: 1201px) and (max-width: 1280px) {
+    font-size: 3.8rem;
+  }
+  @media (min-width: 1281px) and (max-width: 1440px) {
+    font-size: 3.8rem;
+  }
+  @media (min-width: 1441px) and (max-width: 2599px) {
+    font-size: 4rem !important;
+  }
+  @media (min-width: 2600px) and (max-width: 3000px) {
+    font-size: 6rem !important;
+  }
+  @media (min-width: 3001px) and (max-width: 4000px) {
+    font-size: 8rem !important;
+  }
+  @media (min-width: 3001px) and (max-width: 6000px) {
+    font-size: 8rem !important;
+  }
 `;
 
 const Button1= styled.button`
@@ -166,13 +158,25 @@ const Subtitle = styled.p`
   @media (min-width: 300px) and (max-width: 370px) {
     width: 285px;
   }
+  @media (min-width: 280px) and (max-width: 800px) {
+    font-size: 1.4rem;
+  }
+  @media (min-width: 801px) and (max-width: 1440px) {
+    font-size: 2rem;
+  }
+  @media (min-width: 1441px) and (max-width: 2599px) {
+    font-size: 3rem !important;
+  }
+  @media (min-width: 2600px) and (max-width: 3000px) {
+    font-size: 5rem !important;
+  }
+  @media (min-width: 3001px) and (max-width: 4000px) {
+    font-size: 6rem !important;
+  }
+  @media (min-width: 4001px) and (max-width: 6000px) {
+    font-size: 7rem !important;
+  }
 
-  @media only screen 
-  and (max-width : 2880px) 
-  and (max-height : 5120px) {
-  /*  27 inch 4k IMAC Styles here */
-    font-size: 7rem;
-}
 `;
 
 const ProjectsWrapper = styled.div`
@@ -214,9 +218,18 @@ const Bullet = styled.img`
 ${tw('rounded-full w-12 shadow-lg')};
   height: 28px;
   width: 28px;
-  @media (min-width: 290px) and (max-width: 390px){
+  margin-top: 5px;
+  @media (min-width: 280px) and (max-width: 800px) {
     height: 18px;
-    width 18px;
+    width: 18px;
+  }
+  @media (min-width: 801px) and (max-width: 1200px) {
+    height: 25px;
+    width: 25px;
+  }
+  @media (min-width: 1201px) and (max-width: 5000px) {
+    height: 28px;
+    width: 28px;
   }
 `;
 
@@ -226,6 +239,69 @@ const AboutSub = styled.span`
 
 const AboutDesc = styled.p`
   ${tw('text-white text-lg md:text-xl lg:text-2xl font-sans')};
+  p {
+    @media only screen 
+  and (max-width : 5120px)
+  and (min-width : 4150px) {
+    font-size: 4rem;
+}
+
+@media only screen 
+and (max-width : 4149px)
+and (min-width : 4000px) {
+  font-size: 3rem;
+}
+
+@media only screen 
+and (max-width : 3999px)
+and (min-width : 2400px) {
+  font-size: 2.3rem;
+}
+
+@media only screen 
+and (max-width : 2399px)
+and (min-width : 1000px) {
+  font-size: 1.2rem;
+}
+
+
+@media only screen 
+and (max-width : 999px)
+and (min-width : 200px) {
+  font-size: .8rem;
+} 
+  }
+  h2 {
+    @media only screen 
+  and (max-width : 5120px)
+  and (min-width : 4150px) {
+    font-size: 6rem;
+}
+
+@media only screen 
+and (max-width : 4149px)
+and (min-width : 4000px) {
+  font-size: 5rem;
+}
+
+@media only screen 
+and (max-width : 3999px)
+and (min-width : 2400px) {
+  font-size: 3rem;
+}
+
+@media only screen 
+and (max-width : 2399px)
+and (min-width : 1000px) {
+  font-size: 2rem;
+}
+
+@media only screen 
+and (max-width : 999px)
+and (min-width : 200px) {
+  font-size: 1rem;
+}
+  }
 `;
 
 const ContactText = styled.p`
@@ -259,7 +335,6 @@ const Babelbark = () => (
         <SVG icon="circle" width={6} fill={colors['grey']} left="4%" top="20%" />
         <SVG icon="circle" width={12} fill={colors['grey-darkest']} left="50%" top="60%" />
         <SVG icon="upDown" width={8} fill={colors['grey']} left="95%" top="90%" />
-        <SVG icon="upDown" className={hidden} width={24} fill={'#F799C3'} left="40%" top="80%" />
         <SVG icon="triangle" width={8} stroke={'#F799C3'} left="25%" top="5%" />
         <SVG icon="circle" width={64} fill={colors['grey-darkest']} left="95%" top="5%" />
         <SVG icon="box" className={hidden} width={64} fill={'#FBD0E3'} left="-5%" top="90%" />

@@ -408,6 +408,17 @@ injectGlobal`
 
 
   body .footer {
+
+    @media (min-width: 2000px) and (max-width: 3000px) {
+      transform: Scale(2);
+    }
+    @media (min-width: 3001px) and (max-width: 4000px) {
+      transform: Scale(3);
+    }
+    @media (min-width: 4001px) and (max-width: 6000px) {
+      transform: Scale(4);
+  
+    }
     z-index: 1;
     display: grid;
     position: absolute;

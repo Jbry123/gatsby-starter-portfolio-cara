@@ -48,7 +48,8 @@ const Divider = styled(ParallaxLayer)`
 
 const DividerMiddle = styled(Divider)`
   clip-path: polygon(0 15%, 100% 25%, 100% 85%, 0 75%);
-`;
+
+  `;
 
 const Content = styled(ParallaxLayer)`
   ${tw('p-6 md:p-12 lg:p-24 justify-center items-center flex z-50')};
@@ -81,11 +82,9 @@ const BigTitle = styled.h1`
   }
   @media (min-width: 1201px) and (max-width: 1280px) {
     font-size: 3.8rem;
-    margin-top: 490px !important;
   }
   @media (min-width: 1281px) and (max-width: 1440px) {
     font-size: 3.8rem;
-    margin-top: 490px !important;
   }
   @media (min-width: 1441px) and (max-width: 2599px) {
     font-size: 4rem !important;
@@ -98,14 +97,13 @@ const BigTitle = styled.h1`
   }
   @media (min-width: 3001px) and (max-width: 6000px) {
     font-size: 10rem !important;
-    margin-top: 400px !important;
   }
   
 
 `;
 
 const Title = styled.h1`
-  ${tw('text-4xl lg:text-4xl font-serif text-white mb-8 tracking-wide relative inline-block')};
+  ${tw('font-serif text-white mb-8 tracking-wide relative inline-block')};
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   &:before {
     content: '';
@@ -118,6 +116,31 @@ const Title = styled.h1`
     left: -60px;
     top: 105px;
   }
+      @media (min-width: 280px) and (max-width: 800px) {
+    font-size: 2.5rem;
+  }
+  @media (min-width: 801px) and (max-width: 1200px) {
+    font-size: 3rem;
+  }
+  @media (min-width: 1201px) and (max-width: 1280px) {
+    font-size: 3.8rem;
+  }
+  @media (min-width: 1281px) and (max-width: 1440px) {
+    font-size: 3.8rem;
+  }
+  @media (min-width: 1441px) and (max-width: 2599px) {
+    font-size: 4rem !important;
+  }
+  @media (min-width: 2600px) and (max-width: 3000px) {
+    font-size: 6rem !important;
+  }
+  @media (min-width: 3001px) and (max-width: 4000px) {
+    font-size: 8rem !important;
+  }
+  @media (min-width: 3001px) and (max-width: 6000px) {
+    font-size: 8rem !important;
+  }
+  
 `;
 
 // const Button1= styled.button`
@@ -165,9 +188,8 @@ const Subtitle = styled.p`
   @media (min-width: 3001px) and (max-width: 4000px) {
     font-size: 6rem !important;
   }
-  @media (min-width: 3001px) and (max-width: 6000px) {
+  @media (min-width: 4001px) and (max-width: 6000px) {
     font-size: 7rem !important;
-    margin-top: 400px !important;
   }
 
 `;
@@ -207,29 +229,101 @@ const AboutHero = styled.div`
 
 const Avatar = styled.img`
   ${tw('rounded-full w-32 xl:w-48 shadow-lg h-auto')};
+  @media (min-width: 280px) and (max-width: 800px) {
+    width: 10rem !important;
+    height: 10rem !important;
+  }
+  @media (min-width: 801px) and (max-width: 1200px) {
+    width: 10rem !important;
+    height: 10rem !important;
+  }
+  @media (min-width: 1201px) and (max-width: 1280px) {
+    width: 14rem !important;
+    height: 14rem !important;
+  }
+  @media (min-width: 1281px) and (max-width: 1440px) {
+    width: 14rem !important;
+    height: 14rem !important;
+  }
+  @media (min-width: 1441px) and (max-width: 2599px) {
+    width: 14rem !important;
+    height: 14rem !important;
+  }
+  @media (min-width: 2600px) and (max-width: 3000px) {
+    width: 22rem !important;
+    height: 22rem !important;
+  }
+  @media (min-width: 3001px) and (max-width: 4000px) {
+    width: 26rem !important;
+    height: 26rem !important;
+  }
+  @media (min-width: 4001px) and (max-width: 6000px) {
+    width: 30rem !important;
+    height: 30rem !important;
+  }
 `;
 
 const Bullet = styled.img`
 ${tw('rounded-full w-12 shadow-lg')};
 
   margin-top: 5px;
+
   @media (min-width: 280px) and (max-width: 800px) {
-    height: 18px;
-    width: 18px;
+    height: 1.4rem;
+    width: auto;
   }
-  @media (min-width: 801px) and (max-width: 1200px) {
-    height: 25px;
-    width: 25px;
+  @media (min-width: 801px) and (max-width: 1440px) {
+    height: 2rem;
+    width: auto;
   }
-  @media (min-width: 1201px) and (max-width: 5000px) {
-    height: 28px;
-    width: 28px;
+  @media (min-width: 1441px) and (max-width: 2599px) {
+    height: 3rem !important;
+    width: auto;
+  }
+  @media (min-width: 2600px) and (max-width: 3000px) {
+    height: 5rem !important;
+    width: auto;
+  }
+  @media (min-width: 3001px) and (max-width: 4000px) {
+    height: 6rem !important;
+    width: auto;
+  }
+  @media (min-width: 4001px) and (max-width: 6000px) {
+    height: 7rem !important;
+    width: auto;
   }
 `;
 
 const AboutSub = styled.span`
   ${tw('text-white pt-12 lg:pt-0 lg:pl-12 text-2xl lg:text-3xl xl:text-4xl')};
   text-align: left;
+  @media (min-width: 280px) and (max-width: 800px) {
+    font-size: 2rem;
+  }
+  @media (min-width: 801px) and (max-width: 1200px) {
+    font-size: 2.5rem;
+  }
+  @media (min-width: 1201px) and (max-width: 1280px) {
+    font-size: 3rem;
+
+  }
+  @media (min-width: 1281px) and (max-width: 1440px) {
+    font-size: 3rem;
+
+  }
+  @media (min-width: 1441px) and (max-width: 2599px) {
+    font-size: 3rem !important;
+  }
+  @media (min-width: 2600px) and (max-width: 3000px) {
+    font-size: 5rem !important;
+  }
+  @media (min-width: 3001px) and (max-width: 4000px) {
+    font-size: 6rem !important;
+  }
+  @media (min-width: 3001px) and (max-width: 6000px) {
+    font-size: 6rem !important;
+
+  }
 `;
 
 const AboutDesc = styled.p`
@@ -243,6 +337,33 @@ const ContactText = styled.p`
     color: #e07628;
     text-decoration: none;
   }
+  @media (min-width: 280px) and (max-width: 800px) {
+    font-size: 1.2rem;
+  }
+  @media (min-width: 801px) and (max-width: 1200px) {
+    font-size: 2.5rem;
+  }
+  @media (min-width: 1201px) and (max-width: 1280px) {
+    font-size: 3rem;
+
+  }
+  @media (min-width: 1281px) and (max-width: 1440px) {
+    font-size: 3rem;
+
+  }
+  @media (min-width: 1441px) and (max-width: 2599px) {
+    font-size: 3rem !important;
+  }
+  @media (min-width: 2600px) and (max-width: 3000px) {
+    font-size: 5rem !important;
+  }
+  @media (min-width: 3001px) and (max-width: 4000px) {
+    font-size: 6rem !important;
+  }
+  @media (min-width: 3001px) and (max-width: 6000px) {
+    font-size: 6rem !important;
+
+  }
 `;
 
 const Footer2 = styled.footer`
@@ -251,13 +372,27 @@ const Footer2 = styled.footer`
     color: #e07628;
     text-decoration: none;
   }
+
+  @media (min-width: 1441px) and (max-width: 2599px) {
+    font-size: 2.5rem !important;
+  }
+  @media (min-width: 2600px) and (max-width: 3000px) {
+    font-size: 2.5rem !important;
+  }
+  @media (min-width: 3001px) and (max-width: 4000px) {
+    font-size: 3.5rem !important;
+  }
+  @media (min-width: 3001px) and (max-width: 6000px) {
+    font-size: 4.2rem !important;
+
+  }
 `;
 
 const Index = () => (
   <React.Fragment>
     <SEO />
     <Parallax pages={5}>
-      <Divider speed={0.2} offset={0}>
+      <Divider speed={0.4} offset={0}>
         <UpDown>
           <SVG icon="triangle" className={hidden} width={48} stroke={'#87546B'} left="10%" top="20%" />
           <SVG icon="hexa" width={48} stroke={'#87546B'} left="60%" top="70%" />
@@ -303,7 +438,7 @@ const Index = () => (
       </Content>
 
       <DividerMiddle
-        bg="linear-gradient(to right, #000 0%, #000 10%, #F799C3 90%)"
+        bg="linear-gradient(to right, #000 0%, #000 10%, #F799C3 90%), url(piano-man.svg)"
         speed={-0.4}
         offset={1.1}
         factor={2}
@@ -351,7 +486,7 @@ const Index = () => (
           </ProjectsWrapper>
         </Inner>
       </Content>
-      <Divider speed={0.1} offset={1} factor={2}>
+      <Divider speed={0.4} offset={1} factor={2}>
         <UpDown>
           <SVG icon="box" width={6} fill={'#FBD0E3'} left="85%" top="75%" />
           <SVG icon="upDown" width={8} fill={'#87546B'} left="70%" top="20%" />
@@ -373,8 +508,8 @@ const Index = () => (
         <SVG icon="hexa" width={16} stroke={'#E18CB2'} left="75%" top="30%" />
         <SVG icon="hexa" width={8} stroke={'#F9B4D3'} left="80%" top="70%" />
       </Divider>
-      <Divider bg="#23262b" clipPath="polygon(0 16%, 100% 4%, 100% 82%, 0 94%)" speed={0.2} offset={3} />
-      <Divider speed={0.1} offset={3}>
+      <Divider bg="#23262b" clipPath="polygon(0 16%, 100% 4%, 100% 82%, 0 94%)" speed={0.4} offset={3} />
+      <Divider speed={0.4} offset={3}>
         <UpDown>
           <SVG icon="box" className={hidden} width={6} fill={'#E18CB2'} left="50%" top="75%" />
           <SVG icon="upDown" className={hidden} width={8} fill={'#F799C3'} left="70%" top="20%" />
@@ -417,7 +552,7 @@ const Index = () => (
           </InnerCenter>
         </Inner>
       </Content>
-      <Divider fill="#23262b" speed={0.2} offset={4}>
+      <Divider fill="#23262b" speed={0.4} offset={4}>
         <WaveWrapper>
           <InnerWave>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 338.05" preserveAspectRatio="none">
@@ -443,10 +578,10 @@ const Index = () => (
           </ContactText>
         </Inner>
         <Footer2 style={{color: "#000000"}}>
-          &copy; Feel free to call or text me at (615) 823-0984 💕🖤💕🖤
+         Jonathan Bry &copy; 2020 💕🖤💕🖤
         </Footer2>
       </Content>
-      <Divider speed={0.2} offset={4}>
+      <Divider speed={0.4} offset={4}>
         <UpDown>
           <SVG icon="upDown" className={hidden} width={8} fill={colors['grey']} left="70%" top="20%" />
           <SVG icon="triangle" width={8} stroke={colors['grey']} left="25%" top="5%" />
