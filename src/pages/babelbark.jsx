@@ -12,7 +12,7 @@ import { hidden } from '../styles/utils';
 import { colors } from '../../tailwind';
 import triangle from '../images/triangle.svg';
 import '../styles/global';
-import rocket from './giphy.gif';
+import rocket from './vaprGif2.webp';
 import homeicon from './homeicon.png';
 import './JonathanBryResume.pdf';
 
@@ -70,21 +70,38 @@ const BigTitle = styled.h1`
   }
   @media (min-width: 1201px) and (max-width: 1280px) {
     font-size: 3.8rem;
+    margin-top: 357px;
   }
   @media (min-width: 1281px) and (max-width: 1440px) {
     font-size: 3.8rem;
   }
-  @media (min-width: 1441px) and (max-width: 2599px) {
+  @media (min-width: 1441px) and (max-width: 1899px) {
     font-size: 4rem !important;
+    margin-top: 430px;
   }
-  @media (min-width: 2600px) and (max-width: 3000px) {
+  @media (min-width: 1900px) and (max-width: 2599px) {
+    font-size: 4rem !important;
+    margin-top: -1100px;
+  }
+  @media (min-width: 2600px) and (max-width: 2720px) {
     font-size: 6rem !important;
+    margin-top: -1700px;
   }
-  @media (min-width: 3001px) and (max-width: 4000px) {
+  @media (min-width: 2721px) and (max-width: 2740px) {
+    font-size: 6rem !important;
+    margin-top: -500px;
+  } 
+  @media (min-width: 2741px) and (max-width: 3200px) {
+    font-size: 6rem !important;
+    margin-top: -1700px;
+  }
+  @media (min-width: 3201px) and (max-width: 4000px) {
     font-size: 8rem !important;
+    margin-top: -1700px;
   }
-  @media (min-width: 3001px) and (max-width: 6000px) {
+  @media (min-width: 4001px) and (max-width: 6000px) {
     font-size: 10rem !important;
+    margin-top: -1680px;
   }
 
 `;
@@ -216,21 +233,33 @@ const Avatar = styled.img`
 
 const Bullet = styled.img`
 ${tw('rounded-full w-12 shadow-lg')};
-  height: 28px;
-  width: 28px;
-  margin-top: 5px;
-  @media (min-width: 280px) and (max-width: 800px) {
-    height: 18px;
-    width: 18px;
-  }
-  @media (min-width: 801px) and (max-width: 1200px) {
-    height: 25px;
-    width: 25px;
-  }
-  @media (min-width: 1201px) and (max-width: 5000px) {
-    height: 28px;
-    width: 28px;
-  }
+margin-top: -5px;
+margin-right: 1vw;
+
+@media (min-width: 280px) and (max-width: 800px) {
+  height: 1.4rem;
+  width: auto;
+}
+@media (min-width: 801px) and (max-width: 1440px) {
+  height: 2rem;
+  width: auto;
+}
+@media (min-width: 1441px) and (max-width: 2599px) {
+  height: 3rem !important;
+  width: auto;
+}
+@media (min-width: 2600px) and (max-width: 3000px) {
+  height: 5rem !important;
+  width: auto;
+}
+@media (min-width: 3001px) and (max-width: 4000px) {
+  height: 6rem !important;
+  width: auto;
+}
+@media (min-width: 4001px) and (max-width: 6000px) {
+  height: 7rem !important;
+  width: auto;
+}
 `;
 
 const AboutSub = styled.span`
@@ -318,8 +347,8 @@ const Babelbark = () => (
     <SEO />
     <Parallax pages={5}>
       <Divider speed={0.2} offset={0}>
-        <UpDown>
-        <SVG icon="triangle" className={hidden} width={48} stroke={'#87546B'} left="10%" top="20%" />
+      <UpDown>
+          <SVG icon="triangle" className={hidden} width={48} stroke={'#87546B'} left="10%" top="20%" />
           <SVG icon="hexa" width={48} stroke={'#87546B'} left="60%" top="70%" />
           <SVG icon="box" width={6} fill={'#F799C3'} left="60%" top="15%" />
         </UpDown>
@@ -327,30 +356,25 @@ const Babelbark = () => (
           <SVG icon="arrowUp" className={hidden} width={16} fill={'#E18CB2'} left="80%" top="10%" />
           <SVG icon="triangle" width={12} stroke={'#F9B4D3'} left="90%" top="50%" />
           <SVG icon="circle" width={16} fill={colors['grey']} left="70%" top="90%" />
-          <SVG icon="triangle" width={16} stroke={'#E18CB2'} left="30%" top="65%" />
           <SVG icon="circle" width={6} fill={colors['grey-darkest']} left="75%" top="10%" />
           <SVG icon="upDown" className={hidden} width={8} fill={colors['grey']} left="45%" top="10%" />
         </UpDownWide>
         <SVG icon="circle" className={hidden} width={24} fill={colors['grey']} left="5%" top="70%" />
         <SVG icon="circle" width={6} fill={colors['grey']} left="4%" top="20%" />
-        <SVG icon="circle" width={12} fill={colors['grey-darkest']} left="50%" top="60%" />
         <SVG icon="upDown" width={8} fill={colors['grey']} left="95%" top="90%" />
         <SVG icon="triangle" width={8} stroke={'#F799C3'} left="25%" top="5%" />
         <SVG icon="circle" width={64} fill={colors['grey-darkest']} left="95%" top="5%" />
         <SVG icon="box" className={hidden} width={64} fill={'#FBD0E3'} left="-5%" top="90%" />
         <SVG icon="box" width={6} fill={colors['grey']} left="10%" top="10%" />
-        <SVG icon="box" width={12} fill={'#F9B4D3'} left="40%" top="30%" />
         <SVG icon="hexa" width={16} stroke={'#F799C3'} left="10%" top="50%" />
         <SVG icon="hexa" width={8} stroke={'#F799C3'} left="80%" top="70%" />
       </Divider>
       <Content1 speed={0.4} offset={0}>
         <Hero >
           <BigTitle>
-            BabelBark - Petcare Reimagined
+            BabelBark - Petcare Reimagined <br />
+            Questions: <br />
           </BigTitle>
-          <Title>
-            <strong>Questions:</strong> <br />
-          </Title>
           <Subtitle className="subtitles">
           <Bullet className="bullet" src={rocket} alt="Website Development, freelance designer" />How can users better connect with their Vets?<br />
 
@@ -488,7 +512,7 @@ const Babelbark = () => (
         <Inner>
           
         </Inner>
-        <a className="homeIcon" href="https://www.prideiscalifornia.com"><img src={homeicon} style={{position: 'absolute', bottom: '75px', right: '45vw'}} width="30px" height="30px" alt="bob"></img></a>
+        <a className="homeIcon" href="https://www.prideiscalifornia.com"><img src={homeicon} style={{position: 'fixed', bottom: '70px', right: '90vw', borderRadius: '20px', maxWidth: '120px', maxHeight: '120px', minWidth: '40px', minHeight: '40px',}} width="3vw" height="3vw" alt="bob"></img></a>
 
       </Content>
       <Divider speed={0.4} offset={4}>

@@ -3,7 +3,8 @@ import React from 'react';
 import Babelbark from '../images/babelbark.jpg';
 import Babelbark2 from '../images/babelbark2.jpg';
 import Babelbark3 from '../images/babelbark3.jpg';
-
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/js/bootstrap.js';
 
 
 const Gallery = () => (
@@ -11,7 +12,7 @@ const Gallery = () => (
   <div className="gallery-container">
 
 
-<div style={{height: '50vh', width:'60vw', minWidth: '327px'}} id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+<div style={{marginBottom: '75px', height: '50vh', width:'60vw', minWidth: '327px'}} id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>

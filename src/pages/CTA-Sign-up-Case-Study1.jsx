@@ -38,6 +38,54 @@ import homeicon from './homeicon.png';
 //JQUERY EDITS END
 
 
+
+const BigTitle = styled.h1`
+  ${tw('text-5xl lg:text-6xl font-sans-serif text-white mb-6 tracking-wide')};
+  text-shadow: 0 5px 35px rgba(255, 255, 255, 0.15);
+  @media (min-width: 280px) and (max-width: 800px) {
+    font-size: 2.5rem;
+  }
+  @media (min-width: 801px) and (max-width: 1200px) {
+    font-size: 3rem;
+  }
+  @media (min-width: 1201px) and (max-width: 1280px) {
+    font-size: 3.8rem;
+    margin-top: 357px;
+  }
+  @media (min-width: 1281px) and (max-width: 1440px) {
+    font-size: 3.8rem;
+  }
+  @media (min-width: 1441px) and (max-width: 1899px) {
+    font-size: 4rem !important;
+    margin-top: 430px;
+  }
+  @media (min-width: 1900px) and (max-width: 2599px) {
+    font-size: 4rem !important;
+    margin-top: -1100px;
+  }
+  @media (min-width: 2600px) and (max-width: 2720px) {
+    font-size: 6rem !important;
+    margin-top: -1700px;
+  }
+  @media (min-width: 2721px) and (max-width: 2740px) {
+    font-size: 6rem !important;
+    margin-top: -500px;
+  } 
+  @media (min-width: 2741px) and (max-width: 3200px) {
+    font-size: 6rem !important;
+    margin-top: -1700px;
+  }
+  @media (min-width: 3201px) and (max-width: 4000px) {
+    font-size: 8rem !important;
+    margin-top: -1700px;
+  }
+  @media (min-width: 4001px) and (max-width: 6000px) {
+    font-size: 10rem !important;
+    margin-top: -1680px;
+  }
+
+`;
+
 const Divider = styled(ParallaxLayer)`
   ${tw('absolute w-full h-full')};
   background: ${props => props.bg};
@@ -49,7 +97,8 @@ const Divider = styled(ParallaxLayer)`
 
 const DividerMiddle = styled(Divider)`
   clip-path: polygon(0 15%, 100% 25%, 100% 85%, 0 75%);
-`;
+
+  `;
 
 const Content = styled(ParallaxLayer)`
   ${tw('p-6 md:p-12 lg:p-24 justify-center items-center flex z-50')};
@@ -67,53 +116,21 @@ const InnerCenter = styled.div`
 ${tw('w-2/3 justify-center xxl:w-2/3 item-center text-center lg:text-left')};
 `;
 
-const BigTitle = styled.h1`
-  ${tw('text-5xl lg:text-6xl font-sans-serif text-white mb-6 tracking-wide')};
-  text-shadow: 0 5px 35px rgba(255, 255, 255, 0.15);
-
-  @media (min-width: 280px) and (max-width: 800px) {
-    font-size: 2.5rem;
-  }
-  @media (min-width: 801px) and (max-width: 1200px) {
-    font-size: 3rem;
-  }
-  @media (min-width: 1201px) and (max-width: 1280px) {
-    font-size: 3.8rem;
-  }
-  @media (min-width: 1281px) and (max-width: 1440px) {
-    font-size: 3.8rem;
-  }
-  @media (min-width: 1441px) and (max-width: 2599px) {
-    font-size: 4rem !important;
-  }
-  @media (min-width: 2600px) and (max-width: 3000px) {
-    font-size: 6rem !important;
-  }
-  @media (min-width: 3001px) and (max-width: 4000px) {
-    font-size: 8rem !important;
-  }
-  @media (min-width: 3001px) and (max-width: 6000px) {
-    font-size: 10rem !important;
-  }
-
-`;
-
 const Title = styled.h1`
-  ${tw('text-4xl lg:text-4xl font-serif text-white mb-8 tracking-wide relative inline-block')};
+  ${tw('font-serif text-white mb-8 tracking-wide relative inline-block')};
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   &:before {
     content: '';
     width: 40px;
     height: 40px;
     background: url(${triangle});
-    position: inherit;
+    position: absolute;
     background-size: 40px;
     animation: ${rotate} 4s linear infinite;
     left: -60px;
-    top: 5px;
+    top: 105px;
   }
-
-  @media (min-width: 280px) and (max-width: 800px) {
+      @media (min-width: 280px) and (max-width: 800px) {
     font-size: 2.5rem;
   }
   @media (min-width: 801px) and (max-width: 1200px) {
@@ -137,27 +154,29 @@ const Title = styled.h1`
   @media (min-width: 3001px) and (max-width: 6000px) {
     font-size: 8rem !important;
   }
+  
 `;
 
-const Button1= styled.button`
-${tw('font-sans w-full justify-center text-white xxl:w-3/4')};
-height: 125px;
-background: linear-gradient(to right, #D4145A 0%, #FBB03B 100%);
-font-size: 20px;
-align-content: center;
-justify-content: center;
-display: inline-flex;
-flex-direction: inherent;
-margin: 0px;
-border-radius: 15px;
-border: none;
+// const Button1= styled.button`
+// ${tw('font-sans w-full justify-center text-white xxl:w-3/4')};
+// height: 125px;
+// background: linear-gradient(to right, #D4145A 0%, #FBB03B 100%);
+// font-size: 20px;
+// align-content: center;
+// justify-content: center;
+// display: inline-flex;
+// flex-direction: inherent;
+// margin: 0px;
+// border-radius: 15px;
+// border: none;
 
-`;
+// `;
 
 const Subtitle = styled.p`
   ${tw('text-2xl lg:text-4xl font-sans text-white mt-8 xxl:w-3/4')};
-  text-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
-  width: 700px;
+  text-shadow: 0 2px 15px rgba(0, 0, 0, 0.2),
+              -1px 1px 0px rgba(0, 0, 0, 1);
+  width: 500px;
   @media (min-width: 531px) and (max-width: 730px) {
     width: 505px;
   }
@@ -167,6 +186,7 @@ const Subtitle = styled.p`
   @media (min-width: 300px) and (max-width: 370px) {
     width: 285px;
   }
+
   @media (min-width: 280px) and (max-width: 800px) {
     font-size: 1.4rem;
   }
@@ -202,6 +222,8 @@ const ProjectsWrapper = styled.div`
   }
 `;
 
+
+
 const WaveWrapper = styled.div`
   ${tw('absolute pin-b w-full')};
   transform: matrix(1, 0, 0, -1, 0, 0);
@@ -221,33 +243,172 @@ const AboutHero = styled.div`
 
 const Avatar = styled.img`
   ${tw('rounded-full w-32 xl:w-48 shadow-lg h-auto')};
+  @media (min-width: 280px) and (max-width: 800px) {
+    width: 10rem !important;
+    height: 10rem !important;
+  }
+  @media (min-width: 801px) and (max-width: 1200px) {
+    width: 10rem !important;
+    height: 10rem !important;
+  }
+  @media (min-width: 1201px) and (max-width: 1280px) {
+    width: 14rem !important;
+    height: 14rem !important;
+  }
+  @media (min-width: 1281px) and (max-width: 1440px) {
+    width: 14rem !important;
+    height: 14rem !important;
+  }
+  @media (min-width: 1441px) and (max-width: 2599px) {
+    width: 14rem !important;
+    height: 14rem !important;
+  }
+  @media (min-width: 2600px) and (max-width: 3000px) {
+    width: 22rem !important;
+    height: 22rem !important;
+  }
+  @media (min-width: 3001px) and (max-width: 4000px) {
+    width: 26rem !important;
+    height: 26rem !important;
+  }
+  @media (min-width: 4001px) and (max-width: 6000px) {
+    width: 30rem !important;
+    height: 30rem !important;
+  }
 `;
 
 const Bullet = styled.img`
 ${tw('rounded-full w-12 shadow-lg')};
-  height: 28px;
-  width: 28px;
+
   margin-top: 5px;
+
   @media (min-width: 280px) and (max-width: 800px) {
-    height: 18px;
-    width: 18px;
+    height: 1.4rem;
+    width: auto;
   }
-  @media (min-width: 801px) and (max-width: 1200px) {
-    height: 25px;
-    width: 25px;
+  @media (min-width: 801px) and (max-width: 1440px) {
+    height: 2rem;
+    width: auto;
   }
-  @media (min-width: 1201px) and (max-width: 5000px) {
-    height: 28px;
-    width: 28px;
+  @media (min-width: 1441px) and (max-width: 2599px) {
+    height: 3rem !important;
+    width: auto;
+  }
+  @media (min-width: 2600px) and (max-width: 3000px) {
+    height: 5rem !important;
+    width: auto;
+  }
+  @media (min-width: 3001px) and (max-width: 4000px) {
+    height: 6rem !important;
+    width: auto;
+  }
+  @media (min-width: 4001px) and (max-width: 6000px) {
+    height: 7rem !important;
+    width: auto;
   }
 `;
 
 const AboutSub = styled.span`
   ${tw('text-white pt-12 lg:pt-0 lg:pl-12 text-2xl lg:text-3xl xl:text-4xl')};
+  text-align: left;
+  @media (min-width: 280px) and (max-width: 800px) {
+    font-size: 2rem;
+  }
+  @media (min-width: 801px) and (max-width: 1200px) {
+    font-size: 2.5rem;
+  }
+  @media (min-width: 1201px) and (max-width: 1280px) {
+    font-size: 3rem;
+
+  }
+  @media (min-width: 1281px) and (max-width: 1440px) {
+    font-size: 3rem;
+
+  }
+  @media (min-width: 1441px) and (max-width: 2599px) {
+    font-size: 3rem !important;
+  }
+  @media (min-width: 2600px) and (max-width: 3000px) {
+    font-size: 5rem !important;
+  }
+  @media (min-width: 3001px) and (max-width: 4000px) {
+    font-size: 6rem !important;
+  }
+  @media (min-width: 3001px) and (max-width: 6000px) {
+    font-size: 6rem !important;
+
+  }
 `;
 
 const AboutDesc = styled.p`
   ${tw('text-white text-lg md:text-xl lg:text-2xl font-sans')};
+  text-align: left;
+
+
+    @media only screen 
+  and (max-width : 5120px)
+  and (min-width : 4150px) {
+    font-size: 4rem;
+}
+
+@media only screen 
+and (max-width : 4149px)
+and (min-width : 4000px) {
+  font-size: 3rem;
+}
+
+@media only screen 
+and (max-width : 3999px)
+and (min-width : 2400px) {
+  font-size: 2.3rem;
+}
+
+@media only screen 
+and (max-width : 2399px)
+and (min-width : 1000px) {
+  font-size: 1.2rem;
+}
+
+
+@media only screen 
+and (max-width : 999px)
+and (min-width : 200px) {
+  font-size: .8rem;
+} 
+
+  strong {
+
+
+    @media only screen 
+  and (max-width : 5120px)
+  and (min-width : 4150px) {
+    font-size: 6rem;
+}
+
+@media only screen 
+and (max-width : 4149px)
+and (min-width : 4000px) {
+  font-size: 5rem;
+}
+
+@media only screen 
+and (max-width : 3999px)
+and (min-width : 2400px) {
+  font-size: 3rem;
+}
+
+@media only screen 
+and (max-width : 2399px)
+and (min-width : 1000px) {
+  font-size: 2rem;
+}
+
+@media only screen 
+and (max-width : 999px)
+and (min-width : 200px) {
+  font-size: 1rem;
+}
+  }
 `;
 
 const ContactText = styled.p`
@@ -256,9 +417,56 @@ const ContactText = styled.p`
     color: #e07628;
     text-decoration: none;
   }
+  @media (min-width: 280px) and (max-width: 800px) {
+    font-size: 1.2rem;
+  }
+  @media (min-width: 801px) and (max-width: 1200px) {
+    font-size: 2.5rem;
+  }
+  @media (min-width: 1201px) and (max-width: 1280px) {
+    font-size: 3rem;
+
+  }
+  @media (min-width: 1281px) and (max-width: 1440px) {
+    font-size: 3rem;
+
+  }
+  @media (min-width: 1441px) and (max-width: 2599px) {
+    font-size: 3rem !important;
+  }
+  @media (min-width: 2600px) and (max-width: 3000px) {
+    font-size: 5rem !important;
+  }
+  @media (min-width: 3001px) and (max-width: 4000px) {
+    font-size: 6rem !important;
+  }
+  @media (min-width: 3001px) and (max-width: 6000px) {
+    font-size: 6rem !important;
+
+  }
 `;
 
+const Footer2 = styled.footer`
+  ${tw('text-center text-grey absolute pin-b p-6 font-sans text-md lg:text-lg')};
+  a {
+    color: #e07628;
+    text-decoration: none;
+  }
 
+  @media (min-width: 1441px) and (max-width: 2599px) {
+    font-size: 2.5rem !important;
+  }
+  @media (min-width: 2600px) and (max-width: 3000px) {
+    font-size: 2.5rem !important;
+  }
+  @media (min-width: 3001px) and (max-width: 4000px) {
+    font-size: 3.5rem !important;
+  }
+  @media (min-width: 3001px) and (max-width: 6000px) {
+    font-size: 4.2rem !important;
+
+  }
+`;
 
 const CtaStudy1 = () => (
   <React.Fragment>
@@ -274,31 +482,24 @@ const CtaStudy1 = () => (
           <SVG icon="arrowUp" className={hidden} width={16} fill={'#E18CB2'} left="80%" top="10%" />
           <SVG icon="triangle" width={12} stroke={'#F9B4D3'} left="90%" top="50%" />
           <SVG icon="circle" width={16} fill={colors['grey']} left="70%" top="90%" />
-          <SVG icon="triangle" width={16} stroke={'#E18CB2'} left="30%" top="65%" />
           <SVG icon="circle" width={6} fill={colors['grey-darkest']} left="75%" top="10%" />
           <SVG icon="upDown" className={hidden} width={8} fill={colors['grey']} left="45%" top="10%" />
         </UpDownWide>
         <SVG icon="circle" className={hidden} width={24} fill={colors['grey']} left="5%" top="70%" />
         <SVG icon="circle" width={6} fill={colors['grey']} left="4%" top="20%" />
-        <SVG icon="circle" width={12} fill={colors['grey-darkest']} left="50%" top="60%" />
         <SVG icon="upDown" width={8} fill={colors['grey']} left="95%" top="90%" />
-        <SVG icon="upDown" className={hidden} width={24} fill={'#F799C3'} left="40%" top="80%" />
         <SVG icon="triangle" width={8} stroke={'#F799C3'} left="25%" top="5%" />
         <SVG icon="circle" width={64} fill={colors['grey-darkest']} left="95%" top="5%" />
         <SVG icon="box" className={hidden} width={64} fill={'#FBD0E3'} left="-5%" top="90%" />
         <SVG icon="box" width={6} fill={colors['grey']} left="10%" top="10%" />
-        <SVG icon="box" width={12} fill={'#F9B4D3'} left="40%" top="30%" />
         <SVG icon="hexa" width={16} stroke={'#F799C3'} left="10%" top="50%" />
         <SVG icon="hexa" width={8} stroke={'#F799C3'} left="80%" top="70%" />
       </Divider>
       <Content speed={0.4} offset={0}>
       <Hero>
           <BigTitle>
-            CTA Sign Up CRO Strategies
+            <strong>CTA Sign Up CRO Strategies: 3 Things To Focus On When Optimizing Your CTA UX, To Boost Conversions.</strong> <br />
           </BigTitle>
-          <Title>
-            <strong>3 Things To Focus On When Optimizing Your CTA UX, To Boost Conversions.</strong> <br />
-          </Title>
           <Subtitle>
           <Bullet className="bullet" src={rocket} alt="Website Development, freelance designer" />Good UX starts from the moment your customer interacts with your brand.<br />
 
@@ -308,9 +509,9 @@ const CtaStudy1 = () => (
           <br /> <br />
           </Subtitle>
           <AboutDesc>
-            <strong>Case Study Overview:</strong>
+            <strong>Making a plan:</strong>
             <br /><br />
-            For this case study, I focused on the overall CTAs in landing page sign ups.
+            For this plan, I focused on the overall CTAs in landing page sign ups.
             <br />
             <br />
             This is an overview of certain trends and takeaways for CTA conversion optimization , lets go over my process of: researching a targeted demographic, looking at well curated copy examples and deciding on
@@ -431,11 +632,12 @@ const CtaStudy1 = () => (
         <Inner>
           
         </Inner>
-        <a className="homeIcon" href="https://www.prideiscalifornia.com"><img src={homeicon} style={{position: 'absolute', bottom: '75px', right: '45vw'}} width="30px" height="30px" alt="bob"></img></a>
         <Footer>
           
           
         </Footer>
+        <a className="homeIcon" href="https://www.prideiscalifornia.com"><img src={homeicon} style={{position: 'absolute', bottom: '75px', right: '45vw', zIndex: '100'}} width="3vw" height="3vw" alt="bob"></img></a>
+
       </Content>
       <Divider speed={0.2} offset={4}>
         <UpDown>
