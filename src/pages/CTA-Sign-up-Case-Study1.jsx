@@ -17,25 +17,7 @@ import rocket from './giphy.gif';
 import './JonathanBryResume.pdf';
 import Footer from '../components/Footer';
 import homeicon from './homeicon.png';
-// import $ from 'jquery';
 
-//JQUERY EDITS
-// $( 'document' ).ready(function() {
-  // $(window).resize(function(){
-
-  //   if ($(window).width() <= 1000) {  
-  
-  //     $('.css-6v7ury-AboutDesc').attr('style','color: red !important');
-  
-  //   }     
-  
-  // });
-  
-// });
-
-
-
-//JQUERY EDITS END
 
 
 
@@ -511,10 +493,10 @@ const CtaStudy1 = () => (
           <AboutDesc>
             <strong>Making a plan:</strong>
             <br /><br />
-            For this plan, I focused on the overall CTAs in landing page sign ups.
+            For this plan, I focused on the copy and the format in landing page sign ups; and the effect on fulfilling the user's motivation.
             <br />
             <br />
-            This is an overview of certain trends and takeaways for CTA conversion optimization , lets go over my process of: researching a targeted demographic, looking at well curated copy examples and deciding on
+            This is an overview of certain trends and takeaways for CTA conversion optimization, lets go over my process of: researching a targeted demographic, looking at well curated copy examples and deciding on
              a voice, and tying that into the whole Call to Action.
 
 
@@ -531,7 +513,7 @@ const CtaStudy1 = () => (
              <br />
              b. Establish key parts of the sign up design, offering, and copy that was responsible for the largest source
              <br />
-             c. Connect the solution you're offering to a customer model, based off of: Age, Traffic Type, Needs, and Career.
+             c. Connect the solutions you're offering to a customer model, based off of: Age, Traffic Type, Needs, and Career.
              <br />
              d. Extract the elements of what was working, the needs you solved, the design, the copy, any discounts, and the overall ad delivery.
             <br /><br />
