@@ -372,7 +372,7 @@ const Babelbark = () => (
       <Content1 speed={0.4} offset={0}>
         <Hero >
           <BigTitle>
-            BabelBark - Petcare Reimagined <br />
+            BabelBark - Pet-care Re-imagined <br />
             Questions: <br />
           </BigTitle>
           <Subtitle className="subtitles">
@@ -393,17 +393,17 @@ const Babelbark = () => (
             </p>
             <h2><strong>Problem Statement:</strong></h2>
             <p>
-            Healthcare, or in this case, petcare, is notoriously clunky and outdated when it comes to design; this is usually due 
+            Healthcare, or in this case, pet-care, is notoriously clunky and outdated when it comes to design; this is usually due 
             to the leadership, HIPA guidelines, or the overall cost when it comes to this field. Thankfully Babelbark is a forward 
-            thinking company that allowed me the artistic freedom to design something that didnt look like it was from 2010. As i was researching and talking to users of the beta, 
+            thinking company that allowed me the artistic freedom to design something that didn't look like it was from 2010. As i was researching and talking to users of the beta, 
             I quickly realized that the problem statement could be boiled down to a few points: We have to design with all age ranges in mind, and create interactions, notifications, 
             and content that would inspire people to log on at least weekly. Lastly, with the latest ADA requirements directed towards public facing apps and websites, we had to start 
-            the development with ARIA attributes in mind for blind users, contrast/typography customization rules for the visual impared, and ease of use for anyone with impaired motor functions.
+            the development with ARIA attributes in mind for blind users, contrast/typography customization rules for the visual impaired, and ease of use for anyone with impaired motor functions.
             </p>
             <h2><strong>My Role:</strong></h2>
             <p>
-            Throughout the process I surveyed current customers to get 3 takeaways across 100 surveys. I developed 15 short, open-ended answer questions, harshly making sure they werent leading the customer to an opinion in any way, and that they fell within the five take-aways we wanted. 
-            From this initial survey I quickly got what I hypothesized; older users expect a hamburger menu and some teaching on how to use the app, they dont use 3D touch, and they like simple and elegant interfaces. Younger people below 40 were across the board for conventions,
+            Throughout the process I surveyed current customers to get 3 takeaways across 100 surveys. I developed 15 short, open-ended answer questions, harshly making sure they weren't leading the customer to an opinion in any way, and that they fell within the five takeaways we wanted. 
+            From this initial survey I quickly got what I hypothesized; older users expect a hamburger menu and some teaching on how to use the app, they don't use 3D touch, and they like simple and elegant interfaces. Younger people below 40 were across the board for conventions,
             depending on what apps they use. I researched the top apps of this year, and came back with examples that were typical to every demographic, and tailored for our platform. My role went from: researching and interviewing, to designing, to testing my findings and reiterating through prototypes, 
             ultimately working with the development team to bring my low fidelity, coded prototypes, to life. I worked for 6 months past the product release to see how our users reacted; this role lasted 2 years.
             </p>
@@ -420,13 +420,13 @@ const Babelbark = () => (
             Surveys and beta testers were key in my heuristic evaluation after I made high fidelity mockups; we got a total of 100 surveys, and 20 beta testers, with a mix of both inside and outside of our company. 
             One thing I think is vital to any app is a guided tour through the app, that the user can not skip. When it comes to tutorials the drop off of information retention drops off at the 5th instruction. 
             This clearly means the shorter the better, but we had to provide enough to give all our users a solid starting point no matter what they're used to when it comes to app/website design. <br /> <br />
-            When it comes to information heirarchy, our surveys revealed that they would prioritize about pet's shots, appointments, and preferred products. We made a banner at the top of the application with this info, 
+            When it comes to information hierarchy, our surveys revealed that they would prioritize about pet's shots, appointments, and preferred products. We made a banner at the top of the application with this info, 
             with a specialized feed of articles from brands, blogs, and their vet. </p>
 
 
             <h2><strong>Outcomes and Lessons:</strong></h2>
             <p>
-            Making an accessible product is a strenuous, but neccessary task when you take into account demographics like: Baby Boomers, Millenials, Gen X, Y, Z, and everyone in between; as well as differently abled poplations such as: visual, cognitive, and motor functions. 
+            Making an accessible product is a strenuous, but necessary task when you take into account demographics like: Baby Boomers, Millennials, Gen X, Y, Z, and everyone in between; as well as differently abled poplations such as: visual, cognitive, and motor functions. 
             It is a task I strive to keep on the forefront, because my job as a UI/UX professional is to make the web not only accessible for <strong>ALL,</strong> but easy and intuitive for <strong>ALL.</strong> 
             </p>
 </AboutDesc>
