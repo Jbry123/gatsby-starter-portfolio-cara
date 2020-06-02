@@ -4,5 +4,5 @@ exports.onCreateBabelConfig = ({ actions: { setBabelPlugin } }) => {
 };
 
 exports.onCreateBabelConfig = ({ actions: { setBabelPlugin } }) => {
-  setBabelPlugin({ name: 'jQuery' });
+  setBabelPlugin({ name: 'jquery' });
 };
