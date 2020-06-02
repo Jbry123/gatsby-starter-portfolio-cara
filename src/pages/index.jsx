@@ -16,7 +16,25 @@ import '../styles/global';
 import rocket from './giphy.gif';
 import './JonathanBryResume.pdf';
 import Footer from '../components/Footer';
+// import $ from 'jquery';
 
+//JQUERY EDITS
+// $( 'document' ).ready(function() {
+  // $(window).resize(function(){
+
+  //   if ($(window).width() <= 1000) {  
+  
+  //     $('.css-6v7ury-AboutDesc').attr('style','color: red !important');
+  
+  //   }     
+  
+  // });
+  
+// });
+
+
+
+//JQUERY EDITS END
 
 
 const Divider = styled(ParallaxLayer)`

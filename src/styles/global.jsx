@@ -73,7 +73,7 @@ injectGlobal`
     }
 
 
-  @media only screen and (min-width: 2700px) and (max-width: 4000px) {
+  @media only screen and (min-width: 2501px) and (max-width: 4000px) {
     .css-sd50ea-Subtitle, .css-142vdkh{
       img{
         height:45px;
@@ -84,29 +84,6 @@ injectGlobal`
     }
     .css-11ptdj9-BigTitle, .css-142vdkh {
       margin-top: -156% !important;
-    }
-    .css-6v7ury-AboutDesc, .css-ugwx4i {
-      h2{
-        font-size: 40px !important;
-      }
-      p{
-        font-size: 30px !important;
-      }
-      }
-
-    }
-  }
-  @media only screen and (min-width: 2501px) and (max-width: 2699px) {
-    .css-sd50ea-Subtitle, .css-142vdkh{
-      img{
-        height:45px;
-        width:45px;
-      }
-      font-size: 45px;
-      width: 1200px !important;
-    }
-    .css-11ptdj9-BigTitle, .css-142vdkh {
-      margin-top: 400px !important;
     }
     .css-6v7ury-AboutDesc, .css-ugwx4i {
       h2{
